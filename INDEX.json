@@ -80,6 +80,24 @@
       "signature": "ffeb465f17b9a30507f1fd29e8b0009a1ab7996f2a27b3350e46286a5c32ca70",
       "slot": "slot-008",
       "status": "CAPTURED"
+    },
+    {
+      "archive": "slots/slot-009/ad8e55f75fc4e7978bc001a737d692f6ee5c8da6d3634b7d3a6241657c83b8f0.tar.gz",
+      "completed": true,
+      "files": 37,
+      "sha256": "d33b760f40fbb9f7d0b4f9946abe8740cc469f0370f505b2afde9e9b879e18ef",
+      "signature": "ad8e55f75fc4e7978bc001a737d692f6ee5c8da6d3634b7d3a6241657c83b8f0",
+      "slot": "slot-009",
+      "status": "CAPTURED"
+    },
+    {
+      "archive": "slots/slot-010/c0750d99496a35b4c52a3c5f8f4664a64f605be16bebf4cf1849e66f9d74f11e.tar.gz",
+      "completed": true,
+      "files": 37,
+      "sha256": "6e3066499f35609aabc942835e7d9d526daa01b51e206f6c7a9ceb629ba2dfe0",
+      "signature": "c0750d99496a35b4c52a3c5f8f4664a64f605be16bebf4cf1849e66f9d74f11e",
+      "slot": "slot-010",
+      "status": "CAPTURED"
     }
   ],
   "state": {
