@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-04T20:20:03.042310+00:00",
-  "captured_slots": 2,
+  "as_of": "2026-11-04T21:05:03.038614+00:00",
+  "captured_slots": 3,
   "closeout_eligible_at": "2026-11-09T09:15:00+00:00",
   "collection_closed": false,
   "complete": false,
   "corrected_clock": {
     "available": true,
-    "cohort_record_count": 2,
+    "cohort_record_count": 3,
     "cohort_records": [
       {
         "conditional_error_bound_seconds": "0.020170339",
@@ -37,10 +37,25 @@
         "schema": "KOD_CHRONY_CSV_CORRECTION_V1",
         "status": "DERIVED_FROM_RETAINED_RAW",
         "system_correction_seconds": "0.001661492"
+      },
+      {
+        "conditional_error_bound_seconds": "0.0024064375",
+        "evidence_id": "clock_9de3ab87dba69b5cefd16094d9a698bde6b7afa3412d4367a34bef1d9fdf83dc",
+        "legacy_offset_seconds_is_invalid": true,
+        "meaning": "Derived chrony system correction, not independent proof of absolute time",
+        "observed_at": "2026-11-04T21:00:01.108921Z",
+        "original_file": "/var/lib/kod/timing-forward/timing/clocks/clock_9de3ab87dba69b5cefd16094d9a698bde6b7afa3412d4367a34bef1d9fdf83dc.json",
+        "original_sha256": "dddaf5f91afea3dbb5611f4191e44a275305c67d061c0fc4ce8bb9e5cc1875e6",
+        "reference_time_epoch": "1793825447.047188956",
+        "root_delay_seconds": "0.003409407",
+        "root_dispersion_seconds": "0.000696698",
+        "schema": "KOD_CHRONY_CSV_CORRECTION_V1",
+        "status": "DERIVED_FROM_RETAINED_RAW",
+        "system_correction_seconds": "-0.000005036"
       }
     ],
     "cohort_status_counts": {
-      "DERIVED_FROM_RETAINED_RAW": 2
+      "DERIVED_FROM_RETAINED_RAW": 3
     },
     "legacy_offset_used": false,
     "other_record_count": 1,
@@ -93,9 +108,12 @@
       "status": "CAPTURED"
     },
     {
+      "completed_at": "2026-11-04T21:00:09.304035Z",
+      "observed_at": "2026-11-04T21:00:00.940273Z",
+      "plan_sha256": "693394f0efffc485a0892a4b5b2115454a858ff0d50ff6daeaff7717c7e2cbb9",
       "scheduled_at": "2026-11-04T21:00:00Z",
       "slot": 3,
-      "status": "PENDING"
+      "status": "CAPTURED"
     },
     {
       "scheduled_at": "2026-11-05T01:00:00Z",
@@ -235,19 +253,19 @@
   ],
   "source_commit": "dbb27ea5c6a16c5b37c6f94b938a1509c2a9148e",
   "status_counts": {
-    "CAPTURED": 2,
-    "PENDING": 28
+    "CAPTURED": 3,
+    "PENDING": 27
   },
   "strategy_promotion": false,
-  "terminal_slots": 2,
+  "terminal_slots": 3,
   "timing": {
-    "all_journal_identities": 18,
+    "all_journal_identities": 27,
     "available": true,
     "integrity": {
-      "attempts": 18,
+      "attempts": 27,
       "entry_permission": false,
       "external_verification": "LOCAL_HASH_CHAIN_ONLY",
-      "head_hash": "94a94cdd35c871d47c9bbab7df957b67d6b7aa1f097d6a72c35ba3caed0cd895",
+      "head_hash": "9333ac9c8da7834e1ddd7c03c3b978fef206270c7ce481bbc566f33b5d9e37df",
       "linked_evidence": {
         "checks": [
           {
@@ -427,6 +445,94 @@
             "status": "VERIFIED"
           },
           {
+            "attempt_id": "attempt_b2747887f28a4022bf8e9f70a038f04f",
+            "id": "membership_37da9b0b55ec8e0f157afd63a5413a5a8bc1c2c73ae5589e12d2d640c68a1a32",
+            "kind": "membership",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_b2747887f28a4022bf8e9f70a038f04f",
+            "id": "clock_9de3ab87dba69b5cefd16094d9a698bde6b7afa3412d4367a34bef1d9fdf83dc",
+            "kind": "clock",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_b2747887f28a4022bf8e9f70a038f04f",
+            "id": "timing/captures/attempt_b2747887f28a4022bf8e9f70a038f04f.json",
+            "kind": "capture",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_b2747887f28a4022bf8e9f70a038f04f:request:0",
+            "id": "membership_37da9b0b55ec8e0f157afd63a5413a5a8bc1c2c73ae5589e12d2d640c68a1a32",
+            "kind": "membership",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_b2747887f28a4022bf8e9f70a038f04f:request:1",
+            "id": "membership_37da9b0b55ec8e0f157afd63a5413a5a8bc1c2c73ae5589e12d2d640c68a1a32",
+            "kind": "membership",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_b2747887f28a4022bf8e9f70a038f04f:request:2",
+            "id": "membership_37da9b0b55ec8e0f157afd63a5413a5a8bc1c2c73ae5589e12d2d640c68a1a32",
+            "kind": "membership",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_b2747887f28a4022bf8e9f70a038f04f:request:3",
+            "id": "membership_37da9b0b55ec8e0f157afd63a5413a5a8bc1c2c73ae5589e12d2d640c68a1a32",
+            "kind": "membership",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_b2747887f28a4022bf8e9f70a038f04f:request:4",
+            "id": "membership_37da9b0b55ec8e0f157afd63a5413a5a8bc1c2c73ae5589e12d2d640c68a1a32",
+            "kind": "membership",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_b2747887f28a4022bf8e9f70a038f04f:request:5",
+            "id": "membership_37da9b0b55ec8e0f157afd63a5413a5a8bc1c2c73ae5589e12d2d640c68a1a32",
+            "kind": "membership",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_b2747887f28a4022bf8e9f70a038f04f:request:6",
+            "id": "membership_37da9b0b55ec8e0f157afd63a5413a5a8bc1c2c73ae5589e12d2d640c68a1a32",
+            "kind": "membership",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_b2747887f28a4022bf8e9f70a038f04f:request:7",
+            "id": "membership_37da9b0b55ec8e0f157afd63a5413a5a8bc1c2c73ae5589e12d2d640c68a1a32",
+            "kind": "membership",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
             "attempt_id": "attempt_5fa40709f292463a8518f019ca37a592:request:0",
             "id": "ev_367d31d8d52c1ff02ecb2184da654a0a57fa01b7db40aee1f43d3a3089542fb8",
             "kind": "request",
@@ -553,6 +659,70 @@
             "reason": "original linked object verified",
             "required": true,
             "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_b2747887f28a4022bf8e9f70a038f04f:request:0",
+            "id": "ev_9a20a1365fa37c586fadedb2c566a310ddf36140c47aacf605fe35b2a74e1c2c",
+            "kind": "request",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_b2747887f28a4022bf8e9f70a038f04f:request:1",
+            "id": "ev_78052717741093f82728917578c5e0286ec263f1d99da9fa09ce2dea1c83c579",
+            "kind": "request",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_b2747887f28a4022bf8e9f70a038f04f:request:2",
+            "id": "ev_8a410f2cf68696e948ed4ad822dcf48f42dcd701483a250e0435a968f3fe0999",
+            "kind": "request",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_b2747887f28a4022bf8e9f70a038f04f:request:3",
+            "id": "ev_539b8309d130d366be718ca71dd6dac27bddfa39f4ce60b13e88ae9dc89ebdda",
+            "kind": "request",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_b2747887f28a4022bf8e9f70a038f04f:request:4",
+            "id": "ev_f9b42a6f0f72db7c7d803d8aea83e4e43e44b2640bbf8cc9ee2580b003ab0db4",
+            "kind": "request",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_b2747887f28a4022bf8e9f70a038f04f:request:5",
+            "id": "ev_4cefb4ce3ccc72c9a5ba3494a01d812340ef61d6aa4cdbfa725c08a3582b87cc",
+            "kind": "request",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_b2747887f28a4022bf8e9f70a038f04f:request:6",
+            "id": "ev_46ad679e97e1ef4022b28448202e82673a98d3ee229b6b3db02c98d700448e2f",
+            "kind": "request",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_b2747887f28a4022bf8e9f70a038f04f:request:7",
+            "id": "ev_1dde70344fd19e87ae9def2248e09e527aec6fd2d9b74caa8fdf8da407f7ba2c",
+            "kind": "request",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
           }
         ],
         "complete": true,
@@ -560,7 +730,7 @@
           "declared": 0,
           "fail": 0,
           "unavailable": 0,
-          "verified": 38
+          "verified": 57
         },
         "entry_permission": false,
         "ok": true,
@@ -568,13 +738,13 @@
         "schema_version": "KOD_TIMING_LINKED_EVIDENCE_V1"
       },
       "ok": true,
-      "revisions": 20,
+      "revisions": 30,
       "schema_version": "KOD_TIMING_JOURNAL_V1"
     },
-    "main_attempts": 2,
+    "main_attempts": 3,
     "main_cohorts": [
       {
-        "attempts": 2,
+        "attempts": 3,
         "detector_version": "INTRADAY_OBSERVATION_V1",
         "evidence_kind": "prospective",
         "stages": {
@@ -583,48 +753,48 @@
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 2
+            "unknown": 3
           },
           "collection_after_threshold": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 2
+            "unknown": 3
           },
           "detection_processing": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 2
+            "unknown": 3
           },
           "execution_quote": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 2
+            "unknown": 3
           },
           "fill_after_quote": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 2
+            "unknown": 3
           },
           "receipt_to_features": {
-            "known": 2,
+            "known": 3,
             "max_seconds": 0.008801,
-            "median_seconds": 0.0081875,
+            "median_seconds": 0.007574,
             "p95_seconds": 0.008801,
             "unknown": 0
           },
           "schedule_start": {
-            "known": 2,
-            "max_seconds": 0.879463,
-            "median_seconds": 0.855462,
-            "p95_seconds": 0.879463,
+            "known": 3,
+            "max_seconds": 1.086505,
+            "median_seconds": 0.879463,
+            "p95_seconds": 1.086505,
             "unknown": 0
           },
           "source_to_receipt": {
@@ -632,47 +802,47 @@
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 2
+            "unknown": 3
           },
           "threshold": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 2
+            "unknown": 3
           }
         },
         "statuses": {
-          "COMPLETED": 2
+          "COMPLETED": 3
         }
       }
     ],
     "missing_stages": {
-      "decision_at": 18,
-      "detected_at": 18,
-      "executable_at": 18,
-      "features_ready_at": 16,
-      "fill_at": 18,
-      "published_at": 18,
+      "decision_at": 27,
+      "detected_at": 27,
+      "executable_at": 27,
+      "features_ready_at": 24,
+      "fill_at": 27,
+      "published_at": 27,
       "received_at": 0,
-      "scheduled_at": 16,
+      "scheduled_at": 24,
       "started_at": 0
     },
     "other_cohorts": [],
-    "report_as_of": "2026-11-04T20:20:05.146814Z",
-    "request_detail_rows": 16,
+    "report_as_of": "2026-11-04T21:05:04.827183Z",
+    "request_detail_rows": 24,
     "request_duration_scope_verified": true,
     "request_monotonic_duration": {
-      "known": 16,
-      "median_seconds": 0.223028408,
+      "known": 24,
+      "median_seconds": 0.2468044385,
       "p95_method": "nearest rank; descriptive only",
-      "p95_seconds": 3.532740068,
+      "p95_seconds": 2.8056367,
       "unknown_or_invalid": 0,
       "worst_seconds": 3.532740068
     },
     "source_lag": [
       {
-        "attempts": 4,
+        "attempts": 6,
         "clock_conflicts": 0,
         "evidence_kind": "prospective",
         "failures": 0,
@@ -681,12 +851,12 @@
           "max_seconds": null,
           "median_seconds": null,
           "p95_seconds": null,
-          "unknown": 4
+          "unknown": 6
         },
         "source": "/api/v3/depth"
       },
       {
-        "attempts": 2,
+        "attempts": 3,
         "clock_conflicts": 0,
         "evidence_kind": "prospective",
         "failures": 0,
@@ -695,12 +865,12 @@
           "max_seconds": null,
           "median_seconds": null,
           "p95_seconds": null,
-          "unknown": 2
+          "unknown": 3
         },
         "source": "/api/v3/exchangeInfo"
       },
       {
-        "attempts": 4,
+        "attempts": 6,
         "clock_conflicts": 0,
         "evidence_kind": "prospective",
         "failures": 0,
@@ -709,12 +879,12 @@
           "max_seconds": null,
           "median_seconds": null,
           "p95_seconds": null,
-          "unknown": 4
+          "unknown": 6
         },
         "source": "/api/v3/klines"
       },
       {
-        "attempts": 4,
+        "attempts": 6,
         "clock_conflicts": 0,
         "evidence_kind": "prospective",
         "failures": 0,
@@ -723,12 +893,12 @@
           "max_seconds": null,
           "median_seconds": null,
           "p95_seconds": null,
-          "unknown": 4
+          "unknown": 6
         },
         "source": "/api/v3/ticker/bookTicker"
       },
       {
-        "attempts": 2,
+        "attempts": 3,
         "clock_conflicts": 0,
         "evidence_kind": "prospective",
         "failures": 0,
@@ -737,12 +907,12 @@
           "max_seconds": null,
           "median_seconds": null,
           "p95_seconds": null,
-          "unknown": 2
+          "unknown": 3
         },
         "source": "/api/v3/time"
       },
       {
-        "attempts": 2,
+        "attempts": 3,
         "clock_conflicts": 0,
         "evidence_kind": "prospective",
         "failures": 0,
@@ -751,15 +921,15 @@
           "max_seconds": null,
           "median_seconds": null,
           "p95_seconds": null,
-          "unknown": 2
+          "unknown": 3
         },
         "source": "BINANCE_SPOT_PUBLIC"
       }
     ],
-    "source_request_attempts": 16,
+    "source_request_attempts": 24,
     "source_request_cohorts": [
       {
-        "attempts": 16,
+        "attempts": 24,
         "detector_version": "SOURCE_REQUEST_V1",
         "evidence_kind": "prospective",
         "stages": {
@@ -768,73 +938,72 @@
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 16
+            "unknown": 24
           },
           "collection_after_threshold": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 16
+            "unknown": 24
           },
           "detection_processing": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 16
+            "unknown": 24
           },
           "execution_quote": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 16
+            "unknown": 24
           },
           "fill_after_quote": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 16
+            "unknown": 24
           },
           "receipt_to_features": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 16
+            "unknown": 24
           },
           "schedule_start": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 16
+            "unknown": 24
           },
           "source_to_receipt": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 16
+            "unknown": 24
           },
           "threshold": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 16
+            "unknown": 24
           }
         },
         "statuses": {
-          "COMPLETED": 16
+          "COMPLETED": 24
         }
       }
     ]
   },
   "unresolved_slots": [
-    3,
     4,
     5,
     6,
