@@ -1,6 +1,7 @@
 {
-  "as_of": "2026-11-04T13:05:02.590575+00:00",
+  "as_of": "2026-11-04T13:19:14.393442+00:00",
   "clock_corrections": "CLOCK-CORRECTIONS.json",
+  "cohort_report": "COHORT-REPORT.json",
   "collector_service": {
     "ActiveState": "inactive",
     "ExecMainStatus": "0",
@@ -14,6 +15,7 @@
     "CAPTURED": 1,
     "PENDING": 29
   },
+  "evidence_integrity_ok": true,
   "experiment_changed": false,
   "issues": [],
   "plan_file_sha256": "bffe919924e56a48d49e92045f86e3ee4678ac5ae03aad8287ae8d6e6af6af6b",
@@ -174,9 +176,9 @@
       "status": "PENDING"
     }
   ],
-  "snapshot": "snapshots/0da22fe1ea9d13950fcafcceeb8ec876d57ae98c5d46d610e4fc136d0590e776.tar.gz",
-  "snapshot_files": 660,
-  "snapshot_sha256": "d091a41d32e26508877a9bef4990da30472b8608e7b1441abf943c3f30a60ffb",
+  "snapshot": "snapshots/abda483cbb231094926b28d21b8cab7a7d5972bbf145222fb2bd26fb421efa91.tar.gz",
+  "snapshot_files": 661,
+  "snapshot_sha256": "7740db01169c77932e66a9b0725e78cea8c82fe954d5bbe5b2e2eb180b12672c",
   "source_check": {
     "checked_files": 527,
     "commit": "dbb27ea5c6a16c5b37c6f94b938a1509c2a9148e",
