@@ -1,14 +1,21 @@
 {
-  "as_of": "2026-11-04T17:04:39.500139+00:00",
+  "as_of": "2026-11-04T17:30:52.982662+00:00",
   "backup_branch": "supplement-30m-v1",
   "current_clock": {
     "command": "chronyc -c tracking",
     "meaning": "Current local chrony evidence; not independent absolute-time proof",
-    "raw_csv": "334FA8DC,51.79.168.220,3,1793811841.580732610,-0.000007519,-0.007648779,0.009300812,-43.272,-119.308,56.218,0.005089787,0.011532448,64.4,Normal",
+    "raw_csv": "334FA8DC,51.79.168.220,3,1793813391.074799414,0.001704435,0.000812492,0.010271930,-182.658,54.013,48.161,0.008213954,0.029829502,65.2,Normal",
     "status": "SYNCHRONIZED"
   },
   "issues": [],
-  "last_acknowledged_backup": null,
+  "last_acknowledged_backup": {
+    "begun_slots_archived": 0,
+    "branch": "supplement-30m-v1",
+    "commit": "d4cd513364934e78962b89ff9be610bf2751411b",
+    "completed_slots": 0,
+    "epoch": 1793811891.848678,
+    "issues": []
+  },
   "limitations": [
     "Local supplement monitor has no separate external notification integration.",
     "Existing original-cohort remote watchdog continues monitoring the host heartbeat.",
@@ -16,7 +23,9 @@
   ],
   "original_controls_unchanged": true,
   "plan_sha256": "86102f2e8e592929102f6cce87bec7b7d365fc64a86f9d136a8f01c22672b202",
-  "retained_clock_correction_statuses": {},
+  "retained_clock_correction_statuses": {
+    "DERIVED_FROM_RETAINED_RAW": 1
+  },
   "schema": "KOD_SUPPLEMENT_GUARD_V1",
   "source_check": {
     "checked_files": 527,
@@ -31,7 +40,7 @@
       "Result": "success"
     },
     "kod-supplement-guard-v1.service": {
-      "ActiveState": "activating",
+      "ActiveState": "inactive",
       "ExecMainStatus": "0",
       "Result": "success"
     },
@@ -50,25 +59,26 @@
     }
   },
   "view": {
-    "as_of": "2026-11-04T17:04:40.605173Z",
+    "as_of": "2026-11-04T17:30:53.306566Z",
     "counts": {
-      "PENDING": 224
+      "CAPTURED": 1,
+      "PENDING": 223
     },
     "coverage": {
       "by_symbol": [
         {
-          "first_open_time": null,
+          "first_open_time": "2026-11-04T16:30:00Z",
           "gaps_in_due_lookback_target": [],
-          "latest_bar_end_at": null,
+          "latest_bar_end_at": "2026-11-04T17:30:00Z",
           "symbol": "BTCUSDT",
-          "unique_complete_bars": 0
+          "unique_complete_bars": 60
         },
         {
-          "first_open_time": null,
+          "first_open_time": "2026-11-04T16:30:00Z",
           "gaps_in_due_lookback_target": [],
-          "latest_bar_end_at": null,
+          "latest_bar_end_at": "2026-11-04T17:30:00Z",
           "symbol": "ETHUSDT",
-          "unique_complete_bars": 0
+          "unique_complete_bars": 60
         }
       ],
       "conflicting_candle_identities": 0,
@@ -79,10 +89,10 @@
         "open_time"
       ],
       "overlapping_bar_rows": 0,
-      "retained_bar_rows": 0,
-      "target_end_at": "2026-11-04T16:30:00Z",
+      "retained_bar_rows": 120,
+      "target_end_at": "2026-11-04T17:30:00Z",
       "target_start_at": "2026-11-04T16:30:00Z",
-      "unique_candle_identities": 0
+      "unique_candle_identities": 120
     },
     "end_at": "2026-11-09T09:00:00Z",
     "entry_permission": false,
@@ -112,19 +122,58 @@
     "scope": "Read-only operational observations; original 30-slot report remains separate",
     "slots": [
       {
-        "capture_verified": false,
+        "attempt_id": "attempt_556b44c1bebb4cec9ab66c5e6fc3c80d",
+        "bar_rows": 120,
+        "capture_verified": true,
         "clock": {
           "legacy_offset_seconds_invalid": true,
-          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
-          "system_correction_seconds": null
+          "records": [
+            {
+              "conditional_error_bound_seconds": "0.030637934",
+              "observed_at": "2026-11-04T17:30:02.535709Z",
+              "original_sha256": "c95f56e0d8f81a2e5232935e6893bdeae7a565c5c4645be9e19ef8e1ce6424e0",
+              "status": "DERIVED_FROM_RETAINED_RAW",
+              "system_correction_seconds": "0.001937308"
+            }
+          ],
+          "status": "DERIVED_FROM_RETAINED_RAW",
+          "system_correction_seconds": "0.001937308"
         },
+        "completed_at": "2026-11-04T17:30:08.378923Z",
+        "depth_snapshots": 2,
         "issues": [],
         "origin": "SUPPLEMENT",
-        "receipt_verified": false,
-        "references": {},
+        "quote_snapshots": 2,
+        "receipt_verified": true,
+        "references": {
+          "capture": {
+            "path": "/var/lib/kod/supplement-v1/slot-001/runtime/timing/captures/attempt_556b44c1bebb4cec9ab66c5e6fc3c80d.json",
+            "sha256": "d0504ff57686c781ce9b228e7c4b2b19caaf4565b55b79a122d24c9a6b0fd3b4"
+          },
+          "clock_corrections": {
+            "path": "/var/lib/kod/supplement-v1/slot-001/clock-corrections.json",
+            "sha256": "94a3b68b3933d0a4fb4108674d9ad7a9b21095bdfceff4297c1c37f9a1242293"
+          },
+          "end": {
+            "path": "/var/lib/kod/supplement-v1/slot-001/end.json",
+            "sha256": "5d2cebc87c903a5e1a2095d4d6e3dec281c4c240663037ce88a074febc9bd1e6"
+          },
+          "integrity": {
+            "path": "/var/lib/kod/supplement-v1/slot-001/integrity.json",
+            "sha256": "46dfa0adc9126f3ebf71151fd6e4f02de6241a87289bfdba8333c873da5c85d3"
+          },
+          "result": {
+            "path": "/var/lib/kod/supplement-v1/slot-001/result.json",
+            "sha256": "15452763c37e713e014c53e1f15d5130d4f35a2d8c044deec4a52c6b1413120f"
+          }
+        },
+        "request_count": 8,
         "scheduled_at": "2026-11-04T17:30:00Z",
         "slot": 1,
-        "status": "PENDING"
+        "started_at": "2026-11-04T17:30:02.549074Z",
+        "status": "CAPTURED",
+        "window_end_at": "2026-11-04T17:30:00Z",
+        "window_start_at": "2026-11-04T16:30:00Z"
       },
       {
         "capture_verified": false,
@@ -3473,6 +3522,6 @@
       }
     ],
     "start_at": "2026-11-04T17:30:00Z",
-    "verified_captured_observations": 0
+    "verified_captured_observations": 1
   }
 }

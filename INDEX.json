@@ -8,7 +8,17 @@
   "original_recovery": "main branch snapshots; unchanged and not copied here",
   "original_source_commit": "dbb27ea5c6a16c5b37c6f94b938a1509c2a9148e",
   "schema": "KOD_SUPPLEMENT_DELTA_INDEX_V1",
-  "slots": [],
+  "slots": [
+    {
+      "archive": "slots/slot-001/ca94302de5bb2c3a5b7806972996745bb2817ec10a54b8de10579a9e887dcfa8.tar.gz",
+      "completed": true,
+      "files": 37,
+      "sha256": "2b058a56603df897653ceb3e605dae65741d67c2e46babd97268733391e93fc7",
+      "signature": "ca94302de5bb2c3a5b7806972996745bb2817ec10a54b8de10579a9e887dcfa8",
+      "slot": "slot-001",
+      "status": "CAPTURED"
+    }
+  ],
   "state": {
     "archive": "state/1fa81f8ba3121ab526909add6b8a035aad42bd30e438b76ddcc20a27185eb437.tar.gz",
     "files": 1,
