@@ -1,0 +1,3478 @@
+{
+  "as_of": "2026-11-04T17:04:39.500139+00:00",
+  "backup_branch": "supplement-30m-v1",
+  "current_clock": {
+    "command": "chronyc -c tracking",
+    "meaning": "Current local chrony evidence; not independent absolute-time proof",
+    "raw_csv": "334FA8DC,51.79.168.220,3,1793811841.580732610,-0.000007519,-0.007648779,0.009300812,-43.272,-119.308,56.218,0.005089787,0.011532448,64.4,Normal",
+    "status": "SYNCHRONIZED"
+  },
+  "issues": [],
+  "last_acknowledged_backup": null,
+  "limitations": [
+    "Local supplement monitor has no separate external notification integration.",
+    "Existing original-cohort remote watchdog continues monitoring the host heartbeat.",
+    "Supplement branch pushes do not invoke the original main-branch CI workflow."
+  ],
+  "original_controls_unchanged": true,
+  "plan_sha256": "86102f2e8e592929102f6cce87bec7b7d365fc64a86f9d136a8f01c22672b202",
+  "retained_clock_correction_statuses": {},
+  "schema": "KOD_SUPPLEMENT_GUARD_V1",
+  "source_check": {
+    "checked_files": 527,
+    "commit": "dbb27ea5c6a16c5b37c6f94b938a1509c2a9148e",
+    "ok": true,
+    "problems": []
+  },
+  "units": {
+    "kod-observe.service": {
+      "ActiveState": "inactive",
+      "ExecMainStatus": "0",
+      "Result": "success"
+    },
+    "kod-supplement-guard-v1.service": {
+      "ActiveState": "activating",
+      "ExecMainStatus": "0",
+      "Result": "success"
+    },
+    "kod-supplement-guard-v1.timer": {
+      "ActiveState": "active",
+      "Result": "success"
+    },
+    "kod-supplement-v1.service": {
+      "ActiveState": "inactive",
+      "ExecMainStatus": "0",
+      "Result": "success"
+    },
+    "kod-supplement-v1.timer": {
+      "ActiveState": "active",
+      "Result": "success"
+    }
+  },
+  "view": {
+    "as_of": "2026-11-04T17:04:40.605173Z",
+    "counts": {
+      "PENDING": 224
+    },
+    "coverage": {
+      "by_symbol": [
+        {
+          "first_open_time": null,
+          "gaps_in_due_lookback_target": [],
+          "latest_bar_end_at": null,
+          "symbol": "BTCUSDT",
+          "unique_complete_bars": 0
+        },
+        {
+          "first_open_time": null,
+          "gaps_in_due_lookback_target": [],
+          "latest_bar_end_at": null,
+          "symbol": "ETHUSDT",
+          "unique_complete_bars": 0
+        }
+      ],
+      "conflicting_candle_identities": 0,
+      "identity_fields": [
+        "venue",
+        "symbol",
+        "interval",
+        "open_time"
+      ],
+      "overlapping_bar_rows": 0,
+      "retained_bar_rows": 0,
+      "target_end_at": "2026-11-04T16:30:00Z",
+      "target_start_at": "2026-11-04T16:30:00Z",
+      "unique_candle_identities": 0
+    },
+    "end_at": "2026-11-09T09:00:00Z",
+    "entry_permission": false,
+    "issues": [],
+    "limitations": [
+      "Candle windows follow actual process start, not scheduled time.",
+      "Overlapping candle rows are deduplicated by identity, not independent observations.",
+      "Failed, missed, blocked and pending original slots remain unchanged references.",
+      "Clock legacy offset_seconds is invalid; use retained clock-corrections.json where available.",
+      "Local evidence verification does not establish independent timestamp proof or profitability."
+    ],
+    "origins": {
+      "ORIGINAL_REFERENCE": 28,
+      "SUPPLEMENT": 196
+    },
+    "plans": {
+      "original": {
+        "path": "/etc/kod/observation-plan.json",
+        "sha256": "bffe919924e56a48d49e92045f86e3ee4678ac5ae03aad8287ae8d6e6af6af6b"
+      },
+      "supplement": {
+        "path": "/opt/kod/supplement-v1/plan.json",
+        "sha256": "86102f2e8e592929102f6cce87bec7b7d365fc64a86f9d136a8f01c22672b202"
+      }
+    },
+    "schema": "KOD_COMBINED_OBSERVATION_VIEW_V1",
+    "scope": "Read-only operational observations; original 30-slot report remains separate",
+    "slots": [
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-04T17:30:00Z",
+        "slot": 1,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-04T18:00:00Z",
+        "slot": 2,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-04T18:30:00Z",
+        "slot": 3,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-04T19:00:00Z",
+        "slot": 4,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-04T19:30:00Z",
+        "slot": 5,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-04T20:00:00Z",
+        "slot": 6,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-04T20:30:00Z",
+        "slot": 7,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "ORIGINAL_REFERENCE",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-04T21:00:00Z",
+        "slot": 3,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-04T21:30:00Z",
+        "slot": 8,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-04T22:00:00Z",
+        "slot": 9,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-04T22:30:00Z",
+        "slot": 10,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-04T23:00:00Z",
+        "slot": 11,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-04T23:30:00Z",
+        "slot": 12,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T00:00:00Z",
+        "slot": 13,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T00:30:00Z",
+        "slot": 14,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "ORIGINAL_REFERENCE",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T01:00:00Z",
+        "slot": 4,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T01:30:00Z",
+        "slot": 15,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T02:00:00Z",
+        "slot": 16,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T02:30:00Z",
+        "slot": 17,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T03:00:00Z",
+        "slot": 18,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T03:30:00Z",
+        "slot": 19,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T04:00:00Z",
+        "slot": 20,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T04:30:00Z",
+        "slot": 21,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "ORIGINAL_REFERENCE",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T05:00:00Z",
+        "slot": 5,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T05:30:00Z",
+        "slot": 22,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T06:00:00Z",
+        "slot": 23,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T06:30:00Z",
+        "slot": 24,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T07:00:00Z",
+        "slot": 25,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T07:30:00Z",
+        "slot": 26,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T08:00:00Z",
+        "slot": 27,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T08:30:00Z",
+        "slot": 28,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "ORIGINAL_REFERENCE",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T09:00:00Z",
+        "slot": 6,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T09:30:00Z",
+        "slot": 29,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T10:00:00Z",
+        "slot": 30,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T10:30:00Z",
+        "slot": 31,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T11:00:00Z",
+        "slot": 32,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T11:30:00Z",
+        "slot": 33,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T12:00:00Z",
+        "slot": 34,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T12:30:00Z",
+        "slot": 35,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "ORIGINAL_REFERENCE",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T13:00:00Z",
+        "slot": 7,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T13:30:00Z",
+        "slot": 36,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T14:00:00Z",
+        "slot": 37,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T14:30:00Z",
+        "slot": 38,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T15:00:00Z",
+        "slot": 39,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T15:30:00Z",
+        "slot": 40,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T16:00:00Z",
+        "slot": 41,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T16:30:00Z",
+        "slot": 42,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "ORIGINAL_REFERENCE",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T17:00:00Z",
+        "slot": 8,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T17:30:00Z",
+        "slot": 43,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T18:00:00Z",
+        "slot": 44,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T18:30:00Z",
+        "slot": 45,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T19:00:00Z",
+        "slot": 46,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T19:30:00Z",
+        "slot": 47,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T20:00:00Z",
+        "slot": 48,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T20:30:00Z",
+        "slot": 49,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "ORIGINAL_REFERENCE",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T21:00:00Z",
+        "slot": 9,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T21:30:00Z",
+        "slot": 50,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T22:00:00Z",
+        "slot": 51,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T22:30:00Z",
+        "slot": 52,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T23:00:00Z",
+        "slot": 53,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-05T23:30:00Z",
+        "slot": 54,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T00:00:00Z",
+        "slot": 55,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T00:30:00Z",
+        "slot": 56,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "ORIGINAL_REFERENCE",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T01:00:00Z",
+        "slot": 10,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T01:30:00Z",
+        "slot": 57,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T02:00:00Z",
+        "slot": 58,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T02:30:00Z",
+        "slot": 59,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T03:00:00Z",
+        "slot": 60,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T03:30:00Z",
+        "slot": 61,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T04:00:00Z",
+        "slot": 62,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T04:30:00Z",
+        "slot": 63,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "ORIGINAL_REFERENCE",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T05:00:00Z",
+        "slot": 11,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T05:30:00Z",
+        "slot": 64,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T06:00:00Z",
+        "slot": 65,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T06:30:00Z",
+        "slot": 66,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T07:00:00Z",
+        "slot": 67,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T07:30:00Z",
+        "slot": 68,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T08:00:00Z",
+        "slot": 69,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T08:30:00Z",
+        "slot": 70,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "ORIGINAL_REFERENCE",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T09:00:00Z",
+        "slot": 12,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T09:30:00Z",
+        "slot": 71,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T10:00:00Z",
+        "slot": 72,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T10:30:00Z",
+        "slot": 73,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T11:00:00Z",
+        "slot": 74,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T11:30:00Z",
+        "slot": 75,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T12:00:00Z",
+        "slot": 76,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T12:30:00Z",
+        "slot": 77,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "ORIGINAL_REFERENCE",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T13:00:00Z",
+        "slot": 13,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T13:30:00Z",
+        "slot": 78,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T14:00:00Z",
+        "slot": 79,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T14:30:00Z",
+        "slot": 80,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T15:00:00Z",
+        "slot": 81,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T15:30:00Z",
+        "slot": 82,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T16:00:00Z",
+        "slot": 83,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T16:30:00Z",
+        "slot": 84,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "ORIGINAL_REFERENCE",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T17:00:00Z",
+        "slot": 14,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T17:30:00Z",
+        "slot": 85,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T18:00:00Z",
+        "slot": 86,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T18:30:00Z",
+        "slot": 87,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T19:00:00Z",
+        "slot": 88,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T19:30:00Z",
+        "slot": 89,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T20:00:00Z",
+        "slot": 90,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T20:30:00Z",
+        "slot": 91,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "ORIGINAL_REFERENCE",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T21:00:00Z",
+        "slot": 15,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T21:30:00Z",
+        "slot": 92,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T22:00:00Z",
+        "slot": 93,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T22:30:00Z",
+        "slot": 94,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T23:00:00Z",
+        "slot": 95,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-06T23:30:00Z",
+        "slot": 96,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T00:00:00Z",
+        "slot": 97,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T00:30:00Z",
+        "slot": 98,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "ORIGINAL_REFERENCE",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T01:00:00Z",
+        "slot": 16,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T01:30:00Z",
+        "slot": 99,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T02:00:00Z",
+        "slot": 100,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T02:30:00Z",
+        "slot": 101,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T03:00:00Z",
+        "slot": 102,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T03:30:00Z",
+        "slot": 103,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T04:00:00Z",
+        "slot": 104,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T04:30:00Z",
+        "slot": 105,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "ORIGINAL_REFERENCE",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T05:00:00Z",
+        "slot": 17,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T05:30:00Z",
+        "slot": 106,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T06:00:00Z",
+        "slot": 107,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T06:30:00Z",
+        "slot": 108,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T07:00:00Z",
+        "slot": 109,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T07:30:00Z",
+        "slot": 110,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T08:00:00Z",
+        "slot": 111,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T08:30:00Z",
+        "slot": 112,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "ORIGINAL_REFERENCE",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T09:00:00Z",
+        "slot": 18,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T09:30:00Z",
+        "slot": 113,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T10:00:00Z",
+        "slot": 114,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T10:30:00Z",
+        "slot": 115,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T11:00:00Z",
+        "slot": 116,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T11:30:00Z",
+        "slot": 117,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T12:00:00Z",
+        "slot": 118,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T12:30:00Z",
+        "slot": 119,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "ORIGINAL_REFERENCE",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T13:00:00Z",
+        "slot": 19,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T13:30:00Z",
+        "slot": 120,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T14:00:00Z",
+        "slot": 121,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T14:30:00Z",
+        "slot": 122,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T15:00:00Z",
+        "slot": 123,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T15:30:00Z",
+        "slot": 124,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T16:00:00Z",
+        "slot": 125,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T16:30:00Z",
+        "slot": 126,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "ORIGINAL_REFERENCE",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T17:00:00Z",
+        "slot": 20,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T17:30:00Z",
+        "slot": 127,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T18:00:00Z",
+        "slot": 128,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T18:30:00Z",
+        "slot": 129,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T19:00:00Z",
+        "slot": 130,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T19:30:00Z",
+        "slot": 131,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T20:00:00Z",
+        "slot": 132,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T20:30:00Z",
+        "slot": 133,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "ORIGINAL_REFERENCE",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T21:00:00Z",
+        "slot": 21,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T21:30:00Z",
+        "slot": 134,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T22:00:00Z",
+        "slot": 135,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T22:30:00Z",
+        "slot": 136,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T23:00:00Z",
+        "slot": 137,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-07T23:30:00Z",
+        "slot": 138,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T00:00:00Z",
+        "slot": 139,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T00:30:00Z",
+        "slot": 140,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "ORIGINAL_REFERENCE",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T01:00:00Z",
+        "slot": 22,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T01:30:00Z",
+        "slot": 141,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T02:00:00Z",
+        "slot": 142,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T02:30:00Z",
+        "slot": 143,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T03:00:00Z",
+        "slot": 144,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T03:30:00Z",
+        "slot": 145,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T04:00:00Z",
+        "slot": 146,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T04:30:00Z",
+        "slot": 147,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "ORIGINAL_REFERENCE",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T05:00:00Z",
+        "slot": 23,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T05:30:00Z",
+        "slot": 148,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T06:00:00Z",
+        "slot": 149,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T06:30:00Z",
+        "slot": 150,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T07:00:00Z",
+        "slot": 151,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T07:30:00Z",
+        "slot": 152,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T08:00:00Z",
+        "slot": 153,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T08:30:00Z",
+        "slot": 154,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "ORIGINAL_REFERENCE",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T09:00:00Z",
+        "slot": 24,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T09:30:00Z",
+        "slot": 155,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T10:00:00Z",
+        "slot": 156,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T10:30:00Z",
+        "slot": 157,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T11:00:00Z",
+        "slot": 158,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T11:30:00Z",
+        "slot": 159,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T12:00:00Z",
+        "slot": 160,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T12:30:00Z",
+        "slot": 161,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "ORIGINAL_REFERENCE",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T13:00:00Z",
+        "slot": 25,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T13:30:00Z",
+        "slot": 162,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T14:00:00Z",
+        "slot": 163,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T14:30:00Z",
+        "slot": 164,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T15:00:00Z",
+        "slot": 165,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T15:30:00Z",
+        "slot": 166,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T16:00:00Z",
+        "slot": 167,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T16:30:00Z",
+        "slot": 168,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "ORIGINAL_REFERENCE",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T17:00:00Z",
+        "slot": 26,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T17:30:00Z",
+        "slot": 169,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T18:00:00Z",
+        "slot": 170,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T18:30:00Z",
+        "slot": 171,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T19:00:00Z",
+        "slot": 172,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T19:30:00Z",
+        "slot": 173,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T20:00:00Z",
+        "slot": 174,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T20:30:00Z",
+        "slot": 175,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "ORIGINAL_REFERENCE",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T21:00:00Z",
+        "slot": 27,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T21:30:00Z",
+        "slot": 176,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T22:00:00Z",
+        "slot": 177,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T22:30:00Z",
+        "slot": 178,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T23:00:00Z",
+        "slot": 179,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-08T23:30:00Z",
+        "slot": 180,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-09T00:00:00Z",
+        "slot": 181,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-09T00:30:00Z",
+        "slot": 182,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "ORIGINAL_REFERENCE",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-09T01:00:00Z",
+        "slot": 28,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-09T01:30:00Z",
+        "slot": 183,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-09T02:00:00Z",
+        "slot": 184,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-09T02:30:00Z",
+        "slot": 185,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-09T03:00:00Z",
+        "slot": 186,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-09T03:30:00Z",
+        "slot": 187,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-09T04:00:00Z",
+        "slot": 188,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-09T04:30:00Z",
+        "slot": 189,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "ORIGINAL_REFERENCE",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-09T05:00:00Z",
+        "slot": 29,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-09T05:30:00Z",
+        "slot": 190,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-09T06:00:00Z",
+        "slot": 191,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-09T06:30:00Z",
+        "slot": 192,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-09T07:00:00Z",
+        "slot": 193,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-09T07:30:00Z",
+        "slot": 194,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-09T08:00:00Z",
+        "slot": 195,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "SUPPLEMENT",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-09T08:30:00Z",
+        "slot": 196,
+        "status": "PENDING"
+      },
+      {
+        "capture_verified": false,
+        "clock": {
+          "legacy_offset_seconds_invalid": true,
+          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
+          "system_correction_seconds": null
+        },
+        "issues": [],
+        "origin": "ORIGINAL_REFERENCE",
+        "receipt_verified": false,
+        "references": {},
+        "scheduled_at": "2026-11-09T09:00:00Z",
+        "slot": 30,
+        "status": "PENDING"
+      }
+    ],
+    "start_at": "2026-11-04T17:30:00Z",
+    "verified_captured_observations": 0
+  }
+}

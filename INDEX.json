@@ -1,0 +1,18 @@
+{
+  "controls": {
+    "archive": "controls/d194fec54e68f44542a088d5af4505127ae1c76a5fc09e60037632a5100ddf9a.tar.gz",
+    "files": 20,
+    "sha256": "2cdbd53a43f77f2e0d488de98a1b97b3bc7e65f38489020bbe108a773cc99dea",
+    "signature": "d194fec54e68f44542a088d5af4505127ae1c76a5fc09e60037632a5100ddf9a"
+  },
+  "original_recovery": "main branch snapshots; unchanged and not copied here",
+  "original_source_commit": "dbb27ea5c6a16c5b37c6f94b938a1509c2a9148e",
+  "schema": "KOD_SUPPLEMENT_DELTA_INDEX_V1",
+  "slots": [],
+  "state": {
+    "archive": "state/1fa81f8ba3121ab526909add6b8a035aad42bd30e438b76ddcc20a27185eb437.tar.gz",
+    "files": 1,
+    "sha256": "4d8535074fc7218713baa89e66e963dcc4191c90a27a2121fcf2f5913fa3f809",
+    "signature": "1fa81f8ba3121ab526909add6b8a035aad42bd30e438b76ddcc20a27185eb437"
+  }
+}
