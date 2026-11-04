@@ -53,3 +53,23 @@ class Guards(unittest.TestCase):
             root=Path(folder); (root/'HEALTH.json').write_text(json.dumps({'as_of':'2026-11-04T10:00:00+00:00','snapshot':'absent'}))
             self.assertEqual(len(inspect(root,dt.datetime(2026,11,4,13,tzinfo=dt.timezone.utc))),2)
 if __name__=='__main__': unittest.main()
+
+class ArchiveChecks(unittest.TestCase):
+    def test_valid_archive_then_corruption_detected(self):
+        import io, tarfile
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder); snapshot=root/'snapshot.tar.gz'; payload=b'original evidence\n'
+            with tarfile.open(snapshot,'w:gz') as out:
+                manifest=json.dumps({'/var/lib/kod/evidence.json':hashlib.sha256(payload).hexdigest()}).encode()
+                for name,data in [('MANIFEST.json',manifest),('var/lib/kod/evidence.json',payload)]:
+                    info=tarfile.TarInfo(name); info.size=len(data); out.addfile(info,io.BytesIO(data))
+            health={'as_of':'2026-11-04T13:00:00+00:00','snapshot':snapshot.name,'snapshot_sha256':hashlib.sha256(snapshot.read_bytes()).hexdigest(),'issues':[]}
+            (root/'HEALTH.json').write_text(json.dumps(health))
+            now=dt.datetime(2026,11,4,13,1,tzinfo=dt.timezone.utc)
+            self.assertEqual(inspect(root,now),[])
+            snapshot.write_bytes(b'corrupted')
+            self.assertEqual(inspect(root,now),['Snapshot archive hash mismatch'])
+    def test_incomplete_slot_alert_from_server_is_preserved(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder); (root/'HEALTH.json').write_text(json.dumps({'as_of':'2026-11-04T13:00:00+00:00','snapshot':'absent','issues':['Slot 1: FAILED']}))
+            self.assertIn('Slot 1: FAILED',inspect(root,dt.datetime(2026,11,4,13,1,tzinfo=dt.timezone.utc)))
