@@ -13,6 +13,7 @@ import tarfile
 import tempfile
 import time
 from clock_corrections import report
+from cohort_report import build_report
 
 UTC=dt.timezone.utc
 BASE=Path('/var/lib/kod-ops')
@@ -43,6 +44,25 @@ def assess(plan, state, now):
         elif due<=now: row['status']='IN_PROGRESS_OR_DUE'
         rows.append(row)
     return rows,issues
+
+def check_cohort_evidence(rows, state, timing):
+    issues=[]
+    if timing.get('integrity',{}).get('ok') is not True:
+        return ['Collected evidence integrity verification failed']
+    identities={r['id'] for r in timing.get('summary',{}).get('records',[]) if 'id' in r}
+    for row in rows:
+        if row['status'] not in ('CAPTURED','PARTIAL','BLOCKED','MISSED'):
+            continue
+        path=state/f"slot-{row['slot']:02d}"/'result.json'
+        try:
+            result=json.loads(path.read_text())
+            identity=result.get('attempt_id') or result.get('id')
+            if not identity or identity not in identities:
+                issues.append(f"Slot {row['slot']}: completed receipt lacks retained timing evidence")
+        except (OSError, ValueError):
+            issues.append(f"Slot {row['slot']}: completed receipt lacks readable result evidence")
+    return issues
+
 
 def included_files():
     # Explicit allowlist; excludes SSH credentials, environment files, and unrelated host files.
@@ -83,6 +103,17 @@ def main():
     if collector.get('Result')!='success': issues.append('Collector service result: '+collector.get('Result','unknown'))
     source=run(['/opt/kod/venv/bin/python','/opt/kod/bin/check-source.py'])
     if source.returncode: issues.append('Frozen source integrity failed')
+    timing={'integrity':{'ok':False},'summary':{}}
+    if source.returncode == 0:
+        checked=run(['/opt/kod/venv/bin/python','/opt/kod/current/tools/kod.py','runtime','--root',str(ROOTS[0]),'timing-status'])
+        try:
+            if checked.returncode != 0: raise ValueError('Verifier command failed')
+            timing=json.loads(checked.stdout)
+            issues.extend(check_cohort_evidence(rows,Path('/var/lib/kod/schedule'),timing))
+        except (ValueError,KeyError):
+            issues.append('Collected evidence integrity verification failed')
+    else:
+        issues.append('Evidence verification skipped because frozen source integrity failed')
     corrections=report(ROOTS)
     if any(r['status']=='UNVERIFIED' for r in corrections['records']): issues.append('At least one retained clock correction is unverified')
     clock=run(['chronyc','-c','tracking'])
@@ -119,10 +150,14 @@ def main():
             'source_check':json.loads(source.stdout) if source.returncode==0 else {'ok':False},
             'snapshot':str(snapshot.relative_to(REPO)),'snapshot_sha256':hashlib.sha256(snapshot.read_bytes()).hexdigest(),
             'snapshot_files':len(hashes),'clock_corrections':'CLOCK-CORRECTIONS.json',
+            'evidence_integrity_ok':timing.get('integrity',{}).get('ok') is True,
+            'cohort_report':'COHORT-REPORT.json',
             'experiment_changed':False,'collector_service':collector,'collector_timer':timer}
     (REPO/'HEALTH.json').write_text(json.dumps(health,sort_keys=True,indent=2)+'\n')
     (REPO/'CLOCK-CORRECTIONS.json').write_text(json.dumps(corrections,sort_keys=True,indent=2)+'\n')
-    git('add','HEALTH.json','CLOCK-CORRECTIONS.json','snapshots')
+    cohort=build_report(plan,rows,timing,corrections,now)
+    (REPO/'COHORT-REPORT.json').write_text(json.dumps(cohort,sort_keys=True,indent=2)+'\n')
+    git('add','HEALTH.json','CLOCK-CORRECTIONS.json','COHORT-REPORT.json','snapshots')
     if git('status','--porcelain'): git('commit','-m','KOD recovery snapshot and operational heartbeat '+now.isoformat())
     git('push','origin','main')
     head=git('rev-parse','HEAD')
