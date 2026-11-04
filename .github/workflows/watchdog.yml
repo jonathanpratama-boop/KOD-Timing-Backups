@@ -1,0 +1,32 @@
+name: KOD cloud safeguards
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      test_alert:
+        description: Create an explicitly labelled alert test; does not touch the collector
+        type: boolean
+        default: false
+  schedule:
+    - cron: '23 * 4-10 11 *'
+permissions:
+  contents: read
+  issues: write
+concurrency:
+  group: kod-cloud-watchdog
+  cancel-in-progress: false
+jobs:
+  health-and-backup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: main
+          persist-credentials: false
+      - name: Check heartbeat and verify every archived file; alert on failure
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TEST_ALERT: ${{ inputs.test_alert || 'false' }}
+        run: python3 ops/watchdog.py

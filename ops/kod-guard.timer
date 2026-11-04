@@ -1,0 +1,9 @@
+[Unit]
+Description=KOD safeguards every five minutes during the bounded November cohort
+[Timer]
+OnCalendar=2026-11-04..10 *:0/5:00 UTC
+AccuracySec=10s
+Persistent=true
+Unit=kod-guard.service
+[Install]
+WantedBy=timers.target

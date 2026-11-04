@@ -1,0 +1,27 @@
+[Unit]
+Description=KOD independent health and off-server recovery safeguard
+After=network-online.target
+Wants=network-online.target
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /opt/kod/bin/guard.py
+Environment=PYTHONDONTWRITEBYTECODE=1
+Environment="GIT_SSH_COMMAND=ssh -i /etc/kod-ops/github_backup -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes -o UserKnownHostsFile=/etc/kod-ops/github_known_hosts -o BatchMode=yes -o ConnectTimeout=10"
+TimeoutStartSec=240
+Nice=15
+IOSchedulingClass=idle
+CPUQuota=25%
+MemoryMax=192M
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/kod-ops
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+[Install]
+WantedBy=multi-user.target
