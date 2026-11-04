@@ -52,7 +52,6 @@ class Guards(unittest.TestCase):
         with tempfile.TemporaryDirectory() as folder:
             root=Path(folder); (root/'HEALTH.json').write_text(json.dumps({'as_of':'2026-11-04T10:00:00+00:00','snapshot':'absent'}))
             self.assertEqual(len(inspect(root,dt.datetime(2026,11,4,13,tzinfo=dt.timezone.utc))),2)
-if __name__=='__main__': unittest.main()
 
 class ArchiveChecks(unittest.TestCase):
     def test_valid_archive_then_corruption_detected(self):
@@ -73,3 +72,5 @@ class ArchiveChecks(unittest.TestCase):
         with tempfile.TemporaryDirectory() as folder:
             root=Path(folder); (root/'HEALTH.json').write_text(json.dumps({'as_of':'2026-11-04T13:00:00+00:00','snapshot':'absent','issues':['Slot 1: FAILED']}))
             self.assertIn('Slot 1: FAILED',inspect(root,dt.datetime(2026,11,4,13,1,tzinfo=dt.timezone.utc)))
+
+if __name__=='__main__': unittest.main()
