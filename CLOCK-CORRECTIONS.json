@@ -1,0 +1,36 @@
+{
+  "originals_modified": false,
+  "records": [
+    {
+      "conditional_error_bound_seconds": "0.0265711735",
+      "evidence_id": "clock_65d076c89056ce9a23819143217cbc929aa5283bebcfcfd97e792a9d08905c1f",
+      "legacy_offset_seconds_is_invalid": true,
+      "meaning": "Derived chrony system correction, not independent proof of absolute time",
+      "observed_at": "2026-11-04T13:00:00.893336Z",
+      "original_file": "/var/lib/kod/timing-forward/timing/clocks/clock_65d076c89056ce9a23819143217cbc929aa5283bebcfcfd97e792a9d08905c1f.json",
+      "original_sha256": "a8455e63277c213cde9bf9ed666c822a9c2f69a7dfb5ce7a2e14f812f6d1aa2f",
+      "reference_time_epoch": "1793797157.055892788",
+      "root_delay_seconds": "0.006832217",
+      "root_dispersion_seconds": "0.021493573",
+      "schema": "KOD_CHRONY_CSV_CORRECTION_V1",
+      "status": "DERIVED_FROM_RETAINED_RAW",
+      "system_correction_seconds": "0.001661492"
+    },
+    {
+      "conditional_error_bound_seconds": "0.017018918",
+      "evidence_id": "clock_44499b11c6b067fc2239684750462ec5b9140169be0e71a34c4b56c6fda019c0",
+      "legacy_offset_seconds_is_invalid": true,
+      "meaning": "Derived chrony system correction, not independent proof of absolute time",
+      "observed_at": "2026-11-04T12:30:00.034011Z",
+      "original_file": "/var/lib/kod/commissioning/real-capture/timing/clocks/clock_44499b11c6b067fc2239684750462ec5b9140169be0e71a34c4b56c6fda019c0.json",
+      "original_sha256": "9f67966ff0449b6e9924e39aa4a54b77b28d31ed60238b83a50dcc8784c9104c",
+      "reference_time_epoch": "1793795343.592268319",
+      "root_delay_seconds": "0.003564034",
+      "root_dispersion_seconds": "0.012801948",
+      "schema": "KOD_CHRONY_CSV_CORRECTION_V1",
+      "status": "DERIVED_FROM_RETAINED_RAW",
+      "system_correction_seconds": "0.002434953"
+    }
+  ],
+  "schema": "KOD_CHRONY_CSV_CORRECTION_V1"
+}

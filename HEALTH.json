@@ -1,0 +1,186 @@
+{
+  "as_of": "2026-11-04T13:00:57.563760+00:00",
+  "clock_corrections": "CLOCK-CORRECTIONS.json",
+  "collector_service": {
+    "ActiveState": "inactive",
+    "ExecMainStatus": "0",
+    "Result": "success"
+  },
+  "collector_timer": {
+    "ActiveState": "active",
+    "Result": "success"
+  },
+  "counts": {
+    "CAPTURED": 1,
+    "PENDING": 29
+  },
+  "experiment_changed": false,
+  "issues": [],
+  "plan_file_sha256": "bffe919924e56a48d49e92045f86e3ee4678ac5ae03aad8287ae8d6e6af6af6b",
+  "plan_semantic_sha256": "693394f0efffc485a0892a4b5b2115454a858ff0d50ff6daeaff7717c7e2cbb9",
+  "schema": "KOD_CLOUD_GUARD_V1",
+  "slots": [
+    {
+      "completed_at": "2026-11-04T13:00:08.711512Z",
+      "observed_at": "2026-11-04T13:00:00.650632Z",
+      "plan_sha256": "693394f0efffc485a0892a4b5b2115454a858ff0d50ff6daeaff7717c7e2cbb9",
+      "scheduled_at": "2026-11-04T13:00:00Z",
+      "slot": 1,
+      "status": "CAPTURED"
+    },
+    {
+      "scheduled_at": "2026-11-04T17:00:00Z",
+      "slot": 2,
+      "status": "PENDING"
+    },
+    {
+      "scheduled_at": "2026-11-04T21:00:00Z",
+      "slot": 3,
+      "status": "PENDING"
+    },
+    {
+      "scheduled_at": "2026-11-05T01:00:00Z",
+      "slot": 4,
+      "status": "PENDING"
+    },
+    {
+      "scheduled_at": "2026-11-05T05:00:00Z",
+      "slot": 5,
+      "status": "PENDING"
+    },
+    {
+      "scheduled_at": "2026-11-05T09:00:00Z",
+      "slot": 6,
+      "status": "PENDING"
+    },
+    {
+      "scheduled_at": "2026-11-05T13:00:00Z",
+      "slot": 7,
+      "status": "PENDING"
+    },
+    {
+      "scheduled_at": "2026-11-05T17:00:00Z",
+      "slot": 8,
+      "status": "PENDING"
+    },
+    {
+      "scheduled_at": "2026-11-05T21:00:00Z",
+      "slot": 9,
+      "status": "PENDING"
+    },
+    {
+      "scheduled_at": "2026-11-06T01:00:00Z",
+      "slot": 10,
+      "status": "PENDING"
+    },
+    {
+      "scheduled_at": "2026-11-06T05:00:00Z",
+      "slot": 11,
+      "status": "PENDING"
+    },
+    {
+      "scheduled_at": "2026-11-06T09:00:00Z",
+      "slot": 12,
+      "status": "PENDING"
+    },
+    {
+      "scheduled_at": "2026-11-06T13:00:00Z",
+      "slot": 13,
+      "status": "PENDING"
+    },
+    {
+      "scheduled_at": "2026-11-06T17:00:00Z",
+      "slot": 14,
+      "status": "PENDING"
+    },
+    {
+      "scheduled_at": "2026-11-06T21:00:00Z",
+      "slot": 15,
+      "status": "PENDING"
+    },
+    {
+      "scheduled_at": "2026-11-07T01:00:00Z",
+      "slot": 16,
+      "status": "PENDING"
+    },
+    {
+      "scheduled_at": "2026-11-07T05:00:00Z",
+      "slot": 17,
+      "status": "PENDING"
+    },
+    {
+      "scheduled_at": "2026-11-07T09:00:00Z",
+      "slot": 18,
+      "status": "PENDING"
+    },
+    {
+      "scheduled_at": "2026-11-07T13:00:00Z",
+      "slot": 19,
+      "status": "PENDING"
+    },
+    {
+      "scheduled_at": "2026-11-07T17:00:00Z",
+      "slot": 20,
+      "status": "PENDING"
+    },
+    {
+      "scheduled_at": "2026-11-07T21:00:00Z",
+      "slot": 21,
+      "status": "PENDING"
+    },
+    {
+      "scheduled_at": "2026-11-08T01:00:00Z",
+      "slot": 22,
+      "status": "PENDING"
+    },
+    {
+      "scheduled_at": "2026-11-08T05:00:00Z",
+      "slot": 23,
+      "status": "PENDING"
+    },
+    {
+      "scheduled_at": "2026-11-08T09:00:00Z",
+      "slot": 24,
+      "status": "PENDING"
+    },
+    {
+      "scheduled_at": "2026-11-08T13:00:00Z",
+      "slot": 25,
+      "status": "PENDING"
+    },
+    {
+      "scheduled_at": "2026-11-08T17:00:00Z",
+      "slot": 26,
+      "status": "PENDING"
+    },
+    {
+      "scheduled_at": "2026-11-08T21:00:00Z",
+      "slot": 27,
+      "status": "PENDING"
+    },
+    {
+      "scheduled_at": "2026-11-09T01:00:00Z",
+      "slot": 28,
+      "status": "PENDING"
+    },
+    {
+      "scheduled_at": "2026-11-09T05:00:00Z",
+      "slot": 29,
+      "status": "PENDING"
+    },
+    {
+      "scheduled_at": "2026-11-09T09:00:00Z",
+      "slot": 30,
+      "status": "PENDING"
+    }
+  ],
+  "snapshot": "snapshots/0bff2daf7f68dd610208adb49f9fd90f1f69697349fd21f741886cd9d079ef4d.tar.gz",
+  "snapshot_files": 660,
+  "snapshot_sha256": "d922f1a822372c63b89c770c8560a289675c87ca45874e256935734450322add",
+  "source_check": {
+    "checked_files": 527,
+    "commit": "dbb27ea5c6a16c5b37c6f94b938a1509c2a9148e",
+    "ok": true,
+    "problems": []
+  }
+}
