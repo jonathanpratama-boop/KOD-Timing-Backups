@@ -1,0 +1,1 @@
+{"at":"2026-11-05T16:01:25.697525Z","frozen_end_unchanged":true,"manual_review_required":true,"reason":["SCOPED_OFFHOST_PUBLICATION:RuntimeError:scoped Git ls-remote failed; returncode=128"],"schema":"KOD_CAPACITY_OPS_PAUSE_V1","trial_id":"capacity-r2-20261105T082700Z"}
