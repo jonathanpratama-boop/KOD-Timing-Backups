@@ -17,6 +17,21 @@
       "system_correction_seconds": "-0.001890502"
     },
     {
+      "conditional_error_bound_seconds": "0.0028345775",
+      "evidence_id": "clock_3a9ff118ed40d2a3303e6f362e1907ff7e10ba279e3e7ae8c3d56aec34edd731",
+      "legacy_offset_seconds_is_invalid": true,
+      "meaning": "Derived chrony system correction, not independent proof of absolute time",
+      "observed_at": "2026-11-05T13:00:01.374934Z",
+      "original_file": "/var/lib/kod/timing-forward/timing/clocks/clock_3a9ff118ed40d2a3303e6f362e1907ff7e10ba279e3e7ae8c3d56aec34edd731.json",
+      "original_sha256": "a50281c79d712c19f2d258e7613727fda597d2243f777f986358a6018a48d74f",
+      "reference_time_epoch": "1793883408.608087957",
+      "root_delay_seconds": "0.004136711",
+      "root_dispersion_seconds": "0.000560513",
+      "schema": "KOD_CHRONY_CSV_CORRECTION_V1",
+      "status": "DERIVED_FROM_RETAINED_RAW",
+      "system_correction_seconds": "-0.000205709"
+    },
+    {
       "conditional_error_bound_seconds": "0.0028365275",
       "evidence_id": "clock_5748dcdbf71fd0a9a0c1931ee6ce754c3878453435111bc776b8a707528411c1",
       "legacy_offset_seconds_is_invalid": true,
