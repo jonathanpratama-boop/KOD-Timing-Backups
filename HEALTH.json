@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-05T16:20:03.108507+00:00",
+  "as_of": "2026-11-05T17:05:00.741735+00:00",
   "clock_corrections": "CLOCK-CORRECTIONS.json",
   "cohort_report": "COHORT-REPORT.json",
   "collector_service": {
@@ -12,8 +12,8 @@
     "Result": "success"
   },
   "counts": {
-    "CAPTURED": 7,
-    "PENDING": 23
+    "CAPTURED": 8,
+    "PENDING": 22
   },
   "evidence_integrity_ok": true,
   "experiment_changed": false,
@@ -79,9 +79,12 @@
       "status": "CAPTURED"
     },
     {
+      "completed_at": "2026-11-05T17:00:17.019496Z",
+      "observed_at": "2026-11-05T17:00:01.088656Z",
+      "plan_sha256": "693394f0efffc485a0892a4b5b2115454a858ff0d50ff6daeaff7717c7e2cbb9",
       "scheduled_at": "2026-11-05T17:00:00Z",
       "slot": 8,
-      "status": "PENDING"
+      "status": "CAPTURED"
     },
     {
       "scheduled_at": "2026-11-05T21:00:00Z",
@@ -194,9 +197,9 @@
       "status": "PENDING"
     }
   ],
-  "snapshot": "snapshots/a89dfc75c3059431c2b32106b9f208e8ca1c29e0425f71330b2443c08988a392.tar.gz",
-  "snapshot_files": 872,
-  "snapshot_sha256": "72334286273a77964b4e3d4ddf189cec7471346262349b46cbca0f2475588c30",
+  "snapshot": "snapshots/e40f031a526b629a288333ddef8b9d8e21af21c61bc6346adeb7fd6fed071197.tar.gz",
+  "snapshot_files": 907,
+  "snapshot_sha256": "1f4138f287db1f5f0ef8f287d8254a3925472b103502e176e2c9289f0406ed16",
   "source_check": {
     "checked_files": 527,
     "commit": "dbb27ea5c6a16c5b37c6f94b938a1509c2a9148e",
