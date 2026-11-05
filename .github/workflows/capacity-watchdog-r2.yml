@@ -1,0 +1,66 @@
+name: KOD capacity r2 collection quality
+on:
+  push:
+    branches: [main]
+    paths:
+      - ops/capacity_watchdog_r2.py
+      - ops/test_capacity_watchdog_r2.py
+      - .github/workflows/capacity-watchdog-r2.yml
+  workflow_dispatch:
+  schedule:
+    - cron: '7,22,37,52 * 5-7 11 *'
+permissions:
+  contents: read
+concurrency:
+  group: kod-capacity-r2-quality
+  cancel-in-progress: false
+jobs:
+  inspect-capacity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Restrict scheduled checks to this finite trial
+        id: window
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          python3 - <<'PY'
+          import datetime as dt
+          import os
+          now = dt.datetime.now(dt.timezone.utc)
+          start = dt.datetime(2026, 11, 5, 8, 27, tzinfo=dt.timezone.utc)
+          end = dt.datetime(2026, 11, 7, 8, 58, tzinfo=dt.timezone.utc)
+          should_run = os.environ["EVENT_NAME"] != "schedule" or start <= now < end
+          with open(os.environ["GITHUB_OUTPUT"], "a") as output:
+              output.write("run=" + str(should_run).lower() + "\n")
+          if not should_run:
+              print("Finite monitoring window ended; no collection or acceptance claim.")
+          PY
+      - name: Read checker from main
+        if: steps.window.outputs.run == 'true'
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: main
+          path: monitor-code
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /ops/capacity_watchdog_r2.py
+            /ops/test_capacity_watchdog_r2.py
+      - name: Validate checker
+        if: steps.window.outputs.run == 'true'
+        working-directory: monitor-code/ops
+        run: python3 -m unittest -v test_capacity_watchdog_r2.py
+      - name: Read the exact capacity trial heartbeat
+        if: steps.window.outputs.run == 'true'
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: capacity-r2-20261105T082700Z
+          path: capacity-data
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: /HEALTH.json
+      - name: Check service, freshness, original preservation and every collection lane
+        if: steps.window.outputs.run == 'true'
+        run: python3 monitor-code/ops/capacity_watchdog_r2.py capacity-data/HEALTH.json
+
