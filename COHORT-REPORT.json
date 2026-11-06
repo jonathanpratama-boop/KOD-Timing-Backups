@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-06T20:20:03.031156+00:00",
-  "captured_slots": 14,
+  "as_of": "2026-11-06T21:05:02.959880+00:00",
+  "captured_slots": 15,
   "closeout_eligible_at": "2026-11-09T09:15:00+00:00",
   "collection_closed": false,
   "complete": false,
   "corrected_clock": {
     "available": true,
-    "cohort_record_count": 14,
+    "cohort_record_count": 15,
     "cohort_records": [
       {
         "conditional_error_bound_seconds": "0.020170339",
@@ -189,6 +189,21 @@
         "system_correction_seconds": "-0.000005036"
       },
       {
+        "conditional_error_bound_seconds": "0.0020637655",
+        "evidence_id": "clock_d9800d0c469ceedaba2231712d52ac1956429321021115e34a768c0c514ea561",
+        "legacy_offset_seconds_is_invalid": true,
+        "meaning": "Derived chrony system correction, not independent proof of absolute time",
+        "observed_at": "2026-11-06T21:00:01.215325Z",
+        "original_file": "/var/lib/kod/timing-forward/timing/clocks/clock_d9800d0c469ceedaba2231712d52ac1956429321021115e34a768c0c514ea561.json",
+        "original_sha256": "39b691070d0c421ca87070ae698e1a4fe2b046790b00a74c58e2b5875e2fd9b0",
+        "reference_time_epoch": "1793997997.744973326",
+        "root_delay_seconds": "0.002192203",
+        "root_dispersion_seconds": "0.000940090",
+        "schema": "KOD_CHRONY_CSV_CORRECTION_V1",
+        "status": "DERIVED_FROM_RETAINED_RAW",
+        "system_correction_seconds": "0.000027574"
+      },
+      {
         "conditional_error_bound_seconds": "0.001694800",
         "evidence_id": "clock_fb26d05fc3c8db5718235af7bedf3d218b7b2dcc1543c2b24aae1093fc31429d",
         "legacy_offset_seconds_is_invalid": true,
@@ -220,7 +235,7 @@
       }
     ],
     "cohort_status_counts": {
-      "DERIVED_FROM_RETAINED_RAW": 14
+      "DERIVED_FROM_RETAINED_RAW": 15
     },
     "legacy_offset_used": false,
     "other_record_count": 1,
@@ -369,9 +384,12 @@
       "status": "CAPTURED"
     },
     {
+      "completed_at": "2026-11-06T21:00:20.427645Z",
+      "observed_at": "2026-11-06T21:00:00.997216Z",
+      "plan_sha256": "693394f0efffc485a0892a4b5b2115454a858ff0d50ff6daeaff7717c7e2cbb9",
       "scheduled_at": "2026-11-06T21:00:00Z",
       "slot": 15,
-      "status": "PENDING"
+      "status": "CAPTURED"
     },
     {
       "scheduled_at": "2026-11-07T01:00:00Z",
@@ -451,19 +469,19 @@
   ],
   "source_commit": "dbb27ea5c6a16c5b37c6f94b938a1509c2a9148e",
   "status_counts": {
-    "CAPTURED": 14,
-    "PENDING": 16
+    "CAPTURED": 15,
+    "PENDING": 15
   },
   "strategy_promotion": false,
-  "terminal_slots": 14,
+  "terminal_slots": 15,
   "timing": {
-    "all_journal_identities": 126,
+    "all_journal_identities": 135,
     "available": true,
     "integrity": {
-      "attempts": 126,
+      "attempts": 135,
       "entry_permission": false,
       "external_verification": "LOCAL_HASH_CHAIN_ONLY",
-      "head_hash": "438d6a88dfc7034ecf33f7be65732529eceb2e5b07da91229cd02681500b5a48",
+      "head_hash": "7547a524ad886ddfdd07199b0eb6ff839632b4ca4049d39dba9ccfc9eab9ec6b",
       "linked_evidence": {
         "checks": [
           {
@@ -1699,6 +1717,94 @@
             "status": "VERIFIED"
           },
           {
+            "attempt_id": "attempt_4145f54377474b21afec1fc929379c6e",
+            "id": "membership_8f49060311315a568b66f8819c78705bf6ebf334e7118e87d870e084ef284ec7",
+            "kind": "membership",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_4145f54377474b21afec1fc929379c6e",
+            "id": "clock_d9800d0c469ceedaba2231712d52ac1956429321021115e34a768c0c514ea561",
+            "kind": "clock",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_4145f54377474b21afec1fc929379c6e",
+            "id": "timing/captures/attempt_4145f54377474b21afec1fc929379c6e.json",
+            "kind": "capture",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_4145f54377474b21afec1fc929379c6e:request:0",
+            "id": "membership_8f49060311315a568b66f8819c78705bf6ebf334e7118e87d870e084ef284ec7",
+            "kind": "membership",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_4145f54377474b21afec1fc929379c6e:request:1",
+            "id": "membership_8f49060311315a568b66f8819c78705bf6ebf334e7118e87d870e084ef284ec7",
+            "kind": "membership",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_4145f54377474b21afec1fc929379c6e:request:2",
+            "id": "membership_8f49060311315a568b66f8819c78705bf6ebf334e7118e87d870e084ef284ec7",
+            "kind": "membership",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_4145f54377474b21afec1fc929379c6e:request:3",
+            "id": "membership_8f49060311315a568b66f8819c78705bf6ebf334e7118e87d870e084ef284ec7",
+            "kind": "membership",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_4145f54377474b21afec1fc929379c6e:request:4",
+            "id": "membership_8f49060311315a568b66f8819c78705bf6ebf334e7118e87d870e084ef284ec7",
+            "kind": "membership",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_4145f54377474b21afec1fc929379c6e:request:5",
+            "id": "membership_8f49060311315a568b66f8819c78705bf6ebf334e7118e87d870e084ef284ec7",
+            "kind": "membership",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_4145f54377474b21afec1fc929379c6e:request:6",
+            "id": "membership_8f49060311315a568b66f8819c78705bf6ebf334e7118e87d870e084ef284ec7",
+            "kind": "membership",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_4145f54377474b21afec1fc929379c6e:request:7",
+            "id": "membership_8f49060311315a568b66f8819c78705bf6ebf334e7118e87d870e084ef284ec7",
+            "kind": "membership",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
             "attempt_id": "attempt_5fa40709f292463a8518f019ca37a592:request:0",
             "id": "ev_367d31d8d52c1ff02ecb2184da654a0a57fa01b7db40aee1f43d3a3089542fb8",
             "kind": "request",
@@ -2593,6 +2699,70 @@
             "reason": "original linked object verified",
             "required": true,
             "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_4145f54377474b21afec1fc929379c6e:request:0",
+            "id": "ev_897d4d4fedd6f955955adcce5e9cb9b4c49e547f7babd8cc9f5b9271646eb38f",
+            "kind": "request",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_4145f54377474b21afec1fc929379c6e:request:1",
+            "id": "ev_3e53479ef216e450b82f3391619d3ded3f424b41e631239b45a1abe433aa1ea2",
+            "kind": "request",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_4145f54377474b21afec1fc929379c6e:request:2",
+            "id": "ev_f753fbd3225483a8ec04a6bf980957c35214e84ed6849ea517e58f1aad37e322",
+            "kind": "request",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_4145f54377474b21afec1fc929379c6e:request:3",
+            "id": "ev_90189013db77fe3edf510ad5106534a2c7ed338a7368798b3552ed803f4bbcc7",
+            "kind": "request",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_4145f54377474b21afec1fc929379c6e:request:4",
+            "id": "ev_8ffa21584dc0844b43fda8b039803b7472fc24d0803f9c24e955e4a32c90f67f",
+            "kind": "request",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_4145f54377474b21afec1fc929379c6e:request:5",
+            "id": "ev_8b0346dee285f77f4f6e7584eaa17df8bac1ac9e9b22addf032e637d03e2e151",
+            "kind": "request",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_4145f54377474b21afec1fc929379c6e:request:6",
+            "id": "ev_e4a0689bf2deb6919614f1c21a25e7a417a2f99c20f2c675ec60a090b8f900de",
+            "kind": "request",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_4145f54377474b21afec1fc929379c6e:request:7",
+            "id": "ev_2e9de2c4b6aff31f874fb6da4009060d2d8a231b2b026025ab99826147d2cf71",
+            "kind": "request",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
           }
         ],
         "complete": true,
@@ -2600,7 +2770,7 @@
           "declared": 0,
           "fail": 0,
           "unavailable": 0,
-          "verified": 266
+          "verified": 285
         },
         "entry_permission": false,
         "ok": true,
@@ -2608,13 +2778,13 @@
         "schema_version": "KOD_TIMING_LINKED_EVIDENCE_V1"
       },
       "ok": true,
-      "revisions": 140,
+      "revisions": 150,
       "schema_version": "KOD_TIMING_JOURNAL_V1"
     },
-    "main_attempts": 14,
+    "main_attempts": 15,
     "main_cohorts": [
       {
-        "attempts": 14,
+        "attempts": 15,
         "detector_version": "INTRADAY_OBSERVATION_V1",
         "evidence_kind": "prospective",
         "stages": {
@@ -2623,47 +2793,47 @@
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 14
+            "unknown": 15
           },
           "collection_after_threshold": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 14
+            "unknown": 15
           },
           "detection_processing": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 14
+            "unknown": 15
           },
           "execution_quote": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 14
+            "unknown": 15
           },
           "fill_after_quote": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 14
+            "unknown": 15
           },
           "receipt_to_features": {
-            "known": 14,
+            "known": 15,
             "max_seconds": 0.011781,
-            "median_seconds": 0.0073825,
+            "median_seconds": 0.007251,
             "p95_seconds": 0.011781,
             "unknown": 0
           },
           "schedule_start": {
-            "known": 14,
+            "known": 15,
             "max_seconds": 1.35066,
-            "median_seconds": 1.1346805,
+            "median_seconds": 1.139258,
             "p95_seconds": 1.35066,
             "unknown": 0
           },
@@ -2672,47 +2842,47 @@
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 14
+            "unknown": 15
           },
           "threshold": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 14
+            "unknown": 15
           }
         },
         "statuses": {
-          "COMPLETED": 14
+          "COMPLETED": 15
         }
       }
     ],
     "missing_stages": {
-      "decision_at": 126,
-      "detected_at": 126,
-      "executable_at": 126,
-      "features_ready_at": 112,
-      "fill_at": 126,
-      "published_at": 126,
+      "decision_at": 135,
+      "detected_at": 135,
+      "executable_at": 135,
+      "features_ready_at": 120,
+      "fill_at": 135,
+      "published_at": 135,
       "received_at": 0,
-      "scheduled_at": 112,
+      "scheduled_at": 120,
       "started_at": 0
     },
     "other_cohorts": [],
-    "report_as_of": "2026-11-06T20:20:04.741644Z",
-    "request_detail_rows": 112,
+    "report_as_of": "2026-11-06T21:05:04.565394Z",
+    "request_detail_rows": 120,
     "request_duration_scope_verified": true,
     "request_monotonic_duration": {
-      "known": 112,
-      "median_seconds": 0.2614543235,
+      "known": 120,
+      "median_seconds": 0.2543681055,
       "p95_method": "nearest rank; descriptive only",
-      "p95_seconds": 1.513884178,
+      "p95_seconds": 1.496035082,
       "unknown_or_invalid": 0,
       "worst_seconds": 3.532740068
     },
     "source_lag": [
       {
-        "attempts": 28,
+        "attempts": 30,
         "clock_conflicts": 0,
         "evidence_kind": "prospective",
         "failures": 0,
@@ -2721,12 +2891,12 @@
           "max_seconds": null,
           "median_seconds": null,
           "p95_seconds": null,
-          "unknown": 28
+          "unknown": 30
         },
         "source": "/api/v3/depth"
       },
       {
-        "attempts": 14,
+        "attempts": 15,
         "clock_conflicts": 0,
         "evidence_kind": "prospective",
         "failures": 0,
@@ -2735,12 +2905,12 @@
           "max_seconds": null,
           "median_seconds": null,
           "p95_seconds": null,
-          "unknown": 14
+          "unknown": 15
         },
         "source": "/api/v3/exchangeInfo"
       },
       {
-        "attempts": 28,
+        "attempts": 30,
         "clock_conflicts": 0,
         "evidence_kind": "prospective",
         "failures": 0,
@@ -2749,12 +2919,12 @@
           "max_seconds": null,
           "median_seconds": null,
           "p95_seconds": null,
-          "unknown": 28
+          "unknown": 30
         },
         "source": "/api/v3/klines"
       },
       {
-        "attempts": 28,
+        "attempts": 30,
         "clock_conflicts": 0,
         "evidence_kind": "prospective",
         "failures": 0,
@@ -2763,12 +2933,12 @@
           "max_seconds": null,
           "median_seconds": null,
           "p95_seconds": null,
-          "unknown": 28
+          "unknown": 30
         },
         "source": "/api/v3/ticker/bookTicker"
       },
       {
-        "attempts": 14,
+        "attempts": 15,
         "clock_conflicts": 0,
         "evidence_kind": "prospective",
         "failures": 0,
@@ -2777,12 +2947,12 @@
           "max_seconds": null,
           "median_seconds": null,
           "p95_seconds": null,
-          "unknown": 14
+          "unknown": 15
         },
         "source": "/api/v3/time"
       },
       {
-        "attempts": 14,
+        "attempts": 15,
         "clock_conflicts": 0,
         "evidence_kind": "prospective",
         "failures": 0,
@@ -2791,15 +2961,15 @@
           "max_seconds": null,
           "median_seconds": null,
           "p95_seconds": null,
-          "unknown": 14
+          "unknown": 15
         },
         "source": "BINANCE_SPOT_PUBLIC"
       }
     ],
-    "source_request_attempts": 112,
+    "source_request_attempts": 120,
     "source_request_cohorts": [
       {
-        "attempts": 112,
+        "attempts": 120,
         "detector_version": "SOURCE_REQUEST_V1",
         "evidence_kind": "prospective",
         "stages": {
@@ -2808,73 +2978,72 @@
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 112
+            "unknown": 120
           },
           "collection_after_threshold": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 112
+            "unknown": 120
           },
           "detection_processing": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 112
+            "unknown": 120
           },
           "execution_quote": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 112
+            "unknown": 120
           },
           "fill_after_quote": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 112
+            "unknown": 120
           },
           "receipt_to_features": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 112
+            "unknown": 120
           },
           "schedule_start": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 112
+            "unknown": 120
           },
           "source_to_receipt": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 112
+            "unknown": 120
           },
           "threshold": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 112
+            "unknown": 120
           }
         },
         "statuses": {
-          "COMPLETED": 112
+          "COMPLETED": 120
         }
       }
     ]
   },
   "unresolved_slots": [
-    15,
     16,
     17,
     18,
