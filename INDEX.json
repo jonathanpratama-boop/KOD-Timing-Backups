@@ -701,6 +701,33 @@
       "signature": "5e418ed0e57a2dc848e2fc10efabac0d1f2453bae087128fd739122ed6cd6e98",
       "slot": "slot-077",
       "status": "CAPTURED"
+    },
+    {
+      "archive": "slots/slot-078/2b166e192c73ed9d18fdb3673de603c4338450feb71a9df8aa6a59a08522530a.tar.gz",
+      "completed": true,
+      "files": 37,
+      "sha256": "d6a8303f79ea606b8a03bd218e874d93dbe284fe1ce13c58f5c00b188e520bea",
+      "signature": "2b166e192c73ed9d18fdb3673de603c4338450feb71a9df8aa6a59a08522530a",
+      "slot": "slot-078",
+      "status": "CAPTURED"
+    },
+    {
+      "archive": "slots/slot-079/12cbda604d3a0be41ad9f784f991cc9a85c28e3a863e296f6e2f9cb984e109b4.tar.gz",
+      "completed": true,
+      "files": 37,
+      "sha256": "27f5fed44fe3cb59f72b94c9177252dda618deb741180134741e6bc4b040ef0a",
+      "signature": "12cbda604d3a0be41ad9f784f991cc9a85c28e3a863e296f6e2f9cb984e109b4",
+      "slot": "slot-079",
+      "status": "CAPTURED"
+    },
+    {
+      "archive": "slots/slot-080/f6089c2e3098a89a398415fef7ee5793620d22ec400b3a53c58a5333e7a32be7.tar.gz",
+      "completed": true,
+      "files": 37,
+      "sha256": "f706d49daf39a1efa568706e19dccbf8ced4473014b0248f7360ac02ff279a76",
+      "signature": "f6089c2e3098a89a398415fef7ee5793620d22ec400b3a53c58a5333e7a32be7",
+      "slot": "slot-080",
+      "status": "CAPTURED"
     }
   ],
   "state": {
