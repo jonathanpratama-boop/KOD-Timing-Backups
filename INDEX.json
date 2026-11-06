@@ -503,6 +503,15 @@
       "signature": "0aa69cf41d42312e4c84d237489c7db6032f8a31e2863d27fd921eab3b593689",
       "slot": "slot-055",
       "status": "CAPTURED"
+    },
+    {
+      "archive": "slots/slot-056/af16e4f93fab1d08af2ae62b614cc0c9d02d5dd384d93d01e243ba0cf3a304df.tar.gz",
+      "completed": true,
+      "files": 37,
+      "sha256": "74f34d4257c2e4c19f30ac52a2c9513b13dcef1ec0a269ec324b307b79ba04b5",
+      "signature": "af16e4f93fab1d08af2ae62b614cc0c9d02d5dd384d93d01e243ba0cf3a304df",
+      "slot": "slot-056",
+      "status": "CAPTURED"
     }
   ],
   "state": {
