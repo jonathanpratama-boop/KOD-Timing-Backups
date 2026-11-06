@@ -1,19 +1,19 @@
 {
-  "as_of": "2026-11-06T12:20:02.859062+00:00",
+  "as_of": "2026-11-06T13:25:03.174800+00:00",
   "backup_branch": "supplement-30m-v1",
   "current_clock": {
     "command": "chronyc -c tracking",
     "meaning": "Current local chrony evidence; not independent absolute-time proof",
-    "raw_csv": "05DF319F,5.223.49.159,2,1793966961.801135646,-0.000041404,0.000017701,0.000556693,-100.061,0.000,0.069,0.001864099,0.001037821,1040.7,Normal",
+    "raw_csv": "05DF319F,5.223.49.159,2,1793971092.600746072,0.000054340,-0.000097120,0.000467027,-99.943,0.001,0.162,0.002178272,0.000538062,1027.7,Normal",
     "status": "SYNCHRONIZED"
   },
   "issues": [],
   "last_acknowledged_backup": {
-    "begun_slots_archived": 74,
+    "begun_slots_archived": 76,
     "branch": "supplement-30m-v1",
-    "commit": "edd1b7abc7eadbadd6eb74d90a4591d244ebe15d",
-    "completed_slots": 74,
-    "epoch": 1793963831.5832584,
+    "commit": "b9905ec9b329fa4311ec71df081aed47c7fcff72",
+    "completed_slots": 76,
+    "epoch": 1793967732.2461853,
     "issues": []
   },
   "limitations": [
@@ -24,7 +24,7 @@
   "original_controls_unchanged": true,
   "plan_sha256": "86102f2e8e592929102f6cce87bec7b7d365fc64a86f9d136a8f01c22672b202",
   "retained_clock_correction_statuses": {
-    "DERIVED_FROM_RETAINED_RAW": 76
+    "DERIVED_FROM_RETAINED_RAW": 77
   },
   "schema": "KOD_SUPPLEMENT_GUARD_V1",
   "source_check": {
@@ -59,26 +59,26 @@
     }
   },
   "view": {
-    "as_of": "2026-11-06T12:20:04.713631Z",
+    "as_of": "2026-11-06T13:25:04.972360Z",
     "counts": {
-      "CAPTURED": 86,
-      "PENDING": 138
+      "CAPTURED": 88,
+      "PENDING": 136
     },
     "coverage": {
       "by_symbol": [
         {
           "first_open_time": "2026-11-04T16:30:00Z",
           "gaps_in_due_lookback_target": [],
-          "latest_bar_end_at": "2026-11-06T12:00:00Z",
+          "latest_bar_end_at": "2026-11-06T13:00:00Z",
           "symbol": "BTCUSDT",
-          "unique_complete_bars": 2610
+          "unique_complete_bars": 2670
         },
         {
           "first_open_time": "2026-11-04T16:30:00Z",
           "gaps_in_due_lookback_target": [],
-          "latest_bar_end_at": "2026-11-06T12:00:00Z",
+          "latest_bar_end_at": "2026-11-06T13:00:00Z",
           "symbol": "ETHUSDT",
-          "unique_complete_bars": 2610
+          "unique_complete_bars": 2670
         }
       ],
       "conflicting_candle_identities": 0,
@@ -88,11 +88,11 @@
         "interval",
         "open_time"
       ],
-      "overlapping_bar_rows": 5100,
-      "retained_bar_rows": 10320,
-      "target_end_at": "2026-11-06T12:00:00Z",
+      "overlapping_bar_rows": 5220,
+      "retained_bar_rows": 10560,
+      "target_end_at": "2026-11-06T13:00:00Z",
       "target_start_at": "2026-11-04T16:30:00Z",
-      "unique_candle_identities": 5220
+      "unique_candle_identities": 5340
     },
     "end_at": "2026-11-09T09:00:00Z",
     "entry_permission": false,
@@ -4636,34 +4636,99 @@
         "window_start_at": "2026-11-06T11:00:00Z"
       },
       {
-        "capture_verified": false,
+        "attempt_id": "attempt_feb2946f29f04eaeb825e704a30b9cb8",
+        "bar_rows": 120,
+        "capture_verified": true,
         "clock": {
           "legacy_offset_seconds_invalid": true,
-          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
-          "system_correction_seconds": null
+          "records": [
+            {
+              "conditional_error_bound_seconds": "0.0016988645",
+              "observed_at": "2026-11-06T12:30:02.374393Z",
+              "original_sha256": "9199158ecf2b4d03a93705f52598298c2d2c9b3f695ab7e51055aa7ee849b443",
+              "status": "DERIVED_FROM_RETAINED_RAW",
+              "system_correction_seconds": "-0.000193559"
+            }
+          ],
+          "status": "DERIVED_FROM_RETAINED_RAW",
+          "system_correction_seconds": "-0.000193559"
         },
+        "completed_at": "2026-11-06T12:30:08.136556Z",
+        "depth_snapshots": 2,
         "issues": [],
         "origin": "SUPPLEMENT",
-        "receipt_verified": false,
-        "references": {},
+        "quote_snapshots": 2,
+        "receipt_verified": true,
+        "references": {
+          "capture": {
+            "path": "/var/lib/kod/supplement-v1/slot-077/runtime/timing/captures/attempt_feb2946f29f04eaeb825e704a30b9cb8.json",
+            "sha256": "c86bc3878f9a1c12709c675bc209f11ea572ce88c576dd0351c7b54108910df7"
+          },
+          "clock_corrections": {
+            "path": "/var/lib/kod/supplement-v1/slot-077/clock-corrections.json",
+            "sha256": "cd7568cbe758ec3b452eab5290ebd69808f6c4e2e40737681b518a354b58e1d3"
+          },
+          "end": {
+            "path": "/var/lib/kod/supplement-v1/slot-077/end.json",
+            "sha256": "1c509236f919a43ea3c086628880f7472c8f45272f5ddb6f60bb8822ec85da06"
+          },
+          "integrity": {
+            "path": "/var/lib/kod/supplement-v1/slot-077/integrity.json",
+            "sha256": "5e69e2b84c551835f1afd0e836248d32f08d74532a3623c3a84214e56592c09f"
+          },
+          "result": {
+            "path": "/var/lib/kod/supplement-v1/slot-077/result.json",
+            "sha256": "593c8d8a2034f6f2909c841884ed3aa11d53040868640ca9306e355c8e38b17f"
+          }
+        },
+        "request_count": 8,
         "scheduled_at": "2026-11-06T12:30:00Z",
         "slot": 77,
-        "status": "PENDING"
+        "started_at": "2026-11-06T12:30:02.382816Z",
+        "status": "CAPTURED",
+        "window_end_at": "2026-11-06T12:30:00Z",
+        "window_start_at": "2026-11-06T11:30:00Z"
       },
       {
-        "capture_verified": false,
+        "attempt_id": "attempt_bf08e5812f414bef92f54b3a3415d870",
+        "bar_rows": 120,
+        "capture_verified": true,
         "clock": {
           "legacy_offset_seconds_invalid": true,
           "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
           "system_correction_seconds": null
         },
+        "completed_at": "2026-11-06T13:00:23.151972Z",
+        "depth_snapshots": 2,
         "issues": [],
         "origin": "ORIGINAL_REFERENCE",
-        "receipt_verified": false,
-        "references": {},
+        "quote_snapshots": 2,
+        "receipt_verified": true,
+        "references": {
+          "capture": {
+            "path": "/var/lib/kod/timing-forward/timing/captures/attempt_bf08e5812f414bef92f54b3a3415d870.json",
+            "sha256": "b3d8b905ee5112937233ad604bc29d1288797d24d9d2dc9607e8cc73526cb8d3"
+          },
+          "end": {
+            "path": "/var/lib/kod/schedule/slot-13/end.json",
+            "sha256": "c0b5fda94ff569b12978349ecc9b9ea5407274b284c5c2dcca93425d637d85c2"
+          },
+          "integrity": {
+            "path": "/var/lib/kod/schedule/slot-13/integrity.json",
+            "sha256": "33b4f60c1b9c369b1c1311dcd81d749a5818402721aef6ce106137e46ed39081"
+          },
+          "result": {
+            "path": "/var/lib/kod/schedule/slot-13/result.json",
+            "sha256": "476f5f1fc7cb9da63338de5ff1e63ca8c34c1ba21bfeb5b0773e4f497b49fa45"
+          }
+        },
+        "request_count": 8,
         "scheduled_at": "2026-11-06T13:00:00Z",
         "slot": 13,
-        "status": "PENDING"
+        "started_at": "2026-11-06T13:00:01.202614Z",
+        "status": "CAPTURED",
+        "window_end_at": "2026-11-06T13:00:00Z",
+        "window_start_at": "2026-11-06T12:00:00Z"
       },
       {
         "capture_verified": false,
@@ -6707,6 +6772,6 @@
       }
     ],
     "start_at": "2026-11-04T17:30:00Z",
-    "verified_captured_observations": 86
+    "verified_captured_observations": 88
   }
 }
