@@ -1,19 +1,19 @@
 {
-  "as_of": "2026-11-06T19:55:02.852437+00:00",
+  "as_of": "2026-11-06T21:20:02.877301+00:00",
   "backup_branch": "supplement-30m-v1",
   "current_clock": {
     "command": "chronyc -c tracking",
     "meaning": "Current local chrony evidence; not independent absolute-time proof",
-    "raw_csv": "05DF319F,5.223.49.159,2,1793994882.598916316,-0.000181412,0.000194009,0.000218666,-99.927,0.036,0.223,0.002137144,0.000130512,1032.7,Normal",
+    "raw_csv": "05DF319F,5.223.49.159,2,1793999037.911887094,0.000020347,-0.000008894,0.000185348,-99.869,-0.000,0.073,0.002192203,0.001167783,1040.2,Normal",
     "status": "SYNCHRONIZED"
   },
   "issues": [],
   "last_acknowledged_backup": {
-    "begun_slots_archived": 87,
+    "begun_slots_archived": 89,
     "branch": "supplement-30m-v1",
-    "commit": "e28ca6e09c5afebc0e945b1d2c23453801aa0f63",
-    "completed_slots": 87,
-    "epoch": 1793991144.997885,
+    "commit": "746a142a1cc17585e20bdf6f55a4c879f499b772",
+    "completed_slots": 89,
+    "epoch": 1793995045.8628154,
     "issues": []
   },
   "limitations": [
@@ -24,7 +24,7 @@
   "original_controls_unchanged": true,
   "plan_sha256": "86102f2e8e592929102f6cce87bec7b7d365fc64a86f9d136a8f01c22672b202",
   "retained_clock_correction_statuses": {
-    "DERIVED_FROM_RETAINED_RAW": 89
+    "DERIVED_FROM_RETAINED_RAW": 91
   },
   "schema": "KOD_SUPPLEMENT_GUARD_V1",
   "source_check": {
@@ -59,26 +59,26 @@
     }
   },
   "view": {
-    "as_of": "2026-11-06T19:55:04.254285Z",
+    "as_of": "2026-11-06T21:20:04.303299Z",
     "counts": {
-      "CAPTURED": 101,
-      "PENDING": 123
+      "CAPTURED": 104,
+      "PENDING": 120
     },
     "coverage": {
       "by_symbol": [
         {
           "first_open_time": "2026-11-04T16:30:00Z",
           "gaps_in_due_lookback_target": [],
-          "latest_bar_end_at": "2026-11-06T19:30:00Z",
+          "latest_bar_end_at": "2026-11-06T21:00:00Z",
           "symbol": "BTCUSDT",
-          "unique_complete_bars": 3060
+          "unique_complete_bars": 3150
         },
         {
           "first_open_time": "2026-11-04T16:30:00Z",
           "gaps_in_due_lookback_target": [],
-          "latest_bar_end_at": "2026-11-06T19:30:00Z",
+          "latest_bar_end_at": "2026-11-06T21:00:00Z",
           "symbol": "ETHUSDT",
-          "unique_complete_bars": 3060
+          "unique_complete_bars": 3150
         }
       ],
       "conflicting_candle_identities": 0,
@@ -88,11 +88,11 @@
         "interval",
         "open_time"
       ],
-      "overlapping_bar_rows": 6000,
-      "retained_bar_rows": 12120,
-      "target_end_at": "2026-11-06T19:30:00Z",
+      "overlapping_bar_rows": 6180,
+      "retained_bar_rows": 12480,
+      "target_end_at": "2026-11-06T21:00:00Z",
       "target_start_at": "2026-11-04T16:30:00Z",
-      "unique_candle_identities": 6120
+      "unique_candle_identities": 6300
     },
     "end_at": "2026-11-09T09:00:00Z",
     "entry_permission": false,
@@ -5420,49 +5420,153 @@
         "window_start_at": "2026-11-06T18:30:00Z"
       },
       {
-        "capture_verified": false,
+        "attempt_id": "attempt_8ded9aa5ca174c6da30dc65c4bdd5b6b",
+        "bar_rows": 120,
+        "capture_verified": true,
         "clock": {
           "legacy_offset_seconds_invalid": true,
-          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
-          "system_correction_seconds": null
+          "records": [
+            {
+              "conditional_error_bound_seconds": "0.001692217",
+              "observed_at": "2026-11-06T20:00:02.550644Z",
+              "original_sha256": "15f285f189e2b76acd2aa735a21008a74e14e4b719f0b4e2c99a03b3a451bdf2",
+              "status": "DERIVED_FROM_RETAINED_RAW",
+              "system_correction_seconds": "-0.000117095"
+            }
+          ],
+          "status": "DERIVED_FROM_RETAINED_RAW",
+          "system_correction_seconds": "-0.000117095"
         },
+        "completed_at": "2026-11-06T20:00:10.270643Z",
+        "depth_snapshots": 2,
         "issues": [],
         "origin": "SUPPLEMENT",
-        "receipt_verified": false,
-        "references": {},
+        "quote_snapshots": 2,
+        "receipt_verified": true,
+        "references": {
+          "capture": {
+            "path": "/var/lib/kod/supplement-v1/slot-090/runtime/timing/captures/attempt_8ded9aa5ca174c6da30dc65c4bdd5b6b.json",
+            "sha256": "77a6d5c13ad02883a92cb5c4539944f16a60de463398251894b01fdb43ea71b9"
+          },
+          "clock_corrections": {
+            "path": "/var/lib/kod/supplement-v1/slot-090/clock-corrections.json",
+            "sha256": "14d00a8b595cf1aeb9130d51e73947f012e81ad10ae2374b0075c4960516da3e"
+          },
+          "end": {
+            "path": "/var/lib/kod/supplement-v1/slot-090/end.json",
+            "sha256": "91bcfe118a3e215b347542e5ece250758cd11c3047452e7bb5968c42ad641691"
+          },
+          "integrity": {
+            "path": "/var/lib/kod/supplement-v1/slot-090/integrity.json",
+            "sha256": "7cd7845ae9582e6c98190d94960f13990367e9bbe904743da7039c1e2b7543d0"
+          },
+          "result": {
+            "path": "/var/lib/kod/supplement-v1/slot-090/result.json",
+            "sha256": "5f988305fe8bf8dc3c73a61e1020360c4810612202f1746d1d4d83a3a3de6f93"
+          }
+        },
+        "request_count": 8,
         "scheduled_at": "2026-11-06T20:00:00Z",
         "slot": 90,
-        "status": "PENDING"
+        "started_at": "2026-11-06T20:00:02.563315Z",
+        "status": "CAPTURED",
+        "window_end_at": "2026-11-06T20:00:00Z",
+        "window_start_at": "2026-11-06T19:00:00Z"
       },
       {
-        "capture_verified": false,
+        "attempt_id": "attempt_016d75fcd3364406ad2f13a4df5379b0",
+        "bar_rows": 120,
+        "capture_verified": true,
         "clock": {
           "legacy_offset_seconds_invalid": true,
-          "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
-          "system_correction_seconds": null
+          "records": [
+            {
+              "conditional_error_bound_seconds": "0.001244094",
+              "observed_at": "2026-11-06T20:30:02.412842Z",
+              "original_sha256": "a4b24cc2acb166266d5a6ca6f54707a0d03a948bf901bffe012d6b56be1ce990",
+              "status": "DERIVED_FROM_RETAINED_RAW",
+              "system_correction_seconds": "0.000078788"
+            }
+          ],
+          "status": "DERIVED_FROM_RETAINED_RAW",
+          "system_correction_seconds": "0.000078788"
         },
+        "completed_at": "2026-11-06T20:30:08.270081Z",
+        "depth_snapshots": 2,
         "issues": [],
         "origin": "SUPPLEMENT",
-        "receipt_verified": false,
-        "references": {},
+        "quote_snapshots": 2,
+        "receipt_verified": true,
+        "references": {
+          "capture": {
+            "path": "/var/lib/kod/supplement-v1/slot-091/runtime/timing/captures/attempt_016d75fcd3364406ad2f13a4df5379b0.json",
+            "sha256": "474bb35e64d950e029241a256aa15d012ce5b82cf22db1a3c7fb8359f523083c"
+          },
+          "clock_corrections": {
+            "path": "/var/lib/kod/supplement-v1/slot-091/clock-corrections.json",
+            "sha256": "ac0421cdeb856207ea76fd28a6ae638d11fd53bd9223b6ef997cea359579a398"
+          },
+          "end": {
+            "path": "/var/lib/kod/supplement-v1/slot-091/end.json",
+            "sha256": "374feb11dfc7452320e634eb3860b3a2ba683909ac4f753b8b1276c3f567e878"
+          },
+          "integrity": {
+            "path": "/var/lib/kod/supplement-v1/slot-091/integrity.json",
+            "sha256": "a51f2bc9cfefd78af9af75513347488085e109bff7cc841f20d7b422aeb4220e"
+          },
+          "result": {
+            "path": "/var/lib/kod/supplement-v1/slot-091/result.json",
+            "sha256": "62ac725fecaaf3adbee0c5356b26eb91296a3bd668de6934feff0c2810ac9bc2"
+          }
+        },
+        "request_count": 8,
         "scheduled_at": "2026-11-06T20:30:00Z",
         "slot": 91,
-        "status": "PENDING"
+        "started_at": "2026-11-06T20:30:02.423820Z",
+        "status": "CAPTURED",
+        "window_end_at": "2026-11-06T20:30:00Z",
+        "window_start_at": "2026-11-06T19:30:00Z"
       },
       {
-        "capture_verified": false,
+        "attempt_id": "attempt_4145f54377474b21afec1fc929379c6e",
+        "bar_rows": 120,
+        "capture_verified": true,
         "clock": {
           "legacy_offset_seconds_invalid": true,
           "status": "UNKNOWN_LEGACY_OFFSET_INVALID",
           "system_correction_seconds": null
         },
+        "completed_at": "2026-11-06T21:00:20.427645Z",
+        "depth_snapshots": 2,
         "issues": [],
         "origin": "ORIGINAL_REFERENCE",
-        "receipt_verified": false,
-        "references": {},
+        "quote_snapshots": 2,
+        "receipt_verified": true,
+        "references": {
+          "capture": {
+            "path": "/var/lib/kod/timing-forward/timing/captures/attempt_4145f54377474b21afec1fc929379c6e.json",
+            "sha256": "707afe082e2900118a26e26b1d3d1a6527f7a0b07d54230d3029c94e4f87b8ca"
+          },
+          "end": {
+            "path": "/var/lib/kod/schedule/slot-15/end.json",
+            "sha256": "1dff8fa1a36da3da0fe483cfeb9ce30d3065001649021f0fcc10fb74275f625d"
+          },
+          "integrity": {
+            "path": "/var/lib/kod/schedule/slot-15/integrity.json",
+            "sha256": "41597c9664f40f821d6b448bab750e0a2c15cac7a9028e06b833eeca6a444d8b"
+          },
+          "result": {
+            "path": "/var/lib/kod/schedule/slot-15/result.json",
+            "sha256": "d0c111cabbfc6b622df3f3abdef6052881a752b46b7406509de96196090c3a72"
+          }
+        },
+        "request_count": 8,
         "scheduled_at": "2026-11-06T21:00:00Z",
         "slot": 15,
-        "status": "PENDING"
+        "started_at": "2026-11-06T21:00:01.218335Z",
+        "status": "CAPTURED",
+        "window_end_at": "2026-11-06T21:00:00Z",
+        "window_start_at": "2026-11-06T20:00:00Z"
       },
       {
         "capture_verified": false,
@@ -7266,6 +7370,6 @@
       }
     ],
     "start_at": "2026-11-04T17:30:00Z",
-    "verified_captured_observations": 101
+    "verified_captured_observations": 104
   }
 }
