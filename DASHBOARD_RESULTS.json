@@ -1,0 +1,130 @@
+{
+  "arms": [
+    {
+      "awaiting_24h": 0,
+      "censored_24h": 0,
+      "completed_24h": 1,
+      "completed_control_pairs": 0,
+      "event_entries": 1,
+      "mean_benchmark_excess": 0.5056501780570117,
+      "mean_control_excess": null,
+      "mean_net_return": 0.5058014073494916,
+      "median_net_return": 0.5058014073494916,
+      "minutes": 1
+    },
+    {
+      "awaiting_24h": 0,
+      "censored_24h": 0,
+      "completed_24h": 1,
+      "completed_control_pairs": 0,
+      "event_entries": 1,
+      "mean_benchmark_excess": 0.5061055921875219,
+      "mean_control_excess": null,
+      "mean_net_return": 0.5063981228001564,
+      "median_net_return": 0.5063981228001564,
+      "minutes": 5
+    },
+    {
+      "awaiting_24h": 0,
+      "censored_24h": 0,
+      "completed_24h": 1,
+      "completed_control_pairs": 0,
+      "event_entries": 1,
+      "mean_benchmark_excess": 0.4875464065974334,
+      "mean_control_excess": null,
+      "mean_net_return": 0.48869733281793604,
+      "median_net_return": 0.48869733281793604,
+      "minutes": 30
+    },
+    {
+      "awaiting_24h": 0,
+      "censored_24h": 0,
+      "completed_24h": 1,
+      "completed_control_pairs": 0,
+      "event_entries": 1,
+      "mean_benchmark_excess": 0.4875464065974334,
+      "mean_control_excess": null,
+      "mean_net_return": 0.48869733281793604,
+      "median_net_return": 0.48869733281793604,
+      "minutes": 240
+    }
+  ],
+  "as_of": "2026-11-07T17:27:33.975893Z",
+  "comparison_inputs": {
+    "as_of": "2026-11-07T17:22:00.000000Z",
+    "eligible_symbols": 0,
+    "status": "UNAVAILABLE",
+    "total_symbols": 130
+  },
+  "coverage": {
+    "on_time_fraction": 0.6983062808750882
+  },
+  "events": [
+    {
+      "arms": [
+        {
+          "benchmark_excess": 0.5056501780570117,
+          "control_excess": null,
+          "entry_at": "2026-11-06T10:01:08.230351Z",
+          "minutes": 1,
+          "net_return": 0.5058014073494916,
+          "primary_status": "COMPLETE"
+        },
+        {
+          "benchmark_excess": 0.5061055921875219,
+          "control_excess": null,
+          "entry_at": "2026-11-06T10:02:07.629970Z",
+          "minutes": 5,
+          "net_return": 0.5063981228001564,
+          "primary_status": "COMPLETE"
+        },
+        {
+          "benchmark_excess": 0.4875464065974334,
+          "control_excess": null,
+          "entry_at": "2026-11-06T10:12:08.634011Z",
+          "minutes": 30,
+          "net_return": 0.48869733281793604,
+          "primary_status": "COMPLETE"
+        },
+        {
+          "benchmark_excess": 0.4875464065974334,
+          "control_excess": null,
+          "entry_at": "2026-11-06T10:12:08.634011Z",
+          "minutes": 240,
+          "net_return": 0.48869733281793604,
+          "primary_status": "COMPLETE"
+        }
+      ],
+      "controls_status": "UNAVAILABLE_PRE_EVENT_FEATURES",
+      "event_id": "ONEUSDT:1793955600",
+      "primary_deadline_at": "2026-11-07T10:00:00.135278Z",
+      "reference_at": "2026-11-06T10:00:00.135278Z",
+      "symbol": "ONEUSDT"
+    }
+  ],
+  "events_with_completed_24h": 1,
+  "events_without_controls": 1,
+  "independent_events": 1,
+  "next_primary_due_at": null,
+  "prospective_check": {
+    "arm_minutes": 1,
+    "beat_controls": 0,
+    "behind_controls": 0,
+    "completed_pairs": 0,
+    "distinct_signal_dates": 0,
+    "enabled": true,
+    "events": [],
+    "horizon_hours": 24,
+    "mean_excess": null,
+    "median_excess": null,
+    "pending_pairs": 0,
+    "started_at": "2026-11-07T17:26:36.132742Z",
+    "status": "WAITING_FOR_SIGNALS",
+    "tied_controls": 0,
+    "total_signals": 0,
+    "unavailable_pairs": 0
+  },
+  "schema": "KOD_R2_RESULTS_V1",
+  "status": "RUNNING",
+  "study_id": "research-r2-20261105T181200Z"
+}
