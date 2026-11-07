@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-07T16:20:02.948924+00:00",
-  "captured_slots": 19,
+  "as_of": "2026-11-07T17:05:03.063382+00:00",
+  "captured_slots": 20,
   "closeout_eligible_at": "2026-11-09T09:15:00+00:00",
   "collection_closed": false,
   "complete": false,
   "corrected_clock": {
     "available": true,
-    "cohort_record_count": 19,
+    "cohort_record_count": 20,
     "cohort_records": [
       {
         "conditional_error_bound_seconds": "0.020170339",
@@ -234,6 +234,21 @@
         "system_correction_seconds": "0.000189248"
       },
       {
+        "conditional_error_bound_seconds": "0.0088923205",
+        "evidence_id": "clock_c80a395ffa73e601954364c0bfbae8731bd99a2eb198e6578e1e62b4c2cc94a6",
+        "legacy_offset_seconds_is_invalid": true,
+        "meaning": "Derived chrony system correction, not independent proof of absolute time",
+        "observed_at": "2026-11-07T17:00:03.316325Z",
+        "original_file": "/var/lib/kod/timing-forward/timing/clocks/clock_c80a395ffa73e601954364c0bfbae8731bd99a2eb198e6578e1e62b4c2cc94a6.json",
+        "original_sha256": "20b680b162462cc3379e88b4cacdf400d12d6dc76e583d4c7fe5fe22f21642c9",
+        "reference_time_epoch": "1794070081.369321799",
+        "root_delay_seconds": "0.010181297",
+        "root_dispersion_seconds": "0.003448550",
+        "schema": "KOD_CHRONY_CSV_CORRECTION_V1",
+        "status": "DERIVED_FROM_RETAINED_RAW",
+        "system_correction_seconds": "-0.000353122"
+      },
+      {
         "conditional_error_bound_seconds": "0.0020637655",
         "evidence_id": "clock_d9800d0c469ceedaba2231712d52ac1956429321021115e34a768c0c514ea561",
         "legacy_offset_seconds_is_invalid": true,
@@ -295,7 +310,7 @@
       }
     ],
     "cohort_status_counts": {
-      "DERIVED_FROM_RETAINED_RAW": 19
+      "DERIVED_FROM_RETAINED_RAW": 20
     },
     "legacy_offset_used": false,
     "other_record_count": 1,
@@ -484,9 +499,12 @@
       "status": "CAPTURED"
     },
     {
+      "completed_at": "2026-11-07T17:00:32.472186Z",
+      "observed_at": "2026-11-07T17:00:02.696822Z",
+      "plan_sha256": "693394f0efffc485a0892a4b5b2115454a858ff0d50ff6daeaff7717c7e2cbb9",
       "scheduled_at": "2026-11-07T17:00:00Z",
       "slot": 20,
-      "status": "PENDING"
+      "status": "CAPTURED"
     },
     {
       "scheduled_at": "2026-11-07T21:00:00Z",
@@ -541,19 +559,19 @@
   ],
   "source_commit": "dbb27ea5c6a16c5b37c6f94b938a1509c2a9148e",
   "status_counts": {
-    "CAPTURED": 19,
-    "PENDING": 11
+    "CAPTURED": 20,
+    "PENDING": 10
   },
   "strategy_promotion": false,
-  "terminal_slots": 19,
+  "terminal_slots": 20,
   "timing": {
-    "all_journal_identities": 171,
+    "all_journal_identities": 180,
     "available": true,
     "integrity": {
-      "attempts": 171,
+      "attempts": 180,
       "entry_permission": false,
       "external_verification": "LOCAL_HASH_CHAIN_ONLY",
-      "head_hash": "d48aa27d7d7194fd11cee1e6f869e030cf6149e5d53ebb99579c46bd70a8b07c",
+      "head_hash": "5131b02a7a32c7efe4a208f0373e3e08f56745e9639f87f0c53aa1f5cb4e3cdf",
       "linked_evidence": {
         "checks": [
           {
@@ -2229,6 +2247,94 @@
             "status": "VERIFIED"
           },
           {
+            "attempt_id": "attempt_dcc2d1320d644a75823b85a9c93da101",
+            "id": "membership_cd1172dc52c461a817de2b23120bdb2d2726cf8a4b868dc1fe4cf2c03171e123",
+            "kind": "membership",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_dcc2d1320d644a75823b85a9c93da101",
+            "id": "clock_c80a395ffa73e601954364c0bfbae8731bd99a2eb198e6578e1e62b4c2cc94a6",
+            "kind": "clock",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_dcc2d1320d644a75823b85a9c93da101",
+            "id": "timing/captures/attempt_dcc2d1320d644a75823b85a9c93da101.json",
+            "kind": "capture",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_dcc2d1320d644a75823b85a9c93da101:request:0",
+            "id": "membership_cd1172dc52c461a817de2b23120bdb2d2726cf8a4b868dc1fe4cf2c03171e123",
+            "kind": "membership",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_dcc2d1320d644a75823b85a9c93da101:request:1",
+            "id": "membership_cd1172dc52c461a817de2b23120bdb2d2726cf8a4b868dc1fe4cf2c03171e123",
+            "kind": "membership",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_dcc2d1320d644a75823b85a9c93da101:request:2",
+            "id": "membership_cd1172dc52c461a817de2b23120bdb2d2726cf8a4b868dc1fe4cf2c03171e123",
+            "kind": "membership",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_dcc2d1320d644a75823b85a9c93da101:request:3",
+            "id": "membership_cd1172dc52c461a817de2b23120bdb2d2726cf8a4b868dc1fe4cf2c03171e123",
+            "kind": "membership",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_dcc2d1320d644a75823b85a9c93da101:request:4",
+            "id": "membership_cd1172dc52c461a817de2b23120bdb2d2726cf8a4b868dc1fe4cf2c03171e123",
+            "kind": "membership",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_dcc2d1320d644a75823b85a9c93da101:request:5",
+            "id": "membership_cd1172dc52c461a817de2b23120bdb2d2726cf8a4b868dc1fe4cf2c03171e123",
+            "kind": "membership",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_dcc2d1320d644a75823b85a9c93da101:request:6",
+            "id": "membership_cd1172dc52c461a817de2b23120bdb2d2726cf8a4b868dc1fe4cf2c03171e123",
+            "kind": "membership",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_dcc2d1320d644a75823b85a9c93da101:request:7",
+            "id": "membership_cd1172dc52c461a817de2b23120bdb2d2726cf8a4b868dc1fe4cf2c03171e123",
+            "kind": "membership",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
             "attempt_id": "attempt_5fa40709f292463a8518f019ca37a592:request:0",
             "id": "ev_367d31d8d52c1ff02ecb2184da654a0a57fa01b7db40aee1f43d3a3089542fb8",
             "kind": "request",
@@ -3443,6 +3549,70 @@
             "reason": "original linked object verified",
             "required": true,
             "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_dcc2d1320d644a75823b85a9c93da101:request:0",
+            "id": "ev_25879fb82ea8b98b37ebc45a2ef03816e3c0f577c7b89392ce458eb9d665e5ee",
+            "kind": "request",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_dcc2d1320d644a75823b85a9c93da101:request:1",
+            "id": "ev_26dc79c7c0c0636ab39eabe72cc4a5fdb59b9b6ee3c3f353c21101d4c373478a",
+            "kind": "request",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_dcc2d1320d644a75823b85a9c93da101:request:2",
+            "id": "ev_0f984948000c96f3486fd8b5048d3fea5be3c531d7e21de68b7b319489358e76",
+            "kind": "request",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_dcc2d1320d644a75823b85a9c93da101:request:3",
+            "id": "ev_c22410f4563e8ab1868a9732f3445e304bdfffedc16804813e776e158cbb9e6c",
+            "kind": "request",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_dcc2d1320d644a75823b85a9c93da101:request:4",
+            "id": "ev_47ef151bc2a190d9f8d0c9f47fab0e355d30612b8f6189c635e4b42c97dbc085",
+            "kind": "request",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_dcc2d1320d644a75823b85a9c93da101:request:5",
+            "id": "ev_06f28f9e767188e0d0c7f1dac3b044791658c642a4a755d9156025fcc81312b4",
+            "kind": "request",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_dcc2d1320d644a75823b85a9c93da101:request:6",
+            "id": "ev_461731e528ed57ef7a37d90b1bcedd38a53c54be27f6f79deedeb593ee65456d",
+            "kind": "request",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
+          },
+          {
+            "attempt_id": "attempt_dcc2d1320d644a75823b85a9c93da101:request:7",
+            "id": "ev_b83496213275b9126a46178be931e857f6338a11033be12983354f07e574d7e4",
+            "kind": "request",
+            "reason": "original linked object verified",
+            "required": true,
+            "status": "VERIFIED"
           }
         ],
         "complete": true,
@@ -3450,7 +3620,7 @@
           "declared": 0,
           "fail": 0,
           "unavailable": 0,
-          "verified": 361
+          "verified": 380
         },
         "entry_permission": false,
         "ok": true,
@@ -3458,13 +3628,13 @@
         "schema_version": "KOD_TIMING_LINKED_EVIDENCE_V1"
       },
       "ok": true,
-      "revisions": 190,
+      "revisions": 200,
       "schema_version": "KOD_TIMING_JOURNAL_V1"
     },
-    "main_attempts": 19,
+    "main_attempts": 20,
     "main_cohorts": [
       {
-        "attempts": 19,
+        "attempts": 20,
         "detector_version": "INTRADAY_OBSERVATION_V1",
         "evidence_kind": "prospective",
         "stages": {
@@ -3473,47 +3643,47 @@
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 19
+            "unknown": 20
           },
           "collection_after_threshold": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 19
+            "unknown": 20
           },
           "detection_processing": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 19
+            "unknown": 20
           },
           "execution_quote": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 19
+            "unknown": 20
           },
           "fill_after_quote": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 19
+            "unknown": 20
           },
           "receipt_to_features": {
-            "known": 19,
+            "known": 20,
             "max_seconds": 0.011781,
-            "median_seconds": 0.003971,
-            "p95_seconds": 0.011781,
+            "median_seconds": 0.0040605,
+            "p95_seconds": 0.00896,
             "unknown": 0
           },
           "schedule_start": {
-            "known": 19,
-            "max_seconds": 2.724822,
-            "median_seconds": 1.14076,
+            "known": 20,
+            "max_seconds": 3.025994,
+            "median_seconds": 1.155829,
             "p95_seconds": 2.724822,
             "unknown": 0
           },
@@ -3522,47 +3692,47 @@
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 19
+            "unknown": 20
           },
           "threshold": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 19
+            "unknown": 20
           }
         },
         "statuses": {
-          "COMPLETED": 19
+          "COMPLETED": 20
         }
       }
     ],
     "missing_stages": {
-      "decision_at": 171,
-      "detected_at": 171,
-      "executable_at": 171,
-      "features_ready_at": 152,
-      "fill_at": 171,
-      "published_at": 171,
+      "decision_at": 180,
+      "detected_at": 180,
+      "executable_at": 180,
+      "features_ready_at": 160,
+      "fill_at": 180,
+      "published_at": 180,
       "received_at": 0,
-      "scheduled_at": 152,
+      "scheduled_at": 160,
       "started_at": 0
     },
     "other_cohorts": [],
-    "report_as_of": "2026-11-07T16:20:04.851471Z",
-    "request_detail_rows": 152,
+    "report_as_of": "2026-11-07T17:05:04.738717Z",
+    "request_detail_rows": 160,
     "request_duration_scope_verified": true,
     "request_monotonic_duration": {
-      "known": 152,
-      "median_seconds": 0.24126147850000002,
+      "known": 160,
+      "median_seconds": 0.2404409255,
       "p95_method": "nearest rank; descriptive only",
-      "p95_seconds": 1.496035082,
+      "p95_seconds": 1.486204696,
       "unknown_or_invalid": 0,
       "worst_seconds": 3.532740068
     },
     "source_lag": [
       {
-        "attempts": 38,
+        "attempts": 40,
         "clock_conflicts": 0,
         "evidence_kind": "prospective",
         "failures": 0,
@@ -3571,12 +3741,12 @@
           "max_seconds": null,
           "median_seconds": null,
           "p95_seconds": null,
-          "unknown": 38
+          "unknown": 40
         },
         "source": "/api/v3/depth"
       },
       {
-        "attempts": 19,
+        "attempts": 20,
         "clock_conflicts": 0,
         "evidence_kind": "prospective",
         "failures": 0,
@@ -3585,12 +3755,12 @@
           "max_seconds": null,
           "median_seconds": null,
           "p95_seconds": null,
-          "unknown": 19
+          "unknown": 20
         },
         "source": "/api/v3/exchangeInfo"
       },
       {
-        "attempts": 38,
+        "attempts": 40,
         "clock_conflicts": 0,
         "evidence_kind": "prospective",
         "failures": 0,
@@ -3599,12 +3769,12 @@
           "max_seconds": null,
           "median_seconds": null,
           "p95_seconds": null,
-          "unknown": 38
+          "unknown": 40
         },
         "source": "/api/v3/klines"
       },
       {
-        "attempts": 38,
+        "attempts": 40,
         "clock_conflicts": 0,
         "evidence_kind": "prospective",
         "failures": 0,
@@ -3613,12 +3783,12 @@
           "max_seconds": null,
           "median_seconds": null,
           "p95_seconds": null,
-          "unknown": 38
+          "unknown": 40
         },
         "source": "/api/v3/ticker/bookTicker"
       },
       {
-        "attempts": 19,
+        "attempts": 20,
         "clock_conflicts": 0,
         "evidence_kind": "prospective",
         "failures": 0,
@@ -3627,12 +3797,12 @@
           "max_seconds": null,
           "median_seconds": null,
           "p95_seconds": null,
-          "unknown": 19
+          "unknown": 20
         },
         "source": "/api/v3/time"
       },
       {
-        "attempts": 19,
+        "attempts": 20,
         "clock_conflicts": 0,
         "evidence_kind": "prospective",
         "failures": 0,
@@ -3641,15 +3811,15 @@
           "max_seconds": null,
           "median_seconds": null,
           "p95_seconds": null,
-          "unknown": 19
+          "unknown": 20
         },
         "source": "BINANCE_SPOT_PUBLIC"
       }
     ],
-    "source_request_attempts": 152,
+    "source_request_attempts": 160,
     "source_request_cohorts": [
       {
-        "attempts": 152,
+        "attempts": 160,
         "detector_version": "SOURCE_REQUEST_V1",
         "evidence_kind": "prospective",
         "stages": {
@@ -3658,73 +3828,72 @@
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 152
+            "unknown": 160
           },
           "collection_after_threshold": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 152
+            "unknown": 160
           },
           "detection_processing": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 152
+            "unknown": 160
           },
           "execution_quote": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 152
+            "unknown": 160
           },
           "fill_after_quote": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 152
+            "unknown": 160
           },
           "receipt_to_features": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 152
+            "unknown": 160
           },
           "schedule_start": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 152
+            "unknown": 160
           },
           "source_to_receipt": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 152
+            "unknown": 160
           },
           "threshold": {
             "known": 0,
             "max_seconds": null,
             "median_seconds": null,
             "p95_seconds": null,
-            "unknown": 152
+            "unknown": 160
           }
         },
         "statuses": {
-          "COMPLETED": 152
+          "COMPLETED": 160
         }
       }
     ]
   },
   "unresolved_slots": [
-    20,
     21,
     22,
     23,
