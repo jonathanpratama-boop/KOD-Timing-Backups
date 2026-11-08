@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-08T01:05:02.966320+00:00",
+  "as_of": "2026-11-08T02:10:00.945916+00:00",
   "captured_slots": 22,
   "closeout_eligible_at": "2026-11-09T09:15:00+00:00",
   "collection_closed": false,
@@ -4059,7 +4059,7 @@
       "started_at": 0
     },
     "other_cohorts": [],
-    "report_as_of": "2026-11-08T01:05:04.643356Z",
+    "report_as_of": "2026-11-08T02:10:03.332825Z",
     "request_detail_rows": 176,
     "request_duration_scope_verified": true,
     "request_monotonic_duration": {
