@@ -1,8 +1,8 @@
 {
-  "as_of": "2026-11-09T09:05:03.047641+00:00",
+  "as_of": "2026-11-09T10:10:03.138803+00:00",
   "captured_slots": 30,
   "closeout_eligible_at": "2026-11-09T09:15:00+00:00",
-  "collection_closed": false,
+  "collection_closed": true,
   "complete": true,
   "corrected_clock": {
     "available": true,
@@ -5418,7 +5418,7 @@
       "started_at": 0
     },
     "other_cohorts": [],
-    "report_as_of": "2026-11-09T09:05:05.054689Z",
+    "report_as_of": "2026-11-09T10:10:05.453864Z",
     "request_detail_rows": 240,
     "request_duration_scope_verified": true,
     "request_monotonic_duration": {
