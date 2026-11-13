@@ -15,16 +15,16 @@
     "path": "/var/lib/kod-supplement-ops/FINAL-COMBINED-20261113.json",
     "sha256": "9b24d2b48fa15d875f16482327852afb2720cb4714f5af17dd59ae8673e564d2"
   },
-  "issues": [
-    "Supplement offsite recovery acknowledgement older than two hours"
-  ],
+  "issues": [],
   "last_acknowledged_backup": {
-    "begun_slots_archived": 93,
+    "begun_slots_archived": 196,
     "branch": "supplement-30m-v1",
-    "commit": "339094df93a5f5ea40bcbca08c71ba9fbda8ed8f",
-    "completed_slots": 93,
-    "epoch": 1794004044.625014,
-    "issues": []
+    "commit": "73af21bffbdcdb86b8f2be0f7843053e5d9a57dc",
+    "completed_slots": 196,
+    "epoch": 1794555587.7026327,
+    "issues": [
+      "Supplement offsite recovery acknowledgement older than two hours"
+    ]
   },
   "last_supplement_completed_at": "2026-11-09T08:30:10.948470Z",
   "last_supplement_scheduled_at": "2026-11-09T08:30:00Z",
