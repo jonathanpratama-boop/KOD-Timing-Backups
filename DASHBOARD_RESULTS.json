@@ -49,15 +49,15 @@
       "minutes": 240
     }
   ],
-  "as_of": "2026-11-14T20:03:34.282074Z",
+  "as_of": "2026-11-14T20:10:33.999282Z",
   "comparison_inputs": {
-    "as_of": "2026-11-14T19:58:00.000000Z",
+    "as_of": "2026-11-14T20:05:00.000000Z",
     "eligible_symbols": 130,
     "status": "READY",
     "total_symbols": 130
   },
   "coverage": {
-    "on_time_fraction": 0.9345830145371079
+    "on_time_fraction": 0.9345515712210414
   },
   "events": [
     {
@@ -125,6 +125,6 @@
     "unavailable_pairs": 0
   },
   "schema": "KOD_R2_RESULTS_V1",
-  "status": "RUNNING",
+  "status": "PROVIDER_STOPPED",
   "study_id": "research-r2-20261105T181200Z"
 }
