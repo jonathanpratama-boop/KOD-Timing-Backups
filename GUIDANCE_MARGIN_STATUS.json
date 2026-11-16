@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-16T11:56:50.377323+00:00",
+  "as_of": "2026-11-16T12:07:02.647943+00:00",
   "credits": {},
   "feed": {
     "api_calls": 2,
@@ -9,17 +9,17 @@
     "credit_budget_usd": 55.0,
     "credit_expiry_at": "2026-12-03T13:41:10+00:00",
     "development_count": 20,
-    "discovered_count": 22,
-    "excluded_count": 22,
+    "discovered_count": 26,
+    "excluded_count": 26,
     "extraction_attempted_count": 1,
     "fetch_error_count": 0,
-    "prospective_count": 2,
+    "prospective_count": 6,
     "review_pending_count": 0,
-    "screened_out_count": 20,
+    "screened_out_count": 24,
     "source_scope": "PRNewswire earnings RSS observed releases; retained issuer wire archive, not all SEC filings",
     "started_at": "2026-11-16T10:51:25.028121+00:00",
     "state": "RUNNING",
-    "updated_at": "2026-11-16T11:56:49.916547+00:00"
+    "updated_at": "2026-11-16T12:07:01.331421+00:00"
   },
   "schema": "guidance-margin-status/v1",
   "state": "RUNNING",
