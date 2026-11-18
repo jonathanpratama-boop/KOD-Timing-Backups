@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-18T11:23:00.793126+00:00",
+  "as_of": "2026-11-18T11:33:10.566917+00:00",
   "credits": {},
   "feed": {
     "api_calls": 4,
@@ -9,7 +9,7 @@
     "credit_budget_usd": 55.0,
     "credit_expiry_at": "2026-12-03T13:41:10+00:00",
     "development_count": 20,
-    "discovered_count": 81,
+    "discovered_count": 82,
     "excluded_count": 78,
     "extraction_attempted_count": 2,
     "fetch_error_count": 0,
@@ -28,16 +28,21 @@
         "reason": "Confirm the issuer and its US listing.",
         "status": "IDENTITY_UNKNOWN",
         "title": "ZKH Group Limited Announces Third Quarter 2026 Unaudited Financial Results"
+      },
+      {
+        "reason": "Confirm the issuer and its US listing.",
+        "status": "IDENTITY_UNKNOWN",
+        "title": "Target Corporation Reports Third Quarter Earnings"
       }
     ],
-    "prospective_count": 61,
+    "prospective_count": 62,
     "review_closed_count": 10,
-    "review_pending_count": 3,
+    "review_pending_count": 4,
     "screened_out_count": 66,
     "source_scope": "PRNewswire earnings RSS observed releases; retained issuer wire archive, not all SEC filings",
     "started_at": "2026-11-16T10:51:25.028121+00:00",
     "state": "RUNNING",
-    "updated_at": "2026-11-18T11:22:59.944462+00:00"
+    "updated_at": "2026-11-18T11:33:10.079741+00:00"
   },
   "schema": "guidance-margin-status/v1",
   "state": "RUNNING",
