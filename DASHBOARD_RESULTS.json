@@ -49,9 +49,9 @@
       "minutes": 240
     }
   ],
-  "as_of": "2026-11-18T06:57:35.060013Z",
+  "as_of": "2026-11-18T06:58:19.832151Z",
   "comparison_inputs": {
-    "as_of": "2026-11-18T06:52:00.000000Z",
+    "as_of": "2026-11-18T06:53:00.000000Z",
     "eligible_symbols": 130,
     "status": "READY",
     "total_symbols": 130
