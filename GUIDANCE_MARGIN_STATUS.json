@@ -13,6 +13,7 @@
     "excluded_count": 89,
     "extraction_attempted_count": 10,
     "fetch_error_count": 0,
+    "live_api_calls": 17,
     "pending_reviews": [
       {
         "reason": "Find an earlier forecast for the same fiscal year and accounting basis.",
@@ -41,6 +42,8 @@
       }
     ],
     "prospective_count": 74,
+    "replay_api_calls": 13,
+    "replay_api_estimated_usd": 1.23813,
     "review_closed_count": 10,
     "review_pending_count": 5,
     "screened_out_count": 72,
@@ -48,6 +51,36 @@
     "started_at": "2026-11-16T10:51:25.028121+00:00",
     "state": "RUNNING",
     "updated_at": "2026-11-19T05:50:36.204075+00:00"
+  },
+  "historical_replay": {
+    "expansion": {
+      "issuer_count": 7,
+      "margin_signals": 0,
+      "primary": {
+        "difference_usd": null,
+        "informative_pairs": 0,
+        "margin_usd": null,
+        "revenue_usd": null,
+        "scored_pairs": 0,
+        "unavailable": 0
+      },
+      "release_count": 28,
+      "revenue_signals": 0
+    },
+    "pilot": {
+      "issuer_count": 2,
+      "margin_signals": 0,
+      "primary": {
+        "difference_usd": null,
+        "informative_pairs": 0,
+        "margin_usd": null,
+        "revenue_usd": null,
+        "scored_pairs": 0,
+        "unavailable": 0
+      },
+      "release_count": 8,
+      "revenue_signals": 0
+    }
   },
   "schema": "guidance-margin-status/v1",
   "state": "RUNNING",
