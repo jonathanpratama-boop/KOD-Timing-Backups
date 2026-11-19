@@ -1,19 +1,19 @@
 {
-  "as_of": "2026-11-19T10:24:10.604408+00:00",
+  "as_of": "2026-11-19T10:34:58.936542+00:00",
   "credits": {},
   "feed": {
-    "api_calls": 115,
-    "api_estimated_usd": 9.157783,
-    "api_remaining_estimate_usd": 45.372217,
-    "candidate_count": 8,
+    "api_calls": 117,
+    "api_estimated_usd": 9.284325500000001,
+    "api_remaining_estimate_usd": 45.2456745,
+    "candidate_count": 9,
     "credit_budget_usd": 55.0,
     "credit_expiry_at": "2026-12-03T13:41:10+00:00",
     "development_count": 20,
-    "discovered_count": 101,
+    "discovered_count": 102,
     "excluded_count": 97,
-    "extraction_attempted_count": 10,
+    "extraction_attempted_count": 11,
     "fetch_error_count": 0,
-    "live_api_calls": 20,
+    "live_api_calls": 22,
     "pending_reviews": [
       {
         "reason": "Find an earlier forecast for the same fiscal year and accounting basis.",
@@ -29,18 +29,23 @@
         "reason": "Confirm the issuer and its US listing.",
         "status": "IDENTITY_UNKNOWN",
         "title": "Youdao Reports Third Quarter 2026 Unaudited Financial Results"
+      },
+      {
+        "reason": "Check the source comparison.",
+        "status": "REVIEW_PENDING",
+        "title": "Financial Results Vision Marine Technologies Announces Fiscal Year 2026 Results"
       }
     ],
-    "prospective_count": 81,
+    "prospective_count": 82,
     "replay_api_calls": 95,
     "replay_api_estimated_usd": 7.500603,
     "review_closed_count": 12,
-    "review_pending_count": 3,
+    "review_pending_count": 4,
     "screened_out_count": 78,
     "source_scope": "PRNewswire earnings RSS observed releases; retained issuer wire archive, not all SEC filings",
     "started_at": "2026-11-16T10:51:25.028121+00:00",
     "state": "RUNNING",
-    "updated_at": "2026-11-19T10:24:10.069069+00:00"
+    "updated_at": "2026-11-19T10:34:58.491776+00:00"
   },
   "historical_replay": {
     "expansion": {
