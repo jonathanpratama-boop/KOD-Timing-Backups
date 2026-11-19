@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-19T08:22:50.791323+00:00",
+  "as_of": "2026-11-19T08:33:01.928335+00:00",
   "credits": {},
   "feed": {
     "api_calls": 115,
@@ -9,8 +9,8 @@
     "credit_budget_usd": 55.0,
     "credit_expiry_at": "2026-12-03T13:41:10+00:00",
     "development_count": 20,
-    "discovered_count": 96,
-    "excluded_count": 93,
+    "discovered_count": 98,
+    "excluded_count": 95,
     "extraction_attempted_count": 10,
     "fetch_error_count": 0,
     "live_api_calls": 20,
@@ -26,16 +26,16 @@
         "title": "ZIM Reports Industry Leading Third Quarter 2026 Profitability, Driven by Favorable Market Conditions and Focused Strategic Execution"
       }
     ],
-    "prospective_count": 76,
+    "prospective_count": 78,
     "replay_api_calls": 95,
     "replay_api_estimated_usd": 7.500603,
     "review_closed_count": 12,
     "review_pending_count": 2,
-    "screened_out_count": 74,
+    "screened_out_count": 76,
     "source_scope": "PRNewswire earnings RSS observed releases; retained issuer wire archive, not all SEC filings",
     "started_at": "2026-11-16T10:51:25.028121+00:00",
     "state": "RUNNING",
-    "updated_at": "2026-11-19T08:22:50.152325+00:00"
+    "updated_at": "2026-11-19T08:33:00.765270+00:00"
   },
   "historical_replay": {
     "expansion": {
