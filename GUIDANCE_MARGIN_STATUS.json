@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-19T06:00:39.379822+00:00",
+  "as_of": "2026-11-19T06:08:08.890916+00:00",
   "credits": {},
   "feed": {
     "api_calls": 64,
@@ -176,6 +176,7 @@
         "paired_events": 0
       }
     },
+    "informative_admissions": 0,
     "last_record_at": "2026-11-19T05:57:16.566279+00:00",
     "missed_entries": 0,
     "missing_terminal_outcomes": 0,
