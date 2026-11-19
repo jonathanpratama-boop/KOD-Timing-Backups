@@ -1,19 +1,19 @@
 {
-  "as_of": "2026-11-19T21:15:16.084270+00:00",
+  "as_of": "2026-11-19T21:26:02.154287+00:00",
   "credits": {},
   "feed": {
-    "api_calls": 123,
-    "api_estimated_usd": 9.745500500000002,
-    "api_remaining_estimate_usd": 44.784499499999995,
-    "candidate_count": 12,
+    "api_calls": 125,
+    "api_estimated_usd": 10.009778,
+    "api_remaining_estimate_usd": 44.520222000000004,
+    "candidate_count": 13,
     "credit_budget_usd": 55.0,
     "credit_expiry_at": "2026-12-03T13:41:10+00:00",
     "development_count": 20,
-    "discovered_count": 113,
-    "excluded_count": 104,
-    "extraction_attempted_count": 14,
+    "discovered_count": 117,
+    "excluded_count": 106,
+    "extraction_attempted_count": 15,
     "fetch_error_count": 0,
-    "live_api_calls": 28,
+    "live_api_calls": 30,
     "pending_reviews": [
       {
         "reason": "Find an earlier forecast for the same fiscal year and accounting basis.",
@@ -54,18 +54,28 @@
         "reason": "Check the source comparison.",
         "status": "REVIEW_PENDING",
         "title": "Natural Grocers by Vitamin Cottage Announces Fiscal 2026 Fourth Quarter and Full Year Results"
+      },
+      {
+        "reason": "Confirm the issuer and its US listing.",
+        "status": "IDENTITY_UNKNOWN",
+        "title": "Gap Inc. Reports Third Quarter Fiscal 2026 Results"
+      },
+      {
+        "reason": "Confirm the issuer and its US listing.",
+        "status": "IDENTITY_UNKNOWN",
+        "title": "Globant Reports 2026 Third Quarter Financial Results"
       }
     ],
-    "prospective_count": 93,
+    "prospective_count": 97,
     "replay_api_calls": 95,
     "replay_api_estimated_usd": 7.500603,
     "review_closed_count": 12,
-    "review_pending_count": 8,
-    "screened_out_count": 84,
+    "review_pending_count": 10,
+    "screened_out_count": 85,
     "source_scope": "PRNewswire earnings RSS observed releases; retained issuer wire archive, not all SEC filings",
     "started_at": "2026-11-16T10:51:25.028121+00:00",
     "state": "RUNNING",
-    "updated_at": "2026-11-19T21:15:15.661883+00:00"
+    "updated_at": "2026-11-19T21:26:00.569673+00:00"
   },
   "historical_replay": {
     "expansion": {
@@ -140,14 +150,14 @@
       },
       "NEW_RELEASE": {
         "admitted": 1,
-        "filled_pairs": 0,
+        "filled_pairs": 1,
         "horizons": {
           "1": {
             "net_pnl_usd": {
-              "revenue": "0",
-              "revenue_and_margin": "0"
+              "revenue": "-12.4758941894427944889508891",
+              "revenue_and_margin": "-12.4758941894427944889508891"
             },
-            "paired_events": 0
+            "paired_events": 1
           },
           "20": {
             "net_pnl_usd": {
@@ -175,14 +185,14 @@
     },
     "conclusion": "Descriptive paper observations only; no edge verdict or real orders",
     "excluded": 0,
-    "filled_pairs": 0,
+    "filled_pairs": 1,
     "horizons": {
       "1": {
         "net_pnl_usd": {
-          "revenue": "0",
-          "revenue_and_margin": "0"
+          "revenue": "-12.4758941894427944889508891",
+          "revenue_and_margin": "-12.4758941894427944889508891"
         },
-        "paired_events": 0
+        "paired_events": 1
       },
       "20": {
         "net_pnl_usd": {
@@ -207,12 +217,12 @@
       }
     },
     "informative_admissions": 0,
-    "last_record_at": "2026-11-19T05:57:16.566279+00:00",
+    "last_record_at": "2026-11-19T21:26:01.565178+00:00",
     "missed_entries": 0,
     "missing_terminal_outcomes": 0,
     "modeled_net_pnl_usd": {
-      "revenue": "0",
-      "revenue_and_margin": "0"
+      "revenue": "-12.4758941894427944889508891",
+      "revenue_and_margin": "-12.4758941894427944889508891"
     },
     "policy": {
       "capital_per_arm_usd": "10000",
