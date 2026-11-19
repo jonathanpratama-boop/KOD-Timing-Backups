@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-19T16:20:31.943288+00:00",
+  "as_of": "2026-11-19T16:30:34.568167+00:00",
   "credits": {},
   "feed": {
     "api_calls": 119,
@@ -9,8 +9,8 @@
     "credit_budget_usd": 55.0,
     "credit_expiry_at": "2026-12-03T13:41:10+00:00",
     "development_count": 20,
-    "discovered_count": 110,
-    "excluded_count": 103,
+    "discovered_count": 111,
+    "excluded_count": 104,
     "extraction_attempted_count": 12,
     "fetch_error_count": 0,
     "live_api_calls": 24,
@@ -46,16 +46,16 @@
         "title": "Meitav Investment House Reports Strong Third Quarter 2026 Financial Results: Revenue Grew 24% YoY to NIS 643 million (~$210M), Operating Profit Rose 30% and Net Profit Attributed to Shareholders Grew 29% to NIS 148 million (~$48 M)"
       }
     ],
-    "prospective_count": 90,
+    "prospective_count": 91,
     "replay_api_calls": 95,
     "replay_api_estimated_usd": 7.500603,
     "review_closed_count": 12,
     "review_pending_count": 6,
-    "screened_out_count": 83,
+    "screened_out_count": 84,
     "source_scope": "PRNewswire earnings RSS observed releases; retained issuer wire archive, not all SEC filings",
     "started_at": "2026-11-16T10:51:25.028121+00:00",
     "state": "RUNNING",
-    "updated_at": "2026-11-19T16:20:30.835765+00:00"
+    "updated_at": "2026-11-19T16:30:34.119018+00:00"
   },
   "historical_replay": {
     "expansion": {
