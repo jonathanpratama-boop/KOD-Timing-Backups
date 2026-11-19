@@ -1,19 +1,19 @@
 {
-  "as_of": "2026-11-19T11:56:10.659666+00:00",
+  "as_of": "2026-11-19T12:06:58.367999+00:00",
   "credits": {},
   "feed": {
-    "api_calls": 117,
-    "api_estimated_usd": 9.284325500000001,
-    "api_remaining_estimate_usd": 45.2456745,
-    "candidate_count": 9,
+    "api_calls": 119,
+    "api_estimated_usd": 9.438785500000003,
+    "api_remaining_estimate_usd": 45.0912145,
+    "candidate_count": 10,
     "credit_budget_usd": 55.0,
     "credit_expiry_at": "2026-12-03T13:41:10+00:00",
     "development_count": 20,
-    "discovered_count": 103,
-    "excluded_count": 98,
-    "extraction_attempted_count": 11,
+    "discovered_count": 108,
+    "excluded_count": 102,
+    "extraction_attempted_count": 12,
     "fetch_error_count": 0,
-    "live_api_calls": 22,
+    "live_api_calls": 24,
     "pending_reviews": [
       {
         "reason": "Find an earlier forecast for the same fiscal year and accounting basis.",
@@ -34,18 +34,23 @@
         "reason": "Check the source comparison.",
         "status": "REVIEW_PENDING",
         "title": "Financial Results Vision Marine Technologies Announces Fiscal Year 2026 Results"
+      },
+      {
+        "reason": "Confirm the issuer and its US listing.",
+        "status": "IDENTITY_UNKNOWN",
+        "title": "Arbe Announces Third Quarter 2026 Financial Results"
       }
     ],
-    "prospective_count": 83,
+    "prospective_count": 88,
     "replay_api_calls": 95,
     "replay_api_estimated_usd": 7.500603,
     "review_closed_count": 12,
-    "review_pending_count": 4,
-    "screened_out_count": 79,
+    "review_pending_count": 5,
+    "screened_out_count": 82,
     "source_scope": "PRNewswire earnings RSS observed releases; retained issuer wire archive, not all SEC filings",
     "started_at": "2026-11-16T10:51:25.028121+00:00",
     "state": "RUNNING",
-    "updated_at": "2026-11-19T11:56:10.165489+00:00"
+    "updated_at": "2026-11-19T12:06:57.989238+00:00"
   },
   "historical_replay": {
     "expansion": {
