@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-19T13:38:06.838639+00:00",
+  "as_of": "2026-11-19T13:48:11.975982+00:00",
   "credits": {},
   "feed": {
     "api_calls": 119,
@@ -9,7 +9,7 @@
     "credit_budget_usd": 55.0,
     "credit_expiry_at": "2026-12-03T13:41:10+00:00",
     "development_count": 20,
-    "discovered_count": 109,
+    "discovered_count": 110,
     "excluded_count": 103,
     "extraction_attempted_count": 12,
     "fetch_error_count": 0,
@@ -39,18 +39,23 @@
         "reason": "Confirm the issuer and its US listing.",
         "status": "IDENTITY_UNKNOWN",
         "title": "Arbe Announces Third Quarter 2026 Financial Results"
+      },
+      {
+        "reason": "Confirm the issuer and its US listing.",
+        "status": "IDENTITY_UNKNOWN",
+        "title": "Meitav Investment House Reports Strong Third Quarter 2026 Financial Results: Revenue Grew 24% YoY to NIS 643 million (~$210M), Operating Profit Rose 30% and Net Profit Attributed to Shareholders Grew 29% to NIS 148 million (~$48 M)"
       }
     ],
-    "prospective_count": 89,
+    "prospective_count": 90,
     "replay_api_calls": 95,
     "replay_api_estimated_usd": 7.500603,
     "review_closed_count": 12,
-    "review_pending_count": 5,
+    "review_pending_count": 6,
     "screened_out_count": 83,
     "source_scope": "PRNewswire earnings RSS observed releases; retained issuer wire archive, not all SEC filings",
     "started_at": "2026-11-16T10:51:25.028121+00:00",
     "state": "RUNNING",
-    "updated_at": "2026-11-19T13:38:06.394698+00:00"
+    "updated_at": "2026-11-19T13:48:11.556850+00:00"
   },
   "historical_replay": {
     "expansion": {
