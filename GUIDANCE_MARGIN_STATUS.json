@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-20T10:57:50.974921+00:00",
+  "as_of": "2026-11-20T11:08:02.752989+00:00",
   "credits": {},
   "feed": {
     "api_calls": 125,
@@ -9,8 +9,8 @@
     "credit_budget_usd": 55.0,
     "credit_expiry_at": "2026-12-03T13:41:10+00:00",
     "development_count": 20,
-    "discovered_count": 120,
-    "excluded_count": 109,
+    "discovered_count": 121,
+    "excluded_count": 110,
     "extraction_attempted_count": 15,
     "fetch_error_count": 0,
     "live_api_calls": 30,
@@ -66,16 +66,16 @@
         "title": "Globant Reports 2026 Third Quarter Financial Results"
       }
     ],
-    "prospective_count": 100,
+    "prospective_count": 101,
     "replay_api_calls": 95,
     "replay_api_estimated_usd": 7.500603,
     "review_closed_count": 12,
     "review_pending_count": 10,
-    "screened_out_count": 88,
+    "screened_out_count": 89,
     "source_scope": "PRNewswire earnings RSS observed releases; retained issuer wire archive, not all SEC filings",
     "started_at": "2026-11-16T10:51:25.028121+00:00",
     "state": "RUNNING",
-    "updated_at": "2026-11-20T10:57:50.521612+00:00"
+    "updated_at": "2026-11-20T11:08:02.211554+00:00"
   },
   "historical_replay": {
     "expansion": {
