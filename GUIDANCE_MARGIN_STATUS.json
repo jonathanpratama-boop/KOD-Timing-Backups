@@ -1,19 +1,19 @@
 {
-  "as_of": "2026-11-23T08:55:41.768978+00:00",
+  "as_of": "2026-11-23T09:06:07.046352+00:00",
   "credits": {},
   "feed": {
-    "api_calls": 127,
-    "api_estimated_usd": 10.271818000000001,
-    "api_remaining_estimate_usd": 44.258182,
+    "api_calls": 128,
+    "api_estimated_usd": 10.355208000000001,
+    "api_remaining_estimate_usd": 44.174792,
     "candidate_count": 14,
     "credit_budget_usd": 55.0,
     "credit_expiry_at": "2026-12-03T13:41:10+00:00",
     "development_count": 20,
-    "discovered_count": 125,
+    "discovered_count": 126,
     "excluded_count": 114,
-    "extraction_attempted_count": 16,
+    "extraction_attempted_count": 17,
     "fetch_error_count": 0,
-    "live_api_calls": 32,
+    "live_api_calls": 33,
     "pending_reviews": [
       {
         "reason": "Find an earlier forecast for the same fiscal year and accounting basis.",
@@ -64,18 +64,23 @@
         "reason": "Confirm the issuer and its US listing.",
         "status": "IDENTITY_UNKNOWN",
         "title": "Globant Reports 2026 Third Quarter Financial Results"
+      },
+      {
+        "reason": "Verify the extracted figures against the release.",
+        "status": "EXTRACTION_REJECTED",
+        "title": "VNET Reports Unaudited Third Quarter 2026 Financial Results"
       }
     ],
-    "prospective_count": 105,
+    "prospective_count": 106,
     "replay_api_calls": 95,
     "replay_api_estimated_usd": 7.500603,
     "review_closed_count": 12,
-    "review_pending_count": 10,
+    "review_pending_count": 11,
     "screened_out_count": 92,
     "source_scope": "PRNewswire earnings RSS observed releases; retained issuer wire archive, not all SEC filings",
     "started_at": "2026-11-16T10:51:25.028121+00:00",
     "state": "RUNNING",
-    "updated_at": "2026-11-23T08:55:41.302877+00:00"
+    "updated_at": "2026-11-23T09:06:06.517068+00:00"
   },
   "historical_replay": {
     "expansion": {
