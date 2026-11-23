@@ -1,11 +1,11 @@
 {
   "arms": [
     {
-      "awaiting_24h": 2,
+      "awaiting_24h": 4,
       "censored_24h": 0,
       "completed_24h": 1,
       "completed_control_pairs": 0,
-      "event_entries": 3,
+      "event_entries": 5,
       "mean_benchmark_excess": 0.5056501780570117,
       "mean_control_excess": null,
       "mean_net_return": 0.5058014073494916,
@@ -49,15 +49,15 @@
       "minutes": 240
     }
   ],
-  "as_of": "2026-11-23T15:06:34.834499Z",
+  "as_of": "2026-11-23T15:07:34.627397Z",
   "comparison_inputs": {
-    "as_of": "2026-11-23T15:01:00.000000Z",
+    "as_of": "2026-11-23T15:02:00.000000Z",
     "eligible_symbols": 130,
     "status": "READY",
     "total_symbols": 130
   },
   "coverage": {
-    "on_time_fraction": 0.8839622274899934
+    "on_time_fraction": 0.8839667366130411
   },
   "events": [
     {
@@ -188,10 +188,10 @@
         {
           "benchmark_excess": null,
           "control_excess": null,
-          "entry_at": null,
+          "entry_at": "2026-11-23T15:01:00.983208Z",
           "minutes": 1,
           "net_return": null,
-          "primary_status": "AWAIT_ENTRY"
+          "primary_status": "AWAIT_EXIT"
         },
         {
           "benchmark_excess": null,
@@ -199,7 +199,7 @@
           "entry_at": null,
           "minutes": 5,
           "net_return": null,
-          "primary_status": "NO_ENTRY_RECORDED"
+          "primary_status": "AWAIT_ENTRY"
         },
         {
           "benchmark_excess": null,
@@ -229,10 +229,10 @@
         {
           "benchmark_excess": null,
           "control_excess": null,
-          "entry_at": null,
+          "entry_at": "2026-11-23T15:01:00.983208Z",
           "minutes": 1,
           "net_return": null,
-          "primary_status": "AWAIT_ENTRY"
+          "primary_status": "AWAIT_EXIT"
         },
         {
           "benchmark_excess": null,
@@ -240,7 +240,7 @@
           "entry_at": null,
           "minutes": 5,
           "net_return": null,
-          "primary_status": "NO_ENTRY_RECORDED"
+          "primary_status": "AWAIT_ENTRY"
         },
         {
           "benchmark_excess": null,
