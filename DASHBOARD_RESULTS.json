@@ -13,11 +13,11 @@
       "minutes": 1
     },
     {
-      "awaiting_24h": 2,
+      "awaiting_24h": 4,
       "censored_24h": 0,
       "completed_24h": 1,
       "completed_control_pairs": 0,
-      "event_entries": 3,
+      "event_entries": 5,
       "mean_benchmark_excess": 0.5061055921875219,
       "mean_control_excess": null,
       "mean_net_return": 0.5063981228001564,
@@ -49,15 +49,15 @@
       "minutes": 240
     }
   ],
-  "as_of": "2026-11-23T15:07:34.627397Z",
+  "as_of": "2026-11-23T15:08:35.771610Z",
   "comparison_inputs": {
-    "as_of": "2026-11-23T15:02:00.000000Z",
+    "as_of": "2026-11-23T15:03:00.000000Z",
     "eligible_symbols": 130,
     "status": "READY",
     "total_symbols": 130
   },
   "coverage": {
-    "on_time_fraction": 0.8839667366130411
+    "on_time_fraction": 0.8839712453856615
   },
   "events": [
     {
@@ -196,10 +196,10 @@
         {
           "benchmark_excess": null,
           "control_excess": null,
-          "entry_at": null,
+          "entry_at": "2026-11-23T15:02:00.732210Z",
           "minutes": 5,
           "net_return": null,
-          "primary_status": "AWAIT_ENTRY"
+          "primary_status": "AWAIT_EXIT"
         },
         {
           "benchmark_excess": null,
@@ -237,10 +237,10 @@
         {
           "benchmark_excess": null,
           "control_excess": null,
-          "entry_at": null,
+          "entry_at": "2026-11-23T15:02:00.732210Z",
           "minutes": 5,
           "net_return": null,
-          "primary_status": "AWAIT_ENTRY"
+          "primary_status": "AWAIT_EXIT"
         },
         {
           "benchmark_excess": null,
