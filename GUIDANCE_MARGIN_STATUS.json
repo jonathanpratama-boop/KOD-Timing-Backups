@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-23T20:56:51.966752+00:00",
+  "as_of": "2026-11-23T21:07:02.667714+00:00",
   "credits": {},
   "feed": {
     "api_calls": 130,
@@ -9,8 +9,8 @@
     "credit_budget_usd": 55.0,
     "credit_expiry_at": "2026-12-03T13:41:10+00:00",
     "development_count": 20,
-    "discovered_count": 133,
-    "excluded_count": 119,
+    "discovered_count": 134,
+    "excluded_count": 120,
     "extraction_attempted_count": 18,
     "fetch_error_count": 0,
     "live_api_calls": 35,
@@ -81,16 +81,16 @@
         "title": "TopGum Reports Eleventh Consecutive Record Quarter: Q3 Revenue Exceeds $40 Million, Driven by Approximately 52% Growth in Dietary Supplements"
       }
     ],
-    "prospective_count": 113,
+    "prospective_count": 114,
     "replay_api_calls": 95,
     "replay_api_estimated_usd": 7.500603,
     "review_closed_count": 12,
     "review_pending_count": 13,
-    "screened_out_count": 97,
+    "screened_out_count": 98,
     "source_scope": "PRNewswire earnings RSS observed releases; retained issuer wire archive, not all SEC filings",
     "started_at": "2026-11-16T10:51:25.028121+00:00",
     "state": "RUNNING",
-    "updated_at": "2026-11-23T20:56:51.561784+00:00"
+    "updated_at": "2026-11-23T21:07:02.009541+00:00"
   },
   "historical_replay": {
     "expansion": {
