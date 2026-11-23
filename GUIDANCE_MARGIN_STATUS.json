@@ -1,19 +1,19 @@
 {
-  "as_of": "2026-11-23T11:58:21.039716+00:00",
+  "as_of": "2026-11-23T12:09:08.424310+00:00",
   "credits": {},
   "feed": {
-    "api_calls": 128,
-    "api_estimated_usd": 10.355208000000001,
-    "api_remaining_estimate_usd": 44.174792,
-    "candidate_count": 14,
+    "api_calls": 130,
+    "api_estimated_usd": 10.494693,
+    "api_remaining_estimate_usd": 44.035307,
+    "candidate_count": 15,
     "credit_budget_usd": 55.0,
     "credit_expiry_at": "2026-12-03T13:41:10+00:00",
     "development_count": 20,
-    "discovered_count": 127,
-    "excluded_count": 115,
-    "extraction_attempted_count": 17,
+    "discovered_count": 129,
+    "excluded_count": 116,
+    "extraction_attempted_count": 18,
     "fetch_error_count": 0,
-    "live_api_calls": 33,
+    "live_api_calls": 35,
     "pending_reviews": [
       {
         "reason": "Find an earlier forecast for the same fiscal year and accounting basis.",
@@ -69,18 +69,23 @@
         "reason": "Verify the extracted figures against the release.",
         "status": "EXTRACTION_REJECTED",
         "title": "VNET Reports Unaudited Third Quarter 2026 Financial Results"
+      },
+      {
+        "reason": "Check the source comparison.",
+        "status": "REVIEW_PENDING",
+        "title": "Freightos Reports Third Quarter 2026 Results, Cuts Adjusted EBITDA Loss by Over 50% and Announces a Share Repurchase Program"
       }
     ],
-    "prospective_count": 107,
+    "prospective_count": 109,
     "replay_api_calls": 95,
     "replay_api_estimated_usd": 7.500603,
     "review_closed_count": 12,
-    "review_pending_count": 11,
-    "screened_out_count": 93,
+    "review_pending_count": 12,
+    "screened_out_count": 94,
     "source_scope": "PRNewswire earnings RSS observed releases; retained issuer wire archive, not all SEC filings",
     "started_at": "2026-11-16T10:51:25.028121+00:00",
     "state": "RUNNING",
-    "updated_at": "2026-11-23T11:58:20.577222+00:00"
+    "updated_at": "2026-11-23T12:09:07.811387+00:00"
   },
   "historical_replay": {
     "expansion": {
