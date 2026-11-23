@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-23T11:27:51.465431+00:00",
+  "as_of": "2026-11-23T11:38:02.623895+00:00",
   "credits": {},
   "feed": {
     "api_calls": 128,
@@ -9,8 +9,8 @@
     "credit_budget_usd": 55.0,
     "credit_expiry_at": "2026-12-03T13:41:10+00:00",
     "development_count": 20,
-    "discovered_count": 126,
-    "excluded_count": 114,
+    "discovered_count": 127,
+    "excluded_count": 115,
     "extraction_attempted_count": 17,
     "fetch_error_count": 0,
     "live_api_calls": 33,
@@ -71,16 +71,16 @@
         "title": "VNET Reports Unaudited Third Quarter 2026 Financial Results"
       }
     ],
-    "prospective_count": 106,
+    "prospective_count": 107,
     "replay_api_calls": 95,
     "replay_api_estimated_usd": 7.500603,
     "review_closed_count": 12,
     "review_pending_count": 11,
-    "screened_out_count": 92,
+    "screened_out_count": 93,
     "source_scope": "PRNewswire earnings RSS observed releases; retained issuer wire archive, not all SEC filings",
     "started_at": "2026-11-16T10:51:25.028121+00:00",
     "state": "RUNNING",
-    "updated_at": "2026-11-23T11:27:50.918099+00:00"
+    "updated_at": "2026-11-23T11:38:02.041408+00:00"
   },
   "historical_replay": {
     "expansion": {
