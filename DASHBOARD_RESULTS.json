@@ -49,15 +49,15 @@
       "minutes": 240
     }
   ],
-  "as_of": "2026-11-23T13:00:37.367829Z",
+  "as_of": "2026-11-23T13:06:45.600289Z",
   "comparison_inputs": {
-    "as_of": "2026-11-23T12:55:00.000000Z",
+    "as_of": "2026-11-23T13:01:00.000000Z",
     "eligible_symbols": 130,
     "status": "READY",
     "total_symbols": 130
   },
   "coverage": {
-    "on_time_fraction": 0.8833912602022884
+    "on_time_fraction": 0.883418576504119
   },
   "events": [
     {
@@ -100,28 +100,147 @@
       "primary_deadline_at": "2026-11-07T10:00:00.135278Z",
       "reference_at": "2026-11-06T10:00:00.135278Z",
       "symbol": "ONEUSDT"
+    },
+    {
+      "arms": [
+        {
+          "benchmark_excess": null,
+          "control_excess": null,
+          "entry_at": null,
+          "minutes": 1,
+          "net_return": null,
+          "primary_status": "AWAIT_ENTRY"
+        },
+        {
+          "benchmark_excess": null,
+          "control_excess": null,
+          "entry_at": null,
+          "minutes": 5,
+          "net_return": null,
+          "primary_status": "NO_ENTRY_RECORDED"
+        },
+        {
+          "benchmark_excess": null,
+          "control_excess": null,
+          "entry_at": null,
+          "minutes": 30,
+          "net_return": null,
+          "primary_status": "NO_ENTRY_RECORDED"
+        },
+        {
+          "benchmark_excess": null,
+          "control_excess": null,
+          "entry_at": null,
+          "minutes": 240,
+          "net_return": null,
+          "primary_status": "NO_ENTRY_RECORDED"
+        }
+      ],
+      "controls_status": "AVAILABLE",
+      "event_id": "MUBARAKUSDT:1795435200",
+      "primary_deadline_at": "2026-11-24T13:00:00.093956Z",
+      "reference_at": "2026-11-23T13:00:00.093956Z",
+      "symbol": "MUBARAKUSDT"
+    },
+    {
+      "arms": [
+        {
+          "benchmark_excess": null,
+          "control_excess": null,
+          "entry_at": null,
+          "minutes": 1,
+          "net_return": null,
+          "primary_status": "AWAIT_ENTRY"
+        },
+        {
+          "benchmark_excess": null,
+          "control_excess": null,
+          "entry_at": null,
+          "minutes": 5,
+          "net_return": null,
+          "primary_status": "NO_ENTRY_RECORDED"
+        },
+        {
+          "benchmark_excess": null,
+          "control_excess": null,
+          "entry_at": null,
+          "minutes": 30,
+          "net_return": null,
+          "primary_status": "NO_ENTRY_RECORDED"
+        },
+        {
+          "benchmark_excess": null,
+          "control_excess": null,
+          "entry_at": null,
+          "minutes": 240,
+          "net_return": null,
+          "primary_status": "NO_ENTRY_RECORDED"
+        }
+      ],
+      "controls_status": "AVAILABLE",
+      "event_id": "PROMUSDT:1795435200",
+      "primary_deadline_at": "2026-11-24T13:00:00.137590Z",
+      "reference_at": "2026-11-23T13:00:00.137590Z",
+      "symbol": "PROMUSDT"
     }
   ],
   "events_with_completed_24h": 1,
   "events_without_controls": 1,
-  "independent_events": 1,
+  "independent_events": 3,
   "next_primary_due_at": null,
   "prospective_check": {
     "arm_minutes": 1,
     "beat_controls": 0,
     "behind_controls": 0,
     "completed_pairs": 0,
-    "distinct_signal_dates": 0,
+    "distinct_signal_dates": 1,
     "enabled": true,
-    "events": [],
+    "events": [
+      {
+        "control_mean_net_return": null,
+        "controls": [
+          "LSKUSDT",
+          "NILUSDT",
+          "PARTIUSDT",
+          "DODOUSDT",
+          "LUNCUSDT"
+        ],
+        "event_id": "MUBARAKUSDT:1795435200",
+        "excess": null,
+        "net_return": null,
+        "reason": "Waiting for the complete 24-hour comparison.",
+        "selected_at": "2026-11-23T13:00:00.093956Z",
+        "selection_verified": true,
+        "status": "PENDING",
+        "symbol": "MUBARAKUSDT"
+      },
+      {
+        "control_mean_net_return": null,
+        "controls": [
+          "MUBARAKUSDT",
+          "LSKUSDT",
+          "ALGOUSDT",
+          "LUNCUSDT",
+          "ETCUSDT"
+        ],
+        "event_id": "PROMUSDT:1795435200",
+        "excess": null,
+        "net_return": null,
+        "reason": "Waiting for the complete 24-hour comparison.",
+        "selected_at": "2026-11-23T13:00:00.137590Z",
+        "selection_verified": true,
+        "status": "PENDING",
+        "symbol": "PROMUSDT"
+      }
+    ],
     "horizon_hours": 24,
     "mean_excess": null,
     "median_excess": null,
-    "pending_pairs": 0,
+    "pending_pairs": 2,
     "started_at": "2026-11-07T17:26:36.132742Z",
-    "status": "WAITING_FOR_SIGNALS",
+    "status": "WAITING_FOR_RESULTS",
     "tied_controls": 0,
-    "total_signals": 0,
+    "total_signals": 2,
     "unavailable_pairs": 0
   },
   "schema": "KOD_R2_RESULTS_V1",
