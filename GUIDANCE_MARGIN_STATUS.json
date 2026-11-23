@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-23T21:17:11.445438+00:00",
+  "as_of": "2026-11-23T21:27:20.009559+00:00",
   "credits": {},
   "feed": {
     "api_calls": 130,
@@ -90,7 +90,7 @@
     "source_scope": "PRNewswire earnings RSS observed releases; retained issuer wire archive, not all SEC filings",
     "started_at": "2026-11-16T10:51:25.028121+00:00",
     "state": "RUNNING",
-    "updated_at": "2026-11-23T21:17:10.933353+00:00"
+    "updated_at": "2026-11-23T21:27:19.225102+00:00"
   },
   "historical_replay": {
     "expansion": {
@@ -183,10 +183,10 @@
           },
           "3": {
             "net_pnl_usd": {
-              "revenue": "0",
-              "revenue_and_margin": "0"
+              "revenue": "-54.5041513032846633110197082",
+              "revenue_and_margin": "-54.5041513032846633110197082"
             },
-            "paired_events": 0
+            "paired_events": 1
           },
           "5": {
             "net_pnl_usd": {
@@ -218,10 +218,10 @@
       },
       "3": {
         "net_pnl_usd": {
-          "revenue": "0",
-          "revenue_and_margin": "0"
+          "revenue": "-54.5041513032846633110197082",
+          "revenue_and_margin": "-54.5041513032846633110197082"
         },
-        "paired_events": 0
+        "paired_events": 1
       },
       "5": {
         "net_pnl_usd": {
@@ -232,12 +232,12 @@
       }
     },
     "informative_admissions": 0,
-    "last_record_at": "2026-11-20T21:27:21.036369+00:00",
+    "last_record_at": "2026-11-23T21:27:19.733358+00:00",
     "missed_entries": 0,
     "missing_terminal_outcomes": 0,
     "modeled_net_pnl_usd": {
-      "revenue": "-138.3734885919792110149156111",
-      "revenue_and_margin": "-138.3734885919792110149156111"
+      "revenue": "-54.5041513032846633110197082",
+      "revenue_and_margin": "-54.5041513032846633110197082"
     },
     "policy": {
       "capital_per_arm_usd": "10000",
