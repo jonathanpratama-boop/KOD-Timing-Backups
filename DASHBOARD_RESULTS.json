@@ -49,15 +49,15 @@
       "minutes": 240
     }
   ],
-  "as_of": "2026-11-23T13:10:34.958688Z",
+  "as_of": "2026-11-23T13:17:34.878141Z",
   "comparison_inputs": {
-    "as_of": "2026-11-23T13:05:00.000000Z",
+    "as_of": "2026-11-23T13:12:00.000000Z",
     "eligible_symbols": 130,
     "status": "READY",
     "total_symbols": 130
   },
   "coverage": {
-    "on_time_fraction": 0.8834367802631066
+    "on_time_fraction": 0.8834686231657821
   },
   "events": [
     {
@@ -125,7 +125,7 @@
           "entry_at": null,
           "minutes": 30,
           "net_return": null,
-          "primary_status": "NO_ENTRY_RECORDED"
+          "primary_status": "AWAIT_ENTRY"
         },
         {
           "benchmark_excess": null,
@@ -166,7 +166,7 @@
           "entry_at": null,
           "minutes": 30,
           "net_return": null,
-          "primary_status": "NO_ENTRY_RECORDED"
+          "primary_status": "AWAIT_ENTRY"
         },
         {
           "benchmark_excess": null,
