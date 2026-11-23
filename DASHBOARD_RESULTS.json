@@ -49,15 +49,15 @@
       "minutes": 240
     }
   ],
-  "as_of": "2026-11-23T18:14:35.344150Z",
+  "as_of": "2026-11-23T18:17:34.734384Z",
   "comparison_inputs": {
-    "as_of": "2026-11-23T18:09:00.000000Z",
+    "as_of": "2026-11-23T18:12:00.000000Z",
     "eligible_symbols": 130,
     "status": "READY",
     "total_symbols": 130
   },
   "coverage": {
-    "on_time_fraction": 0.8848038270128468
+    "on_time_fraction": 0.8848171578460114
   },
   "events": [
     {
@@ -215,7 +215,7 @@
           "entry_at": null,
           "minutes": 240,
           "net_return": null,
-          "primary_status": "NO_ENTRY_RECORDED"
+          "primary_status": "AWAIT_ENTRY"
         }
       ],
       "controls_status": "AVAILABLE",
@@ -256,7 +256,7 @@
           "entry_at": null,
           "minutes": 240,
           "net_return": null,
-          "primary_status": "NO_ENTRY_RECORDED"
+          "primary_status": "AWAIT_ENTRY"
         }
       ],
       "controls_status": "AVAILABLE",
@@ -289,7 +289,7 @@
           "entry_at": null,
           "minutes": 30,
           "net_return": null,
-          "primary_status": "NO_ENTRY_RECORDED"
+          "primary_status": "AWAIT_ENTRY"
         },
         {
           "benchmark_excess": null,
@@ -297,7 +297,7 @@
           "entry_at": null,
           "minutes": 240,
           "net_return": null,
-          "primary_status": "NO_ENTRY_RECORDED"
+          "primary_status": "AWAIT_ENTRY"
         }
       ],
       "controls_status": "AVAILABLE",
