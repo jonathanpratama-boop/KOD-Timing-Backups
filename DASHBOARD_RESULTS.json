@@ -49,15 +49,15 @@
       "minutes": 240
     }
   ],
-  "as_of": "2026-11-23T18:04:36.694330Z",
+  "as_of": "2026-11-23T18:06:35.197634Z",
   "comparison_inputs": {
-    "as_of": "2026-11-23T17:59:00.000000Z",
+    "as_of": "2026-11-23T18:01:00.000000Z",
     "eligible_symbols": 130,
     "status": "READY",
     "total_symbols": 130
   },
   "coverage": {
-    "on_time_fraction": 0.8847593686079271
+    "on_time_fraction": 0.8847682630339984
   },
   "events": [
     {
@@ -264,11 +264,52 @@
       "primary_deadline_at": "2026-11-24T15:00:00.227373Z",
       "reference_at": "2026-11-23T15:00:00.227373Z",
       "symbol": "CHIPUSDT"
+    },
+    {
+      "arms": [
+        {
+          "benchmark_excess": null,
+          "control_excess": null,
+          "entry_at": null,
+          "minutes": 1,
+          "net_return": null,
+          "primary_status": "AWAIT_ENTRY"
+        },
+        {
+          "benchmark_excess": null,
+          "control_excess": null,
+          "entry_at": null,
+          "minutes": 5,
+          "net_return": null,
+          "primary_status": "NO_ENTRY_RECORDED"
+        },
+        {
+          "benchmark_excess": null,
+          "control_excess": null,
+          "entry_at": null,
+          "minutes": 30,
+          "net_return": null,
+          "primary_status": "NO_ENTRY_RECORDED"
+        },
+        {
+          "benchmark_excess": null,
+          "control_excess": null,
+          "entry_at": null,
+          "minutes": 240,
+          "net_return": null,
+          "primary_status": "NO_ENTRY_RECORDED"
+        }
+      ],
+      "controls_status": "AVAILABLE",
+      "event_id": "ONEUSDT:1795453200",
+      "primary_deadline_at": "2026-11-24T18:00:00.109295Z",
+      "reference_at": "2026-11-23T18:00:00.109295Z",
+      "symbol": "ONEUSDT"
     }
   ],
   "events_with_completed_24h": 1,
   "events_without_controls": 1,
-  "independent_events": 5,
+  "independent_events": 6,
   "next_primary_due_at": "2026-11-24T13:00:00.093956Z",
   "prospective_check": {
     "arm_minutes": 1,
@@ -349,16 +390,34 @@
         "selection_verified": true,
         "status": "PENDING",
         "symbol": "CHIPUSDT"
+      },
+      {
+        "control_mean_net_return": null,
+        "controls": [
+          "LSKUSDT",
+          "ATOMUSDT",
+          "LUNCUSDT",
+          "BONKUSDT",
+          "JTOUSDT"
+        ],
+        "event_id": "ONEUSDT:1795453200",
+        "excess": null,
+        "net_return": null,
+        "reason": "Waiting for the complete 24-hour comparison.",
+        "selected_at": "2026-11-23T18:00:00.109295Z",
+        "selection_verified": true,
+        "status": "PENDING",
+        "symbol": "ONEUSDT"
       }
     ],
     "horizon_hours": 24,
     "mean_excess": null,
     "median_excess": null,
-    "pending_pairs": 4,
+    "pending_pairs": 5,
     "started_at": "2026-11-07T17:26:36.132742Z",
     "status": "WAITING_FOR_RESULTS",
     "tied_controls": 0,
-    "total_signals": 4,
+    "total_signals": 5,
     "unavailable_pairs": 0
   },
   "schema": "KOD_R2_RESULTS_V1",
