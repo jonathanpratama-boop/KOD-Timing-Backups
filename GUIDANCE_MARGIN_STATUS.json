@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-24T01:20:12.021646+00:00",
+  "as_of": "2026-11-24T01:30:21.517732+00:00",
   "credits": {},
   "feed": {
     "api_calls": 130,
@@ -90,7 +90,7 @@
     "source_scope": "PRNewswire earnings RSS observed releases; retained issuer wire archive, not all SEC filings",
     "started_at": "2026-11-16T10:51:25.028121+00:00",
     "state": "RUNNING",
-    "updated_at": "2026-11-24T01:20:11.422391+00:00"
+    "updated_at": "2026-11-24T01:30:20.877751+00:00"
   },
   "historical_replay": {
     "expansion": {
