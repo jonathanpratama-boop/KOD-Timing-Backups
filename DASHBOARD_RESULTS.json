@@ -49,15 +49,15 @@
       "minutes": 240
     }
   ],
-  "as_of": "2026-11-24T18:26:36.813870Z",
+  "as_of": "2026-11-24T18:36:35.348279Z",
   "comparison_inputs": {
-    "as_of": "2026-11-24T18:21:00.000000Z",
+    "as_of": "2026-11-24T18:31:00.000000Z",
     "eligible_symbols": 130,
     "status": "READY",
     "total_symbols": 130
   },
   "coverage": {
-    "on_time_fraction": 0.8909144047053666
+    "on_time_fraction": 0.8909542416827959
   },
   "events": [
     {
