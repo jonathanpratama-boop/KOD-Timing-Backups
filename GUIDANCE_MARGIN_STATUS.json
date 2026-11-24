@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-24T20:58:36.392663+00:00",
+  "as_of": "2026-11-24T21:09:09.530947+00:00",
   "credits": {},
   "feed": {
     "api_calls": 135,
@@ -9,8 +9,8 @@
     "credit_budget_usd": 55.0,
     "credit_expiry_at": "2026-12-03T13:41:10+00:00",
     "development_count": 20,
-    "discovered_count": 150,
-    "excluded_count": 129,
+    "discovered_count": 153,
+    "excluded_count": 130,
     "extraction_attempted_count": 21,
     "fetch_error_count": 0,
     "live_api_calls": 40,
@@ -114,18 +114,28 @@
         "reason": "Check the remaining earlier releases from this issuer.",
         "status": "INCOMPLETE_INVENTORY",
         "title": "Analog Devices Reports Record Fourth Quarter and Fiscal 2026 Financial Results"
+      },
+      {
+        "reason": "Check the remaining earlier releases from this issuer.",
+        "status": "INCOMPLETE_INVENTORY",
+        "title": "AUTODESK, INC. ANNOUNCES FISCAL 2027 THIRD QUARTER RESULTS"
+      },
+      {
+        "reason": "Find an earlier forecast for the same fiscal year and accounting basis.",
+        "status": "MISSING_PRIOR",
+        "title": "Workday Announces Fiscal 2027 Third Quarter Financial Results"
       }
     ],
-    "prospective_count": 130,
+    "prospective_count": 133,
     "replay_api_calls": 95,
     "replay_api_estimated_usd": 7.500603,
     "review_closed_count": 12,
-    "review_pending_count": 20,
-    "screened_out_count": 106,
+    "review_pending_count": 22,
+    "screened_out_count": 107,
     "source_scope": "PRNewswire earnings RSS observed releases; retained issuer wire archive, not all SEC filings",
     "started_at": "2026-11-16T10:51:25.028121+00:00",
     "state": "RUNNING",
-    "updated_at": "2026-11-24T20:58:35.688613+00:00"
+    "updated_at": "2026-11-24T21:09:09.009662+00:00"
   },
   "historical_replay": {
     "expansion": {
