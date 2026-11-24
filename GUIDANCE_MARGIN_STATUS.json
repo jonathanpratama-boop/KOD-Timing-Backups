@@ -1,19 +1,19 @@
 {
-  "as_of": "2026-11-24T12:00:36.880002+00:00",
+  "as_of": "2026-11-24T12:11:08.536165+00:00",
   "credits": {},
   "feed": {
-    "api_calls": 134,
-    "api_estimated_usd": 10.932628,
-    "api_remaining_estimate_usd": 43.597372,
+    "api_calls": 135,
+    "api_estimated_usd": 11.055238,
+    "api_remaining_estimate_usd": 43.474762,
     "candidate_count": 17,
     "credit_budget_usd": 55.0,
     "credit_expiry_at": "2026-12-03T13:41:10+00:00",
     "development_count": 20,
-    "discovered_count": 144,
-    "excluded_count": 126,
-    "extraction_attempted_count": 20,
+    "discovered_count": 148,
+    "excluded_count": 127,
+    "extraction_attempted_count": 21,
     "fetch_error_count": 0,
-    "live_api_calls": 39,
+    "live_api_calls": 40,
     "pending_reviews": [
       {
         "reason": "Find an earlier forecast for the same fiscal year and accounting basis.",
@@ -99,18 +99,33 @@
         "reason": "Confirm the issuer and its US listing.",
         "status": "IDENTITY_UNKNOWN",
         "title": "MiniMed Delivers Strong Fiscal Q2 with Accelerating Pump Demand, Expanding Profitability, and Faster Pipeline Commercialization"
+      },
+      {
+        "reason": "Confirm the issuer and its US listing.",
+        "status": "IDENTITY_UNKNOWN",
+        "title": "The J.M. Smucker Co. Announces Fiscal Year 2027 Second Quarter Results and Updates Full-Year Fiscal 2027 Outlook"
+      },
+      {
+        "reason": "Verify the extracted figures against the release.",
+        "status": "EXTRACTION_REJECTED",
+        "title": "DICK'S Sporting Goods, Inc. Reports Third Quarter Results"
+      },
+      {
+        "reason": "Check the remaining earlier releases from this issuer.",
+        "status": "INCOMPLETE_INVENTORY",
+        "title": "Analog Devices Reports Record Fourth Quarter and Fiscal 2026 Financial Results"
       }
     ],
-    "prospective_count": 124,
+    "prospective_count": 128,
     "replay_api_calls": 95,
     "replay_api_estimated_usd": 7.500603,
     "review_closed_count": 12,
-    "review_pending_count": 17,
-    "screened_out_count": 103,
+    "review_pending_count": 20,
+    "screened_out_count": 104,
     "source_scope": "PRNewswire earnings RSS observed releases; retained issuer wire archive, not all SEC filings",
     "started_at": "2026-11-16T10:51:25.028121+00:00",
     "state": "RUNNING",
-    "updated_at": "2026-11-24T12:00:36.272672+00:00"
+    "updated_at": "2026-11-24T12:11:08.055022+00:00"
   },
   "historical_replay": {
     "expansion": {
