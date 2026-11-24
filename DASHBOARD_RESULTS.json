@@ -1,63 +1,63 @@
 {
   "arms": [
     {
-      "awaiting_24h": 3,
+      "awaiting_24h": 1,
       "censored_24h": 0,
-      "completed_24h": 3,
-      "completed_control_pairs": 2,
+      "completed_24h": 5,
+      "completed_control_pairs": 4,
       "event_entries": 6,
-      "mean_benchmark_excess": 0.07736327813338881,
-      "mean_control_excess": -0.12732713834414572,
-      "mean_net_return": 0.0691215282737352,
-      "median_net_return": -0.07847016419703644,
+      "mean_benchmark_excess": 0.010408136322044311,
+      "mean_control_excess": -0.08492913724469006,
+      "mean_net_return": -0.012195678342734143,
+      "median_net_return": -0.12539215686274505,
       "minutes": 1
     },
     {
-      "awaiting_24h": 3,
+      "awaiting_24h": 1,
       "censored_24h": 0,
-      "completed_24h": 3,
-      "completed_control_pairs": 2,
+      "completed_24h": 5,
+      "completed_control_pairs": 4,
       "event_entries": 6,
-      "mean_benchmark_excess": 0.08676208333734967,
-      "mean_control_excess": -0.11404194396084089,
-      "mean_net_return": 0.07900145656648547,
-      "median_net_return": -0.06099530899449322,
+      "mean_benchmark_excess": 0.016345112277661597,
+      "mean_control_excess": -0.07780004761361187,
+      "mean_net_return": -0.006823019126107036,
+      "median_net_return": -0.12714285714285709,
       "minutes": 5
     },
     {
-      "awaiting_24h": 3,
+      "awaiting_24h": 1,
       "censored_24h": 0,
-      "completed_24h": 3,
-      "completed_control_pairs": 2,
+      "completed_24h": 5,
+      "completed_control_pairs": 4,
       "event_entries": 6,
-      "mean_benchmark_excess": 0.08676250780258205,
-      "mean_control_excess": -0.10306810853633001,
-      "mean_net_return": 0.07873368854709296,
-      "median_net_return": -0.0529082682023858,
+      "mean_benchmark_excess": 0.019837846600060355,
+      "mean_control_excess": -0.06747534787685548,
+      "mean_net_return": -0.003151232764702133,
+      "median_net_return": -0.11339294585196223,
       "minutes": 30
     },
     {
-      "awaiting_24h": 3,
+      "awaiting_24h": 1,
       "censored_24h": 0,
-      "completed_24h": 3,
-      "completed_control_pairs": 2,
+      "completed_24h": 5,
+      "completed_control_pairs": 4,
       "event_entries": 6,
-      "mean_benchmark_excess": 0.0894315628435305,
-      "mean_control_excess": -0.10301916161723569,
-      "mean_net_return": 0.057565501803460185,
-      "median_net_return": -0.10289448020284762,
+      "mean_benchmark_excess": 0.03636459684553953,
+      "mean_control_excess": -0.06089788107169594,
+      "mean_net_return": 0.008310834146712623,
+      "median_net_return": -0.06649947753396022,
       "minutes": 240
     }
   ],
-  "as_of": "2026-11-24T15:04:35.017705Z",
+  "as_of": "2026-11-24T15:06:34.790012Z",
   "comparison_inputs": {
-    "as_of": "2026-11-24T14:59:00.000000Z",
+    "as_of": "2026-11-24T15:01:00.000000Z",
     "eligible_symbols": 130,
     "status": "READY",
     "total_symbols": 130
   },
   "coverage": {
-    "on_time_fraction": 0.8901034190865261
+    "on_time_fraction": 0.8901115077466603
   },
   "events": [
     {
@@ -186,36 +186,36 @@
     {
       "arms": [
         {
-          "benchmark_excess": null,
-          "control_excess": null,
+          "benchmark_excess": -0.09880390779966555,
+          "control_excess": -0.10624877635888388,
           "entry_at": "2026-11-23T15:01:00.983208Z",
           "minutes": 1,
-          "net_return": null,
-          "primary_status": "AWAIT_EXIT"
+          "net_return": -0.14295081967213127,
+          "primary_status": "COMPLETE"
         },
         {
-          "benchmark_excess": null,
-          "control_excess": null,
+          "benchmark_excess": -0.09769721983400922,
+          "control_excess": -0.10457356149436062,
           "entry_at": "2026-11-23T15:02:00.732210Z",
           "minutes": 5,
-          "net_return": null,
-          "primary_status": "AWAIT_EXIT"
+          "net_return": -0.1439766081871345,
+          "primary_status": "COMPLETE"
         },
         {
-          "benchmark_excess": null,
-          "control_excess": null,
+          "benchmark_excess": -0.09313481408415472,
+          "control_excess": -0.10069702788805589,
           "entry_at": "2026-11-23T15:12:00.675181Z",
           "minutes": 30,
-          "net_return": null,
-          "primary_status": "AWAIT_EXIT"
+          "net_return": -0.13856428361282733,
+          "primary_status": "COMPLETE"
         },
         {
-          "benchmark_excess": null,
-          "control_excess": null,
+          "benchmark_excess": -0.04230754195589541,
+          "control_excess": -0.0489427619135937,
           "entry_at": "2026-11-23T18:12:00.726160Z",
           "minutes": 240,
-          "net_return": null,
-          "primary_status": "AWAIT_EXIT"
+          "net_return": -0.06464285714285721,
+          "primary_status": "COMPLETE"
         }
       ],
       "controls_status": "AVAILABLE",
@@ -227,36 +227,36 @@
     {
       "arms": [
         {
-          "benchmark_excess": null,
-          "control_excess": null,
+          "benchmark_excess": -0.08124524499027933,
+          "control_excess": 0.021186504068415102,
           "entry_at": "2026-11-23T15:01:00.983208Z",
           "minutes": 1,
-          "net_return": null,
-          "primary_status": "AWAIT_EXIT"
+          "net_return": -0.12539215686274505,
+          "primary_status": "COMPLETE"
         },
         {
-          "benchmark_excess": null,
-          "control_excess": null,
+          "benchmark_excess": -0.0808634687897318,
+          "control_excess": 0.021457258961594894,
           "entry_at": "2026-11-23T15:02:00.732210Z",
           "minutes": 5,
-          "net_return": null,
-          "primary_status": "AWAIT_EXIT"
+          "net_return": -0.12714285714285709,
+          "primary_status": "COMPLETE"
         },
         {
-          "benchmark_excess": null,
-          "control_excess": null,
+          "benchmark_excess": -0.06796347632328963,
+          "control_excess": 0.036931853453293986,
           "entry_at": "2026-11-23T15:12:00.675181Z",
           "minutes": 30,
-          "net_return": null,
-          "primary_status": "AWAIT_EXIT"
+          "net_return": -0.11339294585196223,
+          "primary_status": "COMPLETE"
         },
         {
-          "benchmark_excess": null,
-          "control_excess": null,
+          "benchmark_excess": -0.04416416234699842,
+          "control_excess": 0.011389560861281331,
           "entry_at": "2026-11-23T18:12:00.726160Z",
           "minutes": 240,
-          "net_return": null,
-          "primary_status": "AWAIT_EXIT"
+          "net_return": -0.06649947753396022,
+          "primary_status": "COMPLETE"
         }
       ],
       "controls_status": "AVAILABLE",
@@ -307,15 +307,15 @@
       "symbol": "ONEUSDT"
     }
   ],
-  "events_with_completed_24h": 3,
+  "events_with_completed_24h": 5,
   "events_without_controls": 1,
   "independent_events": 6,
-  "next_primary_due_at": "2026-11-24T15:00:00.113229Z",
+  "next_primary_due_at": "2026-11-24T18:00:00.109295Z",
   "prospective_check": {
     "arm_minutes": 1,
-    "beat_controls": 0,
-    "behind_controls": 2,
-    "completed_pairs": 2,
+    "beat_controls": 1,
+    "behind_controls": 3,
+    "completed_pairs": 4,
     "distinct_signal_dates": 1,
     "enabled": true,
     "events": [
@@ -356,7 +356,7 @@
         "symbol": "PROMUSDT"
       },
       {
-        "control_mean_net_return": null,
+        "control_mean_net_return": -0.03670204331324739,
         "controls": [
           "BONKUSDT",
           "JTOUSDT",
@@ -365,16 +365,16 @@
           "SAGAUSDT"
         ],
         "event_id": "LSKUSDT:1795442400",
-        "excess": null,
-        "net_return": null,
-        "reason": "Waiting for the complete 24-hour comparison.",
+        "excess": -0.10624877635888388,
+        "net_return": -0.14295081967213127,
+        "reason": null,
         "selected_at": "2026-11-23T15:00:00.113229Z",
         "selection_verified": true,
-        "status": "PENDING",
+        "status": "COMPLETE",
         "symbol": "LSKUSDT"
       },
       {
-        "control_mean_net_return": null,
+        "control_mean_net_return": -0.14657866093116015,
         "controls": [
           "BONKUSDT",
           "JUPUSDT",
@@ -383,12 +383,12 @@
           "LSKUSDT"
         ],
         "event_id": "CHIPUSDT:1795442400",
-        "excess": null,
-        "net_return": null,
-        "reason": "Waiting for the complete 24-hour comparison.",
+        "excess": 0.021186504068415102,
+        "net_return": -0.12539215686274505,
+        "reason": null,
         "selected_at": "2026-11-23T15:00:00.227373Z",
         "selection_verified": true,
-        "status": "PENDING",
+        "status": "COMPLETE",
         "symbol": "CHIPUSDT"
       },
       {
@@ -411,9 +411,9 @@
       }
     ],
     "horizon_hours": 24,
-    "mean_excess": -0.12732713834414572,
-    "median_excess": -0.12732713834414572,
-    "pending_pairs": 3,
+    "mean_excess": -0.08492913724469006,
+    "median_excess": -0.08847059099716623,
+    "pending_pairs": 1,
     "started_at": "2026-11-07T17:26:36.132742Z",
     "status": "RECORDING_COMPARISONS",
     "tied_controls": 0,
