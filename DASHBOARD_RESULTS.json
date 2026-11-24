@@ -1,63 +1,63 @@
 {
   "arms": [
     {
-      "awaiting_24h": 5,
+      "awaiting_24h": 3,
       "censored_24h": 0,
-      "completed_24h": 1,
-      "completed_control_pairs": 0,
+      "completed_24h": 3,
+      "completed_control_pairs": 2,
       "event_entries": 6,
-      "mean_benchmark_excess": 0.5056501780570117,
-      "mean_control_excess": null,
-      "mean_net_return": 0.5058014073494916,
-      "median_net_return": 0.5058014073494916,
+      "mean_benchmark_excess": 0.07736327813338881,
+      "mean_control_excess": -0.12732713834414572,
+      "mean_net_return": 0.0691215282737352,
+      "median_net_return": -0.07847016419703644,
       "minutes": 1
     },
     {
-      "awaiting_24h": 5,
+      "awaiting_24h": 3,
       "censored_24h": 0,
-      "completed_24h": 1,
-      "completed_control_pairs": 0,
+      "completed_24h": 3,
+      "completed_control_pairs": 2,
       "event_entries": 6,
-      "mean_benchmark_excess": 0.5061055921875219,
-      "mean_control_excess": null,
-      "mean_net_return": 0.5063981228001564,
-      "median_net_return": 0.5063981228001564,
+      "mean_benchmark_excess": 0.08676208333734967,
+      "mean_control_excess": -0.11404194396084089,
+      "mean_net_return": 0.07900145656648547,
+      "median_net_return": -0.06099530899449322,
       "minutes": 5
     },
     {
-      "awaiting_24h": 5,
+      "awaiting_24h": 3,
       "censored_24h": 0,
-      "completed_24h": 1,
-      "completed_control_pairs": 0,
+      "completed_24h": 3,
+      "completed_control_pairs": 2,
       "event_entries": 6,
-      "mean_benchmark_excess": 0.4875464065974334,
-      "mean_control_excess": null,
-      "mean_net_return": 0.48869733281793604,
-      "median_net_return": 0.48869733281793604,
+      "mean_benchmark_excess": 0.08676250780258205,
+      "mean_control_excess": -0.10306810853633001,
+      "mean_net_return": 0.07873368854709296,
+      "median_net_return": -0.0529082682023858,
       "minutes": 30
     },
     {
-      "awaiting_24h": 5,
+      "awaiting_24h": 3,
       "censored_24h": 0,
-      "completed_24h": 1,
-      "completed_control_pairs": 0,
+      "completed_24h": 3,
+      "completed_control_pairs": 2,
       "event_entries": 6,
-      "mean_benchmark_excess": 0.4875464065974334,
-      "mean_control_excess": null,
-      "mean_net_return": 0.48869733281793604,
-      "median_net_return": 0.48869733281793604,
+      "mean_benchmark_excess": 0.0894315628435305,
+      "mean_control_excess": -0.10301916161723569,
+      "mean_net_return": 0.057565501803460185,
+      "median_net_return": -0.10289448020284762,
       "minutes": 240
     }
   ],
-  "as_of": "2026-11-24T13:02:35.141131Z",
+  "as_of": "2026-11-24T13:06:35.338747Z",
   "comparison_inputs": {
-    "as_of": "2026-11-24T12:57:00.000000Z",
+    "as_of": "2026-11-24T13:01:00.000000Z",
     "eligible_symbols": 130,
     "status": "READY",
     "total_symbols": 130
   },
   "coverage": {
-    "on_time_fraction": 0.8896077489001442
+    "on_time_fraction": 0.889624071267512
   },
   "events": [
     {
@@ -104,36 +104,36 @@
     {
       "arms": [
         {
-          "benchmark_excess": null,
-          "control_excess": null,
+          "benchmark_excess": -0.06603192476131607,
+          "control_excess": -0.07069240563544857,
           "entry_at": "2026-11-23T13:01:00.625121Z",
           "minutes": 1,
-          "net_return": null,
-          "primary_status": "AWAIT_EXIT"
+          "net_return": -0.07847016419703644,
+          "primary_status": "COMPLETE"
         },
         {
-          "benchmark_excess": null,
-          "control_excess": null,
+          "benchmark_excess": -0.049208103531879696,
+          "control_excess": -0.053001334133375974,
           "entry_at": "2026-11-23T13:02:00.733156Z",
           "minutes": 5,
-          "net_return": null,
-          "primary_status": "AWAIT_EXIT"
+          "net_return": -0.06099530899449322,
+          "primary_status": "COMPLETE"
         },
         {
-          "benchmark_excess": null,
-          "control_excess": null,
+          "benchmark_excess": -0.040289576208900876,
+          "control_excess": -0.040872687737265954,
           "entry_at": "2026-11-23T13:12:00.768795Z",
           "minutes": 30,
-          "net_return": null,
-          "primary_status": "AWAIT_EXIT"
+          "net_return": -0.0529082682023858,
+          "primary_status": "COMPLETE"
         },
         {
-          "benchmark_excess": null,
-          "control_excess": null,
+          "benchmark_excess": -0.05451992553249084,
+          "control_excess": -0.06286507237022579,
           "entry_at": "2026-11-23T14:12:00.676360Z",
           "minutes": 240,
-          "net_return": null,
-          "primary_status": "AWAIT_EXIT"
+          "net_return": -0.10289448020284762,
+          "primary_status": "COMPLETE"
         }
       ],
       "controls_status": "AVAILABLE",
@@ -145,36 +145,36 @@
     {
       "arms": [
         {
-          "benchmark_excess": null,
-          "control_excess": null,
+          "benchmark_excess": -0.20752841889552923,
+          "control_excess": -0.1839618710528429,
           "entry_at": "2026-11-23T13:01:00.625121Z",
           "minutes": 1,
-          "net_return": null,
-          "primary_status": "AWAIT_EXIT"
+          "net_return": -0.2199666583312496,
+          "primary_status": "COMPLETE"
         },
         {
-          "benchmark_excess": null,
-          "control_excess": null,
+          "benchmark_excess": -0.19661123864359323,
+          "control_excess": -0.17508255378830578,
           "entry_at": "2026-11-23T13:02:00.733156Z",
           "minutes": 5,
-          "net_return": null,
-          "primary_status": "AWAIT_EXIT"
+          "net_return": -0.20839844410620675,
+          "primary_status": "COMPLETE"
         },
         {
-          "benchmark_excess": null,
-          "control_excess": null,
+          "benchmark_excess": -0.18696930698078643,
+          "control_excess": -0.16526352933539407,
           "entry_at": "2026-11-23T13:12:00.768795Z",
           "minutes": 30,
-          "net_return": null,
-          "primary_status": "AWAIT_EXIT"
+          "net_return": -0.19958799897427135,
+          "primary_status": "COMPLETE"
         },
         {
-          "benchmark_excess": null,
-          "control_excess": null,
+          "benchmark_excess": -0.16473179253435108,
+          "control_excess": -0.1431732508642456,
           "entry_at": "2026-11-23T14:12:00.676360Z",
           "minutes": 240,
-          "net_return": null,
-          "primary_status": "AWAIT_EXIT"
+          "net_return": -0.21310634720470786,
+          "primary_status": "COMPLETE"
         }
       ],
       "controls_status": "AVAILABLE",
@@ -307,20 +307,20 @@
       "symbol": "ONEUSDT"
     }
   ],
-  "events_with_completed_24h": 1,
+  "events_with_completed_24h": 3,
   "events_without_controls": 1,
   "independent_events": 6,
-  "next_primary_due_at": "2026-11-24T13:00:00.093956Z",
+  "next_primary_due_at": "2026-11-24T15:00:00.113229Z",
   "prospective_check": {
     "arm_minutes": 1,
     "beat_controls": 0,
-    "behind_controls": 0,
-    "completed_pairs": 0,
+    "behind_controls": 2,
+    "completed_pairs": 2,
     "distinct_signal_dates": 1,
     "enabled": true,
     "events": [
       {
-        "control_mean_net_return": null,
+        "control_mean_net_return": -0.007777758561587874,
         "controls": [
           "LSKUSDT",
           "NILUSDT",
@@ -329,16 +329,16 @@
           "LUNCUSDT"
         ],
         "event_id": "MUBARAKUSDT:1795435200",
-        "excess": null,
-        "net_return": null,
-        "reason": "Waiting for the complete 24-hour comparison.",
+        "excess": -0.07069240563544857,
+        "net_return": -0.07847016419703644,
+        "reason": null,
         "selected_at": "2026-11-23T13:00:00.093956Z",
         "selection_verified": true,
-        "status": "PENDING",
+        "status": "COMPLETE",
         "symbol": "MUBARAKUSDT"
       },
       {
-        "control_mean_net_return": null,
+        "control_mean_net_return": -0.03600478727840669,
         "controls": [
           "MUBARAKUSDT",
           "LSKUSDT",
@@ -347,12 +347,12 @@
           "ETCUSDT"
         ],
         "event_id": "PROMUSDT:1795435200",
-        "excess": null,
-        "net_return": null,
-        "reason": "Waiting for the complete 24-hour comparison.",
+        "excess": -0.1839618710528429,
+        "net_return": -0.2199666583312496,
+        "reason": null,
         "selected_at": "2026-11-23T13:00:00.137590Z",
         "selection_verified": true,
-        "status": "PENDING",
+        "status": "COMPLETE",
         "symbol": "PROMUSDT"
       },
       {
@@ -411,11 +411,11 @@
       }
     ],
     "horizon_hours": 24,
-    "mean_excess": null,
-    "median_excess": null,
-    "pending_pairs": 5,
+    "mean_excess": -0.12732713834414572,
+    "median_excess": -0.12732713834414572,
+    "pending_pairs": 3,
     "started_at": "2026-11-07T17:26:36.132742Z",
-    "status": "WAITING_FOR_RESULTS",
+    "status": "RECORDING_COMPARISONS",
     "tied_controls": 0,
     "total_signals": 5,
     "unavailable_pairs": 0
