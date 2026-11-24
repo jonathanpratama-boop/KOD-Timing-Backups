@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-24T11:40:21.964858+00:00",
+  "as_of": "2026-11-24T11:50:33.250586+00:00",
   "credits": {},
   "feed": {
     "api_calls": 134,
@@ -9,7 +9,7 @@
     "credit_budget_usd": 55.0,
     "credit_expiry_at": "2026-12-03T13:41:10+00:00",
     "development_count": 20,
-    "discovered_count": 143,
+    "discovered_count": 144,
     "excluded_count": 126,
     "extraction_attempted_count": 20,
     "fetch_error_count": 0,
@@ -94,18 +94,23 @@
         "reason": "Find an earlier forecast for the same fiscal year and accounting basis.",
         "status": "MISSING_PRIOR",
         "title": "ITURAN PRESENTS THIRD QUARTER 2026 RESULTS"
+      },
+      {
+        "reason": "Confirm the issuer and its US listing.",
+        "status": "IDENTITY_UNKNOWN",
+        "title": "MiniMed Delivers Strong Fiscal Q2 with Accelerating Pump Demand, Expanding Profitability, and Faster Pipeline Commercialization"
       }
     ],
-    "prospective_count": 123,
+    "prospective_count": 124,
     "replay_api_calls": 95,
     "replay_api_estimated_usd": 7.500603,
     "review_closed_count": 12,
-    "review_pending_count": 16,
+    "review_pending_count": 17,
     "screened_out_count": 103,
     "source_scope": "PRNewswire earnings RSS observed releases; retained issuer wire archive, not all SEC filings",
     "started_at": "2026-11-16T10:51:25.028121+00:00",
     "state": "RUNNING",
-    "updated_at": "2026-11-24T11:40:21.346115+00:00"
+    "updated_at": "2026-11-24T11:50:32.305758+00:00"
   },
   "historical_replay": {
     "expansion": {
