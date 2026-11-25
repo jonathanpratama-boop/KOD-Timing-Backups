@@ -49,15 +49,15 @@
       "minutes": 240
     }
   ],
-  "as_of": "2026-11-25T22:09:47.288199Z",
+  "as_of": "2026-11-25T22:17:34.344171Z",
   "comparison_inputs": {
-    "as_of": "2026-11-25T22:04:00.000000Z",
+    "as_of": "2026-11-25T22:12:00.000000Z",
     "eligible_symbols": 130,
     "status": "READY",
     "total_symbols": 130
   },
   "coverage": {
-    "on_time_fraction": 0.8971621435459429
+    "on_time_fraction": 0.8971904696322821
   },
   "events": [
     {
@@ -338,7 +338,7 @@
           "entry_at": null,
           "minutes": 240,
           "net_return": null,
-          "primary_status": "NO_ENTRY_RECORDED"
+          "primary_status": "AWAIT_ENTRY"
         }
       ],
       "controls_status": "AVAILABLE",
