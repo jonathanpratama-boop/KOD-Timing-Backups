@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-25T12:01:14.046037+00:00",
+  "as_of": "2026-11-25T12:11:17.448904+00:00",
   "credits": {},
   "feed": {
     "api_calls": 135,
@@ -9,8 +9,8 @@
     "credit_budget_usd": 55.0,
     "credit_expiry_at": "2026-12-03T13:41:10+00:00",
     "development_count": 20,
-    "discovered_count": 165,
-    "excluded_count": 162,
+    "discovered_count": 166,
+    "excluded_count": 163,
     "extraction_attempted_count": 21,
     "fetch_error_count": 0,
     "live_api_calls": 40,
@@ -26,16 +26,16 @@
         "title": "Deere Reports Net Income of $1.051 Billion for Fourth Quarter, $4.860 Billion for Fiscal Year"
       }
     ],
-    "prospective_count": 145,
+    "prospective_count": 146,
     "replay_api_calls": 95,
     "replay_api_estimated_usd": 7.500603,
     "review_closed_count": 34,
     "review_pending_count": 2,
-    "screened_out_count": 117,
+    "screened_out_count": 118,
     "source_scope": "PRNewswire earnings RSS observed releases; retained issuer wire archive, not all SEC filings",
     "started_at": "2026-11-16T10:51:25.028121+00:00",
     "state": "RUNNING",
-    "updated_at": "2026-11-25T12:01:13.508561+00:00"
+    "updated_at": "2026-11-25T12:11:16.951202+00:00"
   },
   "historical_replay": {
     "expansion": {
