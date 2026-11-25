@@ -37,11 +37,11 @@
       "minutes": 30
     },
     {
-      "awaiting_24h": 0,
+      "awaiting_24h": 1,
       "censored_24h": 0,
       "completed_24h": 6,
       "completed_control_pairs": 5,
-      "event_entries": 6,
+      "event_entries": 7,
       "mean_benchmark_excess": 0.01100685480225279,
       "mean_control_excess": -0.07254468038511092,
       "mean_net_return": -0.016980916065904055,
@@ -49,15 +49,15 @@
       "minutes": 240
     }
   ],
-  "as_of": "2026-11-25T22:17:34.344171Z",
+  "as_of": "2026-11-25T22:18:34.188146Z",
   "comparison_inputs": {
-    "as_of": "2026-11-25T22:12:00.000000Z",
+    "as_of": "2026-11-25T22:13:00.000000Z",
     "eligible_symbols": 130,
     "status": "READY",
     "total_symbols": 130
   },
   "coverage": {
-    "on_time_fraction": 0.8971904696322821
+    "on_time_fraction": 0.8971940092959201
   },
   "events": [
     {
@@ -335,10 +335,10 @@
         {
           "benchmark_excess": null,
           "control_excess": null,
-          "entry_at": null,
+          "entry_at": "2026-11-25T22:12:00.769387Z",
           "minutes": 240,
           "net_return": null,
-          "primary_status": "AWAIT_ENTRY"
+          "primary_status": "AWAIT_EXIT"
         }
       ],
       "controls_status": "AVAILABLE",
