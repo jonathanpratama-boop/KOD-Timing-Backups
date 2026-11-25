@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-25T09:59:41.802588+00:00",
+  "as_of": "2026-11-25T10:09:51.585733+00:00",
   "credits": {},
   "feed": {
     "api_calls": 135,
@@ -9,8 +9,8 @@
     "credit_budget_usd": 55.0,
     "credit_expiry_at": "2026-12-03T13:41:10+00:00",
     "development_count": 20,
-    "discovered_count": 162,
-    "excluded_count": 160,
+    "discovered_count": 163,
+    "excluded_count": 161,
     "extraction_attempted_count": 21,
     "fetch_error_count": 0,
     "live_api_calls": 40,
@@ -21,16 +21,16 @@
         "title": "Dolby Laboratories Reports Fourth Quarter and Fiscal Year 2026 Financial Results"
       }
     ],
-    "prospective_count": 142,
+    "prospective_count": 143,
     "replay_api_calls": 95,
     "replay_api_estimated_usd": 7.500603,
     "review_closed_count": 34,
     "review_pending_count": 1,
-    "screened_out_count": 115,
+    "screened_out_count": 116,
     "source_scope": "PRNewswire earnings RSS observed releases; retained issuer wire archive, not all SEC filings",
     "started_at": "2026-11-16T10:51:25.028121+00:00",
     "state": "RUNNING",
-    "updated_at": "2026-11-25T09:59:41.203988+00:00"
+    "updated_at": "2026-11-25T10:09:51.022932+00:00"
   },
   "historical_replay": {
     "expansion": {
